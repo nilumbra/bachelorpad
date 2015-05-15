@@ -115,13 +115,13 @@
             controlText.innerHTML = 'Show Range';
             controlUI.appendChild(controlText);
 
-            // Setup the click event listeners: simply set the map to
-            // Chicago
+            //Hide range circles
             google.maps.event.addDomListener(controlUI, 'click', function() {
 
+                console.log("RangeShowing: "+rangeShowing);
                 if(!rangeShowing)
                     showRangeCircles();
-                else
+                else if(rangeShowing)
                     hideRangeCircles();
 
             });
