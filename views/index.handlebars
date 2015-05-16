@@ -15,7 +15,7 @@
 
     </script>
     <script type="text/javascript">
-
+        var UCSD = new google.maps.LatLng(32.8810, -117.2380);
         var rangeShowing = false;;
         var map;
         var citymap = {};
@@ -34,13 +34,15 @@
         };
 
 
-        var cityCircle;
+        var largeCircle;
+        var medCircle;
+        var smallCircle;
 
 
 
 
         function initialize() {
-            var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
+
             var mapOptions = {
                 zoom: 11,
                 center: new google.maps.LatLng(32.7153300, -117.1572600)
@@ -48,40 +50,23 @@
 
             map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-            var contentString = '<div id="content">'+
-                    '<div id="siteNotice">'+
-                    '</div>'+
-                    '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
-                    '<div id="bodyContent">'+
-                    '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-                    '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-                    'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-                    '(last visited June 22, 2009).</p>'+
-                    '</div>'+
-                    '</div>';
 
-            var infowindow = new google.maps.InfoWindow({
-                content: contentString
-            });
-
-            var marker = new google.maps.Marker({
-                position: myLatlng,
-                map: map,
-                title: 'Uluru (Ayers Rock)'
-            });
-            google.maps.event.addListener(marker, 'click', function() {
-                infowindow.open(map,marker);
-            });
-
-
+            //customMapColor();
 
 
 
             var centerControlDiv = document.createElement('div');
             var centerControl = new CenterControl(centerControlDiv, map);
-
             centerControlDiv.index = 1;
+
+            var centerControlDiv2 = document.createElement('div');
+            var centerControl2 = new CenterControl(centerControlDiv2, map, "");
+            centerControlDiv2.index = 1;
+
+
+
             map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(centerControlDiv);
+            map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(centerControlDiv2);
 
 
         }
@@ -90,7 +75,7 @@
 
 
 
-        function CenterControl(controlDiv, map) {
+        function CenterControl(controlDiv, map, name) {
 
             // Set CSS for the control border
             var controlUI = document.createElement('div');
@@ -131,114 +116,115 @@
         function hideRangeCircles(){
             rangeShowing = false;
 
-            // Construct the circle for each value in citymap.
-            // Note: We scale the area of the circle based on the population.
-            for (var city in citymap) {
 
-                if (city == "sandiego1") {
-
-                    var populationOptions = {
-                        strokeColor: '#03A9F4',
-                        strokeOpacity: 0.18,
-                        strokeWeight: 2,
-                        fillColor: '#03A9F4',
-                        fillOpacity: 0.09,
-                        map: map,
-                        center: citymap[city].center,
-                        radius: 0
-                    };
-
-                }
-                else if (city == "sandiego2") {
-
-                    var populationOptions = {
-                        strokeColor: '#03A9F4',
-                        strokeOpacity: 0.18,
-                        strokeWeight: 2,
-                        fillColor: '#03A9F4',
-                        fillOpacity: 0.06,
-                        map: map,
-                        center: citymap[city].center,
-                        radius: 0
-                    };
-
-                }
-                else if (city == "sandiego3") {
-
-                    var populationOptions = {
-                        strokeColor: '#03A9F4',
-                        strokeOpacity: 0.18,
-                        strokeWeight: 2,
-                        fillColor: '#03A9F4',
-                        fillOpacity: 0.09,
-                        map: map,
-                        center: citymap[city].center,
-                        radius: 0
-                    };
-
-                }
-
-                // Add the circle for this city to the map.
-                cityCircle = new google.maps.Circle(populationOptions);
-            }
-
+            largeCircle.setMap(null);
+            medCircle.setMap(null);
+            smallCircle.setMap(null);
         }
 
         function showRangeCircles(){
             rangeShowing = true;
 
-            // Construct the circle for each value in citymap.
-            // Note: We scale the area of the circle based on the population.
-            for (var city in citymap) {
+            var city = citymap.sandiego1;
 
-                if (city == "sandiego1") {
+                    var largeOptions = {
+                        strokeColor: '#03A9F4',
+                        strokeOpacity: 0.18,
+                        strokeWeight: 2,
+                        fillColor: '#03A9F4',
+                        fillOpacity: 0.2,
+                        map: map,
+                        center: city.center,
+                        radius: Math.sqrt(city.population) * 40
+                    };
 
-                    var populationOptions = {
+                    var medOptions = {
+                        strokeColor: '#03A9F4',
+                        strokeOpacity: 0.18,
+                        strokeWeight: 2,
+                        fillColor: '#03A9F4',
+                        fillOpacity: 0.1,
+                        map: map,
+                        center: city.center,
+                        radius: Math.sqrt(city.population) * 30
+                    };
+
+                    var smallOptions = {
                         strokeColor: '#03A9F4',
                         strokeOpacity: 0.18,
                         strokeWeight: 2,
                         fillColor: '#03A9F4',
                         fillOpacity: 0.09,
                         map: map,
-                        center: citymap[city].center,
-                        radius: Math.sqrt(citymap[city].population) * 100
+                        center: city.center,
+                        radius: Math.sqrt(city.population) * 20
                     };
 
-                }
-                else if (city == "sandiego2") {
-
-                    var populationOptions = {
-                        strokeColor: '#03A9F4',
-                        strokeOpacity: 0.18,
-                        strokeWeight: 2,
-                        fillColor: '#03A9F4',
-                        fillOpacity: 0.06,
-                        map: map,
-                        center: citymap[city].center,
-                        radius: Math.sqrt(citymap[city].population) * 100
-                    };
-
-                }
-                else if (city == "sandiego3") {
-
-                    var populationOptions = {
-                        strokeColor: '#03A9F4',
-                        strokeOpacity: 0.18,
-                        strokeWeight: 2,
-                        fillColor: '#03A9F4',
-                        fillOpacity: 0.09,
-                        map: map,
-                        center: citymap[city].center,
-                        radius: Math.sqrt(citymap[city].population) * 100
-                    };
-
-                }
 
                 // Add the circle for this city to the map.
-                cityCircle = new google.maps.Circle(populationOptions);
-            }
+                largeCircle = new google.maps.Circle(largeOptions);
+                medCircle = new google.maps.Circle(medOptions);
+                smallCircle = new google.maps.Circle(smallOptions);
+
 
         }
+
+
+
+
+
+        function customMapColor(){
+
+
+            var MY_MAPTYPE_ID = 'custom_style';
+
+            var featureOpts = [
+                {
+                    stylers: [
+                        { hue: '#0052a3' },
+                        { visibility: 'simplified' },
+                        { gamma: 0.5 },
+                        { weight: 0.5 }
+                    ]
+                },
+                {
+                    elementType: 'labels',
+                    stylers: [
+                        { visibility: 'off' }
+                    ]
+                },
+                {
+                    featureType: 'water',
+                    stylers: [
+                        { color: '#890000' }
+                    ]
+                }
+            ];
+
+
+            var mapOptions = {
+                zoom: 12,
+                center: UCSD,
+                mapTypeControlOptions: {
+                    mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+                },
+                mapTypeId: MY_MAPTYPE_ID
+            };
+
+            map = new google.maps.Map(document.getElementById('map-canvas'),
+                    mapOptions);
+
+            var styledMapOptions = {
+                name: 'Custom Style'
+            };
+
+            var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+
+            map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+
+        }
+
+
 
     </script>
 </head>
