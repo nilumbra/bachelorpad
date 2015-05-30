@@ -355,53 +355,97 @@
         }
 
 
-        function startAnimateCircles(){
 
+        var smallRadius = 1;
+        var mediumRadius = 1;
+        var largeRadius = 1;
+        var smallTime = 0;
+        var mediumTime = 0;
+        var largeTime = 0;
+
+        var largeCircleInterval;
+        var mediumCircleInterval;
+        var smallCircleInterval;
+
+        function smallCircleAnimation() {
+
+            if ((smallRadius < smallCircleRadius)) {
+                smallRadius =  -(1-(Math.pow((1-smallTime), 2)));
+                smallCircle.setRadius(smallRadius);
+            }
+            else{
+                clearInterval(smallCircleAnimation);
+            }
+            smallTime = smallTime += 5;
+        }
+
+        function medCircleAnimation() {
+
+            if ((mediumRadius < medCircleRadius)) {
+                mediumRadius =  -(1-(Math.pow((1-mediumTime), 2)));
+                medCircle.setRadius(mediumRadius);
+            }
+            else{
+                clearInterval(medCircleAnimation);
+            }
+            mediumTime = mediumTime += 3;
+        }
+
+        function largeCircleAnimation() {
+            if ((largeRadius < largeCircleRadius)) {
+                largeRadius =  -(1-(Math.pow((1-largeTime), 2)));
+                largeCircle.setRadius(largeRadius);
+            }
+            else{
+                clearInterval(largeCircleInterval);
+            }
+
+            largeTime = largeTime += 1;
+
+        }
+
+
+        function startAnimateCircles(){
+            smallRadius = 1;
+            mediumRadius = 1;
+            largeRadius = 1;
+            smallTime = 0;
+            mediumTime = 0;
+            largeTime = 0;
+
+
+
+            largeCircleInterval = setInterval(largeCircleAnimation, 5);
+
+            mediumCircleInterval = setInterval(medCircleAnimation, 3);
+
+            smallCircleInterval = setInterval(smallCircleAnimation, 1);
+
+
+
+
+
+
+
+            /*
+
+*/
+            /*
             var radius = 1;
             var time = 0;
-            var refreshIntervalId = setInterval(function() {
-
-
-                console.log("radius: "+radius);
-                if ((radius < largeCircleRadius)) {
-                    radius =  Math.pow((radius), 2);
-                    largeCircle.setRadius(radius);
-                }
-
-                time = time += 100;
-
-            }, 100);
-
-
-
-            //1–(1–t)2f
+            setTimeout(function(){
+                clearInterval(medCircleAnimation);
+                setInterval(largeCircleAnimation, 1);
+            }, 1000);
 
             setTimeout(function(){
-                console.log("timeout done");
-                clearInterval(refreshIntervalId);
-            }, 500);
-
-/*
-            var radius = 2;
-            setInterval(function() {
-
-                if ((radius < (medCircleRadius/medCircleRadius))) {
-                    radius = (Math.pow((radius - 1), 2) - 1);
-                    medCircle.setRadius(radius);
-                }
-            }, 20);
+                clearInterval(largeCircleAnimation);
+            }, 1000);
+*/
 
 
-            var radius = 2;
-            setInterval(function() {
 
-                if ((radius < smallCircleRadius)) {
-                    radius = radius + direction * 10;
-                    //console.log("radius: "+radius)
-                    smallCircle.setRadius(radius);
-                }
-            }, 20);
-         */
+
 
         }
 
