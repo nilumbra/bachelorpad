@@ -1,9 +1,15 @@
-var express = require('express');
-var router = express.Router();
+//var models = require('../models');
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
 
-module.exports = router;
+exports.view = function(req, res) {
+	//search the database object for a model.
+	models.Img.find({}, function(err, dbData){
+		data = {'images':dbData}
+		res.render('index', data);
+	});
+}
+
+exports.deleteImage = function(req, res) {
+	models.Img.find({ _id: req.body.id }).remove().exec();
+	res.redirect('/');
+}
