@@ -11,11 +11,6 @@ var index = require('./routes/index');
 var zillow = new Zillow("X1-ZWz1a7ra6xs5qj_7rj5m");
 
 
-var parameters = {
-    zpid: 1111111
-};
-
-
 //GetSearchResults - Params: address, city/state/zip || result: Zpid, and lots more...........use getDeepSearchResults for more info
 
 //GetComps - params: Zpid, count(1-25), rentzestimate(bool) || result: set of infos for comparables...............use deep for more results
@@ -33,24 +28,31 @@ app.get('/getDeepSearchResults', function(req, res) {
 
     var street = address.substring(0, address.indexOf(","));
     address = address.substring(address.indexOf(",")+2);
-    console.log("street: "+street);
-    //A chance that we get a range here.
 
+    //TODO A chance that we get a range here
+    var streetNum = street.substring(0, street.indexOf(" "));
+    if(streetNum.indexOf('-') != -1){
+        var minRange = streetNum.substring(0, streetNum.indexOf('-'));
+        var maxRange = streetNum.substring(streetNum.indexOf('-')+1);
 
-
-
-
+        //console.log("minRange: "+minRange)
+        //console.log("maxRange: "+maxRange)
+        //Randomize in between?
+        //Just give minRange for now
+        street = maxRange+""+street.substring(street.indexOf(" "))
+    }
+    console.log("street: "+street)
 
     var city = address.substring(0, address.indexOf(","));
     address = address.substring(address.indexOf(",")+2);
-    //console.log("city: "+city);
+    console.log("city: "+city);
 
     var state = address.substring(0, address.indexOf(" "));
     address = address.substring(address.indexOf(" ")+1);
-    //console.log("state: "+state);
+    console.log("state: "+state);
 
     var zip = address.substring(0, address.indexOf(","));
-    //console.log("zip: "+zip);
+    console.log("zip: "+zip);
 
     var getSearchParams = {
         address: street,
@@ -81,13 +83,13 @@ app.get('/getDeepSearchResults', function(req, res) {
 });
 
 
-
+//TODO
 app.get('/getCompResults', function(req, res) {
 
-
-    var getSearchParams = {
-        zpid: 16834453
-    }
+    var address = req.query.zpid;
+    //var getSearchParams = {
+    //    zpid: 16834453
+    //}
 
      //GetZestimate
      zillow.callApi('GetComps', params)
@@ -98,7 +100,7 @@ app.get('/getCompResults', function(req, res) {
      return results;
      })
 
-    res.send('hello world');
+    res.send("hello world"+results);
 });
 
 
