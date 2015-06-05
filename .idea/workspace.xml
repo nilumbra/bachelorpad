@@ -39,8 +39,8 @@
       <file leaf-file-name="index.handlebars" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40397352">
-              <caret line="289" column="57" selection-start-line="289" selection-start-column="57" selection-end-line="289" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.21523179">
+              <caret line="249" column="68" selection-start-line="249" selection-start-column="68" selection-end-line="249" selection-end-column="68" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -459,7 +459,7 @@
       <workItem from="1433354319323" duration="9513000" />
       <workItem from="1433424915424" duration="9483000" />
       <workItem from="1433437815649" duration="16257000" />
-      <workItem from="1433515746217" duration="4987000" />
+      <workItem from="1433515746217" duration="7088000" />
     </task>
     <task id="LOCAL-00001" summary="Created Deagan Branch">
       <created>1431732816469</created>
@@ -509,11 +509,17 @@
       <option name="project" value="LOCAL" />
       <updated>1433519608085</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Code clean up">
+      <created>1433520752161</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1433520752161</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80638000" />
+    <option name="totallyTimeSpent" value="82739000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -572,7 +578,8 @@
     <MESSAGE value="Animated Overlays" />
     <MESSAGE value="Merge Leons HTML" />
     <MESSAGE value="Refactored custom map options&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored custom map options&#10;" />
+    <MESSAGE value="Code clean up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code clean up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -945,8 +952,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40397352">
-          <caret line="289" column="57" selection-start-line="289" selection-start-column="57" selection-end-line="289" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.21523179">
+          <caret line="249" column="68" selection-start-line="249" selection-start-column="68" selection-end-line="249" selection-end-column="68" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

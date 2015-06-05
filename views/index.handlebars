@@ -222,12 +222,12 @@
 
 
             google.maps.event.addListener(map, 'maptypeid_changed', function() {
-                console.log("map has changed to: "+map.getMapTypeId());
+
                 eFunction = Math.pow(Math.E, (22-(map.getZoom())))+2;
 
-
-                daySound.pause();
-                nightSound.pause();
+                console.log("map has changed to: "+eFunction);
+                //daySound.pause();
+                //nightSound.pause();
 
                 if(map.getMapTypeId() == DAY_MAPTYPE_ID) {
 
@@ -247,7 +247,7 @@
 
                     service.nearbySearch(dayRequest, function (results, status) {
 
-                        daySound.fade(daySound.volume, 0.1 * results.length, 500);
+                        daySound.fade(0, 0.1 * results.length, 500);
                         if (status == google.maps.places.PlacesServiceStatus.OK) {
 
                             for (var i = 0; i < results.length; i++) {
@@ -272,7 +272,7 @@
                         types: ['bar', 'night_club']
                     };
                     service.nearbySearch(nightRequest, function (results, status) {
-                        nightSound.fade(nightSound.volume, 0.05 * results.length, 500);
+                        nightSound.fade(0, 0.05 * results.length, 500);
                         if (status == google.maps.places.PlacesServiceStatus.OK) {
 
                             for (var i = 0; i < results.length; i++) {
@@ -287,10 +287,10 @@
 
 
 
-            google.maps.event.addListener(map, 'dragstart', function() {
+            google.maps.event.addListener(map, 'center_changed', function() {
                 var zoom = map.getZoom();
                 if(zoom < 16)
-                    zoom = 13;
+                    zoom = 16;
 
                 eFunction = Math.pow(Math.E, ((22-(zoom)))+1);
                 //console.log("zoom: "+zoom);
@@ -314,9 +314,12 @@
                     };
 
                     service.nearbySearch(dayRequest, function (results, status) {
-                        daySound.volume(0.05 * results.length, 0.05 * results.length, 1000);
 
+                        if(results != null){
+                            daySound.volume(0.05 * results.length, 0.05 * results.length, 1000);
+                        }
                         if (status == google.maps.places.PlacesServiceStatus.OK) {
+
                             for (var i = 0; i < results.length; i++) {
                                 createMarker(results[i], marketIcon);
                             }
@@ -338,16 +341,22 @@
                     };
                     service.nearbySearch(nightRequest, function (results, status) {
 
-                        nightSound.volume(0.05 * results.length, 0.05 * results.length, 1000);
+
+
+                        if(results != null){
+                            nightSound.volume(0.05 * results.length, 0.05 * results.length, 1000);
+                        }
+
                         if (status == google.maps.places.PlacesServiceStatus.OK) {
+
 
                             if (status == google.maps.places.PlacesServiceStatus.OK) {
                                 for (var i = 0; i < results.length; i++) {
                                     createMarker(results[i], barIcon);
                                 }
                             }
-
                         }
+
                     });
                 }
 
@@ -421,9 +430,8 @@
 
 
         function setAllMarkers(hash, map){
-
             Object.keys(hash).forEach(function (key) {
-                console.log(hash[key]);
+                //console.log(hash[key]);
                 hash[key].setMap(map);
             })
 
@@ -431,8 +439,8 @@
 
 
         function initializeMapSoundAndIcons(){
-
-            eFunction = Math.pow(Math.E, (22-(13)))+2;
+            //13
+            eFunction = Math.pow(Math.E, (22-(map.getZoom())))+2;
             if(map.getMapTypeId() == DAY_MAPTYPE_ID) {
 
                 dayRequest = {
