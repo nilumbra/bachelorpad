@@ -1,65 +1,129 @@
+//dependencies for each module used
 var express = require('express');
+var Zillow = require('node-zillow');
+var http = require('http');
 var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-
-var routes = require('./routes/index');
-var users = require('./routes/users');
-
+var handlebars = require('express3-handlebars');
 var app = express();
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
 
+var index = require('./routes/index');
+var zillow = new Zillow("X1-ZWz1a7ra6xs5qj_7rj5m");
+
+
+//GetSearchResults - Params: address, city/state/zip || result: Zpid, and lots more...........use getDeepSearchResults for more info
+
+//GetComps - params: Zpid, count(1-25), rentzestimate(bool) || result: set of infos for comparables...............use deep for more results
+
+//GetDemographics - params: regionid or zip or state or city or neighborhood || charts and info
+
+//GetRateSummary - mortgage rates by state
+
+//GetMonthlyPayments - calculator - http://www.zillow.com/howto/api/GetMonthlyPayments.htm
+
+app.get('/getDeepSearchResults', function(req, res) {
+
+    var address = req.query.address;
+    console.log("address: "+address);
+
+    var street = address.substring(0, address.indexOf(","));
+    address = address.substring(address.indexOf(",")+2);
+
+    //TODO A chance that we get a range here
+    var streetNum = street.substring(0, street.indexOf(" "));
+    if(streetNum.indexOf('-') != -1){
+        var minRange = streetNum.substring(0, streetNum.indexOf('-'));
+        var maxRange = streetNum.substring(streetNum.indexOf('-')+1);
+
+        //console.log("minRange: "+minRange)
+        //console.log("maxRange: "+maxRange)
+        //Randomize in between?
+        //Just give minRange for now
+        street = maxRange+""+street.substring(street.indexOf(" "))
+    }
+    console.log("street: "+street)
+
+    var city = address.substring(0, address.indexOf(","));
+    address = address.substring(address.indexOf(",")+2);
+    console.log("city: "+city);
+
+    var state = address.substring(0, address.indexOf(" "));
+    address = address.substring(address.indexOf(" ")+1);
+    console.log("state: "+state);
+
+    var zip = address.substring(0, address.indexOf(","));
+    console.log("zip: "+zip);
+
+    var getSearchParams = {
+        address: street,
+        city: city,
+        state: state,
+        zip: zip
+    }
+
+    /*
+    var getSearchParams = {
+        address: "9450 La Jolla Farms Road",
+        city: "La Jolla",
+        state: 'CA',
+        zip: '92037'
+    }*/
+
+    zillow.getDeepSearchResults(getSearchParams)
+        .then(function(result) {
+            console.log("error code: "+JSON.stringify(result.message[0].code));
+
+
+            console.log("in here: "+JSON.stringify(result.response[0]));
+            var zpid = result.response[0].results[0].result[0].zpid[0]
+            return zillow.getUpdatedPropertyDetails(zpid)
+        })
+
+    res.send('hello world');
+});
+
+
+//TODO
+app.get('/getCompResults', function(req, res) {
+
+    var address = req.query.zpid;
+    //var getSearchParams = {
+    //    zpid: 16834453
+    //}
+
+     //GetZestimate
+     zillow.callApi('GetComps', params)
+     .then(function(data) {
+     console.log("in here: "+JSON.stringify(data.response[0]));
+     //var results = data.response[0].results[0].result[0];
+     console.log("done here:");
+     return results;
+     })
+
+    res.send("hello world"+results);
+});
+
+
+//Configures the Template engine
+app.engine('handlebars', handlebars());
+app.set('view engine', 'handlebars');
+app.set('views', __dirname + '/views');
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname + '/public'));
+
+//routes
+app.get('/', function(req, res){
+  res.render('index');
+});
+app.get('/login', function(req, res){
+  res.render('login', { user: req.user });
+});
 
 //set environment ports and start application
 app.set('port', process.env.PORT || 3000);
-
-
-// uncomment after placing your favicon in /public
-//app.use(favicon(__dirname + '/public/favicon.ico'));
-app.use(logger('dev'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
-
-app.use('/', routes);
-app.use('/users', users);
-
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  var err = new Error('Not Found');
-  err.status = 404;
-  next(err);
+http.createServer(app).listen(app.get('port'), function(){
+  console.log('Express server listening on port ' + app.get('port'));
 });
-
-// error handlers
-
-// development error handler
-// will print stacktrace
-if (app.get('env') === 'development') {
-  app.use(function(err, req, res, next) {
-    res.status(err.status || 500);
-    res.render('error', {
-      message: err.message,
-      error: err
-    });
-  });
-}
-
-// production error handler
-// no stacktraces leaked to user
-app.use(function(err, req, res, next) {
-  res.status(err.status || 500);
-  res.render('error', {
-    message: err.message,
-    error: {}
-  });
-});
-
 
 module.exports = app;
+

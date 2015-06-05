@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <!--<script src="howler.min.js"></script>-->
+    <script src="javascripts/howler.min.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <script src="//js.leapmotion.com/leap-0.6.4.js"></script>
+    <script src="//js.leapmotion.com/leap-plugins-0.1.8.js"></script>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Bachelor Pad</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#item1">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#item2">OurTeam</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#item2" onclick="toggleMusic()">Sound</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome to Bachelor's Pad</div>
+                <div class="intro-heading">Start your journey now.</div>
+                <a href="#services" class="page-scroll btn btn-xl">Let's Go</a>
+            </div>
+        </div>
+    </header>
+
+
+    <script>
+
+        var ucsd = new google.maps.LatLng(32.880694,-117.236331);
+
+        var nightSound = new Howl({
+            urls: ['sounds/nightlife.ogg', 'sounds/nightlife.m4a'/*, 'sounds/nightlife.mp3'*/],
+            autoplay: false,
+            loop: true,
+            volume: 0.2
+        });
+        var daySound = new Howl({
+            urls: ['sounds/daytime.ogg', 'sounds/daytime.m4a'/*, 'sounds/daytime.mp3'*/],
+            autoplay: false,
+            loop: true,
+            volume: 0.2
+        });
+
+        var barIcon = {
+            url: 'images/bar_cocktail.png',
+            size: new google.maps.Size(32, 37),
+            origin: new google.maps.Point(0,0),
+            anchor: new google.maps.Point(16, 16)
+        };
+        var marketIcon = {
+            url: 'images/supermarket.png',
+            size: new google.maps.Size(32, 37),
+            origin: new google.maps.Point(0,0),
+            anchor: new google.maps.Point(16, 16)
+        };
+
+        var styles = [
+            {
+                stylers: [
+                    { hue: "#194C62" },
+                    { saturation: -40 },
+                    { invert_lightness: true}
+                ]
+            }
+        ];
+        var mapProp = {
+            center:ucsd,
+            zoom:15,
+            mapTypeControlOptions: {
+                mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+            }
+        };
+
+
+        var styledMap = new google.maps.StyledMapType(styles, {name: "Nightlife"});
+
+        var map;
+
+        var geocoder;
+        var rangeShowing = false;
+        var citymap = {};
+        var largeCircle;
+        var medCircle;
+        var smallCircle;
+
+        var largeCircleRadius = (1609.34)*1; //meters
+        var medCircleRadius = (1609.34)*.5;
+        var smallCircleRadius = (1609.34)*.25;
+
+        var playSound = false;
+        var eFunction;
+
+        var dayRequest;
+        var service;
+
+        var barMarkerHash = {};
+        var storeMarkerHash = {};
+
+        var infowindow;
+        function initialize(){
+
+            map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            map.mapTypes.set('map_style', styledMap);
+            map.setMapTypeId('map_style');
+            service = new google.maps.places.PlacesService(map);
+            infowindow = new google.maps.InfoWindow();
+
+
+            google.maps.event.addListener(map, 'maptypeid_changed', function() {
+                eFunction = Math.pow(Math.E, (22-(map.getZoom())))+2;
+
+
+                daySound.pause();
+                nightSound.pause();
+
+                if(map.getMapTypeId() == "roadmap") {
+
+                    setAllMarkers(barMarkerHash, null)
+                    setAllMarkers(storeMarkerHash, map)
+                    nightSound.fade(0, 0, 1500, function() {
+                        nightSound.pause();
+                    });
+                    if(playSound)
+                        daySound.play();
+
+                    dayRequest = {
+                        location: map.getCenter(),
+                        radius: eFunction,
+                        types: ['grocery_or_supermarket']
+                    };
+
+                    service.nearbySearch(dayRequest, function (results, status) {
+
+                        daySound.fade(daySound.volume, 0.1 * results.length, 500);
+                        if (status == google.maps.places.PlacesServiceStatus.OK) {
+
+                            for (var i = 0; i < results.length; i++) {
+                                createMarker(results[i], marketIcon);
+                            }
+
+                        }
+                    });
+                }
+                else if(map.getMapTypeId() == "map_style") {
+                    setAllMarkers(barMarkerHash, map)
+                    setAllMarkers(storeMarkerHash, null)
+                    daySound.fade(0, 0, 1500, function() {
+                        daySound.pause();
+                    });
+                    if(playSound)
+                        nightSound.play();
+
+                    var nightRequest = {
+                        location: map.getCenter(),
+                        radius: eFunction,
+                        types: ['bar', 'night_club']
+                    };
+                    service.nearbySearch(nightRequest, function (results, status) {
+                        nightSound.fade(nightSound.volume, 0.05 * results.length, 500);
+                        if (status == google.maps.places.PlacesServiceStatus.OK) {
+
+                            for (var i = 0; i < results.length; i++) {
+                                createMarker(results[i], barIcon);
+                            }
+                        }
+                    });
+                }
+
+            });
+
+
+
+
+            google.maps.event.addListener(map, 'dragend', function() {
+                var zoom = map.getZoom();
+                if(zoom < 16)
+                    zoom = 16;
+
+                eFunction = Math.pow(Math.E, ((22-(zoom)))+1);
+                //console.log("zoom: "+zoom);
+
+                if(map.getMapTypeId() == "roadmap") { //daytime
+
+                    dayRequest = {
+                        location: map.getCenter(),
+                        radius: (eFunction),
+                        types: ['grocery_or_supermarket']
+                    };
+                    var nearestMall = {
+                        location: map.getCenter(),
+                        radius: 500,
+                        types: ['shopping_mall']
+                    };
+                    var nearestGym = {
+                        location: map.getCenter(),
+                        radius: 500,
+                        types: ['gym']
+                    };
+
+                    service.nearbySearch(dayRequest, function (results, status) {
+                        daySound.volume(0.05 * results.length, 0.05 * results.length, 1000);
+
+                        if (status == google.maps.places.PlacesServiceStatus.OK) {
+                            for (var i = 0; i < results.length; i++) {
+                                createMarker(results[i], marketIcon);
+                            }
+                        }
+
+                    });
+                }
+                else { //nighttime
+
+                    var nightRequest = {
+                        location: map.getCenter(),
+                        radius: eFunction,
+                        types: ['bar', 'night_club']
+                    };
+                    var alcRequest = {
+                        location: map.getCenter(),
+                        radius: 500,
+                        types: ['liquor_store']
+                    };
+                    service.nearbySearch(nightRequest, function (results, status) {
+
+                        nightSound.volume(0.05 * results.length, 0.05 * results.length, 1000);
+                        if (status == google.maps.places.PlacesServiceStatus.OK) {
+
+                            if (status == google.maps.places.PlacesServiceStatus.OK) {
+                                for (var i = 0; i < results.length; i++) {
+                                    createMarker(results[i], barIcon);
+                                }
+                            }
+
+                        }
+                    });
+                }
+
+
+            } );
+
+
+
+
+            geocoder = new google.maps.Geocoder();
+
+
+            google.maps.event.addListener(map, 'click', function(event) {
+
+                var lat = event.latLng.lat();
+                var lng = event.latLng.lng();
+                geocodePosition(event.latLng);
+            });
+
+
+
+
+            initializeMapSoundAndIcons();
+
+
+        }
+
+
+        function createMarker(place, icon) {
+
+            //Save the marker to hash for use later
+            if(icon == barIcon){
+                if(barMarkerHash[place.id] != undefined){
+                    return;
+                }else{
+                    var marker = new google.maps.Marker({
+                        map: map,
+                        position: place.geometry.location,
+                        animation: google.maps.Animation.DROP,
+                        icon: icon
+                    });
+                    barMarkerHash[place.id] = marker;
+                }
+            }
+
+            else if(icon == marketIcon ){
+                if(storeMarkerHash[place.id] != undefined){
+                    return;
+                }else{
+                    var marker = new google.maps.Marker({
+                        map: map,
+                        position: place.geometry.location,
+                        animation: google.maps.Animation.DROP,
+                        icon: icon
+                    });
+                    storeMarkerHash[place.id] = marker;
+                }
+            }
+
+
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.setContent(place.name);
+                infowindow.open(map, this);
+            });
+
+
+
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+
+
+        function setAllMarkers(hash, map){
+
+            Object.keys(hash).forEach(function (key) {
+                console.log(hash[key]);
+                hash[key].setMap(map);
+            })
+
+        }
+
+
+        function initializeMapSoundAndIcons(){
+            //nightSound.pause();
+            //daySound.pause();
+            //nightSound.volume(1);
+
+
+
+
+
+
+            eFunction = Math.pow(Math.E, (22-(map.getZoom())))+2;
+            if(map.getMapTypeId() == "roadmap") {
+
+                dayRequest = {
+                    location: map.getCenter(),
+                    radius: (eFunction),
+                    types: ['grocery_or_supermarket']
+                };
+
+                service.nearbySearch(dayRequest, function (results, status) {
+                    if(playSound)
+                        //daySound.fadeIn(0.05 * results.length, 1500);
+                        daySound.volume(0.05 * results.length, 0.05 * results.length, 1000);
+                    else
+                        daySound.volume(0);
+                    if (status == google.maps.places.PlacesServiceStatus.OK) {
+                        for (var i = 0; i < results.length; i++) {
+                            createMarker(results[i], marketIcon);
+                        }
+                    }
+                });
+            }
+            else { //nighttime
+
+                var nightRequest = {
+                    location: map.getCenter(),
+                    radius: eFunction,
+                    types: ['bar', 'night_club']
+                };
+
+                service.nearbySearch(nightRequest, function (results, status) {
+                    if(playSound)
+                        daySound.volume(0.05 * results.length, 0.05 * results.length, 1000);
+                    else
+                        daySound.volume(0);
+                    if (status == google.maps.places.PlacesServiceStatus.OK) {
+                        for (var i = 0; i < results.length; i++) {
+                            createMarker(results[i], barIcon);
+                        }
+                    }
+
+                });
+            }
+
+        }
+
+
+        function getZillowId(address) {
+            $.ajax({
+                type: "GET",
+                url: '/getDeepSearchResults',
+                data: {address: address},
+                success: function(id) {
+                    //doStuff(id);
+                    //showRangeCircles(address);
+                    console.log("Success: "+id)
+
+                },
+                error: function(jqXHR, textstatus, errorThrown) {
+                    alert('text status ' + textstatus + ', err ' + errorThrown);
+                }
+            });
+        };
+
+
+
+        function init() {
+
+
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', '/hello');
+            xhr.send();
+            console.log("response: "+xhr.response);
+        }
+
+
+
+
+
+        function geocodePosition(pos) {
+            geocoder.geocode({
+                latLng: pos
+            }, function(responses) {
+                if (responses && responses.length > 0) {
+                    console.log(responses[0].formatted_address); //TODO do some action
+                    getZillowId(responses[0].formatted_address);
+                } else {
+                    console.log('Cannot determine address at this location.'); //TODO give dialog?
+                }
+            });
+        }
+
+
+/*
+        function CenterControl(controlDiv, map, name) {
+
+            // Set CSS for the control border
+            var controlUI = document.createElement('div');
+            controlUI.style.backgroundColor = '#fff';
+            controlUI.style.border = '2px solid #fff';
+            controlUI.style.borderRadius = '3px';
+            controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+            controlUI.style.cursor = 'pointer';
+            controlUI.style.marginRight = '22px';
+            controlUI.style.textAlign = 'center';
+            controlUI.title = 'Choose an option';
+            controlDiv.appendChild(controlUI);
+
+            // Set CSS for the control interior
+            var showRangeText = document.createElement('div');
+            showRangeText.style.color = 'rgb(25,25,25)';
+            showRangeText.style.fontFamily = 'Roboto,Arial,sans-serif';
+            showRangeText.style.fontSize = '16px';
+            showRangeText.style.lineHeight = '38px';
+            showRangeText.style.paddingLeft = '15px';
+            showRangeText.style.paddingRight = '15px';
+            showRangeText.innerHTML = 'Show Range';
+            controlUI.appendChild(showRangeText);
+
+
+
+
+            google.maps.event.addDomListener(showRangeText, 'click', function() {
+
+                console.log("RangeShowing: "+rangeShowing);
+                if(!rangeShowing)
+                    showRangeCircles();
+                else if(rangeShowing)
+                    hideRangeCircles();
+
+            });
+
+        }
+
+*/
+
+        function hideRangeCircles(){
+            rangeShowing = false;
+
+            largeCircle.setMap(null);
+            medCircle.setMap(null);
+            smallCircle.setMap(null);
+        }
+
+        function showRangeCircles(location){
+
+
+            rangeShowing = true;
+
+            //var circle = new google.maps.Circle({radius: 10, center: map.getCenter()});
+            //map.fitBounds(circle.getBounds());
+
+            var city = citymap.sandiego1;
+
+            var largeOptions = {
+                strokeColor: '#03A9F4',
+                strokeOpacity: 0.18,
+                strokeWeight: 2,
+                fillColor: '#03A9F4',
+                fillOpacity: 0.2,
+                map: map,
+                center: new google.maps.LatLng(location.latitude, location.longitude)
+                //radius: (1609.34)*1 //in meters
+            };
+
+            var medOptions = {
+                strokeColor: '#03A9F4',
+                strokeOpacity: 0.18,
+                strokeWeight: 2,
+                fillColor: '#03A9F4',
+                fillOpacity: 0.1,
+                map: map,
+                center: map.getCenter() //city.center,
+                //radius: (1609.34)*.5 //in meters
+            };
+
+            var smallOptions = {
+                strokeColor: '#03A9F4',
+                strokeOpacity: 0.18,
+                strokeWeight: 2,
+                fillColor: '#03A9F4',
+                fillOpacity: 0.09,
+                map: map,
+                center: map.getCenter() //city.center,
+                //radius: (1609.34)*.25 //.5 mile
+            };
+
+
+
+
+            // Add the circle for this city to the map.
+            largeCircle = new google.maps.Circle(largeOptions);
+            medCircle = new google.maps.Circle(medOptions);
+            smallCircle = new google.maps.Circle(smallOptions);
+
+
+            startAnimateCircles();
+
+
+        }
+
+
+
+        var smallRadius = 1;
+        var mediumRadius = 1;
+        var largeRadius = 1;
+        var smallTime = 0;
+        var mediumTime = 0;
+        var largeTime = 0;
+
+        var largeCircleInterval;
+        var mediumCircleInterval;
+        var smallCircleInterval;
+
+        function smallCircleAnimation() {
+
+            if ((smallRadius < smallCircleRadius)) {
+                smallRadius =  -(1-(Math.pow((1-smallTime), 2)));
+                smallCircle.setRadius(smallRadius);
+            }
+            else{
+                clearInterval(smallCircleAnimation);
+            }
+            smallTime = smallTime += 5;
+        }
+
+        function medCircleAnimation() {
+
+            if ((mediumRadius < medCircleRadius)) {
+                mediumRadius =  -(1-(Math.pow((1-mediumTime), 2)));
+                medCircle.setRadius(mediumRadius);
+            }
+            else{
+                clearInterval(medCircleAnimation);
+            }
+            mediumTime = mediumTime += 3;
+        }
+
+        function largeCircleAnimation() {
+            if ((largeRadius < largeCircleRadius)) {
+                largeRadius =  -(1-(Math.pow((1-largeTime), 2)));
+                largeCircle.setRadius(largeRadius);
+            }
+            else{
+                clearInterval(largeCircleInterval);
+            }
+
+            largeTime = largeTime += 1;
+
+        }
+
+
+        function startAnimateCircles(){
+            smallRadius = 1;
+            mediumRadius = 1;
+            largeRadius = 1;
+            smallTime = 0;
+            mediumTime = 0;
+            largeTime = 0;
+
+
+
+            largeCircleInterval = setInterval(largeCircleAnimation, 5);
+
+            mediumCircleInterval = setInterval(medCircleAnimation, 3);
+
+            smallCircleInterval = setInterval(smallCircleAnimation, 1);
+
+
+
+        }
+
+
+        function toggleMusic(){
+            //console.log("toggle music:"+playSound);
+            if(playSound){
+                daySound.pause();
+                nightSound.pause();
+                playSound = false;
+            }else{
+                daySound.play();
+                nightSound.play()
+                playSound = true;
+            }
+
+
+        }
+
+    </script>
+    <style type="text/css">
+        html, body {
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top:0px;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+<div id="googleMap" style="width:90%;height:80%"></div>
+
+<style type="text/css">
+    #googleMap {
+        margin-left: 80px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+        position: relative;
+
+    }
+
+</style>
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">More Info</h2>
+                <h3 class="section-subheading text-muted">See what's going on in San Diego</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Daytime</h4>
+                                <h4 class="subheading">The busy city</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Nightlife</h4>
+                                <h4 class="subheading">The happy hours</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>Be Part
+                                <br>Of Our
+                                <br>Story!</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="copyright">Copyright &copy; Bachelor's Pad</span>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline quicklinks">
+                    <li><a href="#">Designed by Shuangli Zhou</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
