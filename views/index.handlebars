@@ -178,12 +178,47 @@
         var infowindow;
         function initialize(){
 
+
+
+
+
+
+
+
+
+
             map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
             map.mapTypes.set(NIGHT_MAPTYPE_ID, nightMapType);
             map.mapTypes.set(DAY_MAPTYPE_ID, dayMapType);
             map.setMapTypeId(NIGHT_MAPTYPE_ID);
             service = new google.maps.places.PlacesService(map);
             infowindow = new google.maps.InfoWindow();
+
+
+            // Try HTML5 geolocation
+            if(navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var pos = new google.maps.LatLng(position.coords.latitude,
+                            position.coords.longitude);
+
+                    /*
+                    var infowindow = new google.maps.InfoWindow({
+                        map: map,
+                        position: pos,
+                        content: 'Location found using HTML5.'
+                    });*/
+
+                    map.setCenter(pos);
+                }, function() {
+                    handleNoGeolocation(true);
+                });
+            } else {
+                // Browser doesn't support Geolocation
+                handleNoGeolocation(false);
+            }
+
+
+
 
 
             google.maps.event.addListener(map, 'maptypeid_changed', function() {
@@ -222,7 +257,7 @@
                         }
                     });
                 }
-                else if(map.getMapTypeId() == "map_style") {
+                else if(map.getMapTypeId() == NIGHT_MAPTYPE_ID) {
                     setAllMarkers(barMarkerHash, map)
                     setAllMarkers(storeMarkerHash, null)
                     daySound.fade(0, 0, 1500, function() {
@@ -252,10 +287,10 @@
 
 
 
-            google.maps.event.addListener(map, 'dragend', function() {
+            google.maps.event.addListener(map, 'dragstart', function() {
                 var zoom = map.getZoom();
                 if(zoom < 16)
-                    zoom = 16;
+                    zoom = 13;
 
                 eFunction = Math.pow(Math.E, ((22-(zoom)))+1);
                 //console.log("zoom: "+zoom);
@@ -396,16 +431,8 @@
 
 
         function initializeMapSoundAndIcons(){
-            //nightSound.pause();
-            //daySound.pause();
-            //nightSound.volume(1);
 
-
-
-
-
-
-            eFunction = Math.pow(Math.E, (22-(map.getZoom())))+2;
+            eFunction = Math.pow(Math.E, (22-(13)))+2;
             if(map.getMapTypeId() == DAY_MAPTYPE_ID) {
 
                 dayRequest = {
@@ -690,9 +717,26 @@
                 nightSound.play()
                 playSound = true;
             }
-
-
         }
+
+
+        function handleNoGeolocation(errorFlag) {
+            if (errorFlag) {
+                var content = 'Error: The Geolocation service failed.';
+            } else {
+                var content = 'Error: Your browser doesn\'t support geolocation.';
+            }
+
+            var options = {
+                map: map,
+                position: new google.maps.LatLng(60, 105),
+                content: content
+            };
+
+            var infowindow = new google.maps.InfoWindow(options);
+            map.setCenter(options.position);
+        }
+
 
     </script>
     <style type="text/css">
