@@ -172,6 +172,8 @@
             name: 'Day Style'
         };
 
+        var boundingCircle;
+        var boundingCircleShowing = false;
 
         var mapOptions = {
             zoom: 12,
@@ -416,8 +418,8 @@
             });
 
 
-            setupMapRegions();
-
+            //setupMapRegions();
+            getMedianValues();
 
             initializeMapSoundAndIcons();
 
@@ -524,31 +526,63 @@
 
                 });
             }
-
         }
 
 
-
-
         /**
-         * Show bounding box
-         *
+         * Show bounding Circle
          */
-        function showBoundingBox(){
+        function toggleBoundingCircle() {
 
-            var bounds = new google.maps.LatLngBounds(
-                    new google.maps.LatLng(44.490, -78.649),
-                    new google.maps.LatLng(44.599, -78.443)
-            );
 
-            // Define a rectangle and set its editable property to true.
-            var rectangle = new google.maps.Rectangle({
-                bounds: bounds,
-                editable: true
-            });
+            if (boundingCircle == null) {
 
-            rectangle.setMap(map);
+                boundingCircle = new google.maps.Circle({
+                    editable: true,
+                    strokeColor: '#D32F2F',
+                    strokeOpacity: 0.18,
+                    strokeWeight: 2,
+                    fillColor: '#D32F2F',
+                    fillOpacity: 0.2,
+                    radius: 1000,
+                    center: map.getCenter()
+                });
+            }
+            if (boundingCircleShowing){ //Hide
 
+                console.log("CenterLoc:" +boundingCircle.getCenter())
+                boundingCircle.setMap(null);
+                var showCircleOptions = {
+                    editable: false,
+                    strokeColor: '#D32F2F',
+                    strokeOpacity: 0,
+                    fillColor: '#D32F2F',
+                    fillOpacity: 0,
+                    map: map,
+                    center: boundingCircle.getCenter(),
+                    radius: boundingCircle.radius
+                };
+
+                boundingCircle = new google.maps.Circle(showCircleOptions);
+            }
+            else{ //Show
+
+                var showCircleOptions = {
+                    editable: true,
+                    strokeColor: '#D32F2F',
+                    strokeOpacity: 0.18,
+                    strokeWeight: 2,
+                    fillColor: '#D32F2F',
+                    fillOpacity: 0.2,
+                    map: map,
+                    center: boundingCircle.getCenter(),
+                    radius: boundingCircle.radius
+                };
+
+                boundingCircle = new google.maps.Circle(showCircleOptions);
+            }
+
+            boundingCircleShowing = !boundingCircleShowing;
         }
 
 
@@ -625,15 +659,11 @@
                         icon: houseIcon
                     });
 
-
-
 /*
 
                     var bathrooms = JSON.stringify(result.results[0].result[0].bathrooms);
                     var bedrooms = JSON.stringify(result.results[0].result[0].bedrooms);
                     console.log("this: "+bedrooms )
-
-
 
 
                     var zestimate = "$"+JSON.stringify(result.results[0].result[0].zestimate[0].amount[0]._);
@@ -660,6 +690,7 @@
                             '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
                             'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
                             '(last visited June 22, 2009).</p>'+
+                            '<button onclick="getZillowComps(16834453)">Get Comps</button>'+
                             '</div>'+
                             '</div>';
 
@@ -671,13 +702,31 @@
                     google.maps.event.addListener(marker, 'click', function() {
                         houseInfowindow.open(map, this);
                     });
-
-
                 },
                 error: function(jqXHR, textstatus, errorThrown) {
                     //alert('text status ' + textstatus + ', err ' + errorThrown);
                 }
             });
+        };
+
+
+        function getZillowComps(zpid) {
+            console.log("trying to get comps: "+zpid);
+
+            $.ajax({
+                type: "GET",
+                url: '/getCompResults',
+                data: { zpid: zpid
+                },
+                success: function(result) {
+                    console.log("comps Success: "+result) //Returned data from call
+
+                },
+                error: function(jqXHR, textstatus, errorThrown) {
+                    alert('text status ' + textstatus + ', err ' + errorThrown);
+                }
+            });
+
         };
 
 
@@ -728,6 +777,49 @@
         }
 
 
+        function getMedianValues(){
+
+            $.ajax({
+                type: "GET",
+                url: '/readMedianData',
+                success: function(result) {
+                    console.log("MedianInfo: "+JSON.stringify(result));
+                    //for (var a in result.features) {
+                    //    buildBox(result.features[a].geometry.coordinates[0][0]);
+                    //}
+                },
+                error: function(jqXHR, textstatus, errorThrown) {
+                    //alert('text status ' + textstatus + ', err ' + errorThrown);
+                    console.log("call error: ")
+
+
+                }
+            });
+        }
+
+
+        function getMaritalStatus(){
+
+            $.ajax({
+                type: "GET",
+                url: '/readMaritalStatus',
+                success: function(result) {
+                    console.log("readMaritalStatus: "+JSON.stringify(result));
+                    //for (var a in result.features) {
+                    //    buildBox(result.features[a].geometry.coordinates[0][0]);
+                    //}
+                },
+                error: function(jqXHR, textstatus, errorThrown) {
+                    //alert('text status ' + textstatus + ', err ' + errorThrown);
+                    console.log("call error: ")
+
+
+                }
+            });
+        }
+
+
+        //Not very useful boundaries
         function setupMapRegions(){
 
             $.ajax({
@@ -745,7 +837,6 @@
 
                 }
             });
-
         }
 
         function buildBox(coordinates){
@@ -767,48 +858,6 @@
             regionPath.setMap(map);
         }
 
-/*
-        function CenterControl(controlDiv, map, name) {
-
-            // Set CSS for the control border
-            var controlUI = document.createElement('div');
-            controlUI.style.backgroundColor = '#fff';
-            controlUI.style.border = '2px solid #fff';
-            controlUI.style.borderRadius = '3px';
-            controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
-            controlUI.style.cursor = 'pointer';
-            controlUI.style.marginRight = '22px';
-            controlUI.style.textAlign = 'center';
-            controlUI.title = 'Choose an option';
-            controlDiv.appendChild(controlUI);
-
-            // Set CSS for the control interior
-            var showRangeText = document.createElement('div');
-            showRangeText.style.color = 'rgb(25,25,25)';
-            showRangeText.style.fontFamily = 'Roboto,Arial,sans-serif';
-            showRangeText.style.fontSize = '16px';
-            showRangeText.style.lineHeight = '38px';
-            showRangeText.style.paddingLeft = '15px';
-            showRangeText.style.paddingRight = '15px';
-            showRangeText.innerHTML = 'Show Range';
-            controlUI.appendChild(showRangeText);
-
-
-
-
-            google.maps.event.addDomListener(showRangeText, 'click', function() {
-
-                console.log("RangeShowing: "+rangeShowing);
-                if(!rangeShowing)
-                    showRangeCircles();
-                else if(rangeShowing)
-                    hideRangeCircles();
-
-            });
-
-        }
-
-*/
 
         function hideRangeCircles(){
             rangeShowing = false;
@@ -888,6 +937,9 @@
         var mediumCircleInterval;
         var smallCircleInterval;
 
+
+
+
         function smallCircleAnimation() {
 
             if ((smallRadius < smallCircleRadius)) {
@@ -920,10 +972,11 @@
             else{
                 clearInterval(largeCircleInterval);
             }
-
             largeTime = largeTime += 1;
 
         }
+
+
 
 
         function startAnimateCircles(){
@@ -934,17 +987,12 @@
             mediumTime = 0;
             largeTime = 0;
 
-
-
             largeCircleInterval = setInterval(largeCircleAnimation, 5);
-
             mediumCircleInterval = setInterval(medCircleAnimation, 3);
-
             smallCircleInterval = setInterval(smallCircleAnimation, 1);
-
-
-
         }
+
+
 
 
         function toggleMusic(){
@@ -1013,6 +1061,10 @@
 </style>
 
 <button onclick="callDatabase()">Delphi</button>
+<button onclick="toggleBoundingCircle()">Show circle bound</button>
+<button onclick="getZillowComps(16834453)">Get Comps</button>
+
+
 
 <!-- About Section -->
 <section id="about">

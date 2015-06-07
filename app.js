@@ -15,13 +15,8 @@ var index = require('./routes/index');
 var zillow = new Zillow("X1-ZWz1a7ra6xs5qj_7rj5m");
 
 
-//var models = require('./models');
 
-//var dbConnect = DATABASE_CONNECTION_URL="postgres://USERNAME:PASSWORD@HOST/caltrans_1_hour";
-
-
-
-mongoose.connect('mongodb://localhost/bachelorpad');
+mongoose.connect('mongodb://nilumbra:chenhuaxiao89@ds043012.mongolab.com:43012/cogs121');
 var db = mongoose.connection;
 db.on('error',function(e){
     console.log("Error: " +  "\n" + e.message);
@@ -82,14 +77,6 @@ app.get('/getDeepSearchResults', function(req, res) {
         zip: zip
     }
 
-    /*
-    var getSearchParams = {
-        address: "9450 La Jolla Farms Road",
-        city: "La Jolla",
-        state: 'CA',
-        zip: '92037'
-    }*/
-
     zillow.getDeepSearchResults(getSearchParams)
         .then(function(result) {
 
@@ -113,23 +100,29 @@ app.get('/getDeepSearchResults', function(req, res) {
 });
 
 
-//TODO
+
+
 app.get('/getCompResults', function(req, res) {
 
-    var address = req.query.zpid;
-    //var getSearchParams = {
-    //    zpid: 16834453
-    //}
+    var zpid = req.query.zpid;
+    console.log("In comp function: "+zpid);
+    var getCompParams = {
+        zpid: zpid,
+        count: 25,
+        rentzestimate: true
+    };
 
-     //GetZestimate
-     zillow.callApi('GetComps', params)
+
+     zillow.callApi('GetComps', getCompParams)
      .then(function(data) {
-     console.log("in here: "+JSON.stringify(data.response[0]));
+     console.log("in comps here: "+JSON.stringify(data));
      //var results = data.response[0].results[0].result[0];
-     return results;
+     //return results;
+     res.send("hello comp world"+data.response[0]);
+     return;
      });
 
-    res.send("hello world"+results);
+
 });
 
 
@@ -175,8 +168,20 @@ var barSchema = mongoose.Schema({
 
 
 app.get('/showMapRegions', function (req, res) {
-    var regionsFromJson = require('./public/json/ca-counties.json');
+    var regionsFromJson = require('./public/json/sd-regions.json');
     res.send(regionsFromJson);
+
+});
+
+app.get('/readMedianData', function (req, res) {
+    var dataFromJson = require('./public/json/median-sold-price-july-2005-2015-san-diego.json');
+    res.send(dataFromJson);
+
+});
+
+app.get('/readMaritalStatus', function (req, res) {
+    var dataFromJson = require('./public/json/marital_status.json');
+    res.send(dataFromJson);
 
 });
 
@@ -193,7 +198,10 @@ app.get('/delphidata', function (req, res) {
     pg.connect(conString, function(err, client, done) {
         if(err) return console.log(err);
         console.log("connected to DB");
-        var query = 'SELECT * FROM hhsa_san_diego_demographics_home_value_2012';
+        //var query = 'SELECT * FROM zillow_zip_median_sold_price_per_sqft_all_homes_norm WHERE State = CA AND City = San Diego';
+
+        var query = "SELECT * FROM zillow_zip_median_sold_price_per_sqft_all_homes_norm WHERE 'State' = 'NY' LIMIT 100";
+        //var query = "SELECT * FROM zillow_zip_median_sold_price_per_sqft_all_homes_norm LIMIT 100";//WHERE 'State'='CA'"; // 'State' = 'CA' AND
         //var query = 'SELECT * FROM hhsa_san_diego_demographics_home_value_2012';
         client.query(query, function(err, result) {
             // return the client to the connection pool for other requests to reuse
