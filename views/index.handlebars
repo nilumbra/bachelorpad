@@ -99,7 +99,7 @@
             <li><a href="javascript:toggleMedianBounds()"><span>Price</span></a></li>
             <li><a href="javascript:toggleTrafficLayer()"><span>Traffic</span></a></li>
             <li><a href="javascript:toggleBarMarkers()"><span>Bars</span></a></li>
-            <li ><a href="javascript:toggleShoppingMarkers()"><span>Stores</span></a></li>
+            <li><a href="javascript:toggleShoppingMarkers()"><span>Stores</span></a></li>
 
         </ul>
     </div>
@@ -108,8 +108,8 @@
         #cssmenu
         {
             position: absolute;
-            top: 925px;
-            left: 180px;
+            top: 1719px;
+            left: 120px;
             z-index: 2;
         }
 
@@ -145,22 +145,22 @@
 
         var barIcon = {
             scale: 1/4,
-            url: 'images/bar_cocktail.png',
-            size: new google.maps.Size(32, 37),
+            url: 'images/Bars.png',
+            size: new google.maps.Size(35, 35),
             origin: new google.maps.Point(0,0),
             anchor: new google.maps.Point(16, 16)
         };
         var marketIcon = {
             scale: 1/4,
-            url: 'images/supermarket.png',
-            size: new google.maps.Size(32, 37),
+            url: 'images/Store.png',
+            size: new google.maps.Size(35, 35),
             origin: new google.maps.Point(0,0),
             anchor: new google.maps.Point(16, 16)
         };
         var houseIcon = {
             scale: 1/4,
-            url: 'images/home.png',
-            size: new google.maps.Size(32, 37),
+            url: 'images/Houses.png',
+            size: new google.maps.Size(35, 35),
             origin: new google.maps.Point(0,0),
             anchor: new google.maps.Point(16, 16)
         };
@@ -266,6 +266,7 @@
 
         var barMarkerHash = {};
         var storeMarkerHash = {};
+        var houseMarkerHash = {};
 
         var infowindow;
 
@@ -602,44 +603,6 @@
         }
 
 
-/*
-        function performSearch() {
-            var request = {
-                bounds: map.getBounds(),
-                keyword: 'best view'
-            };
-            service.radarSearch(request, callback);
-        }
-
-        function callback(results, status) {
-            if (status != google.maps.places.PlacesServiceStatus.OK) {
-                alert(status);
-                return;
-            }
-            for (var i = 0, result; result = results[i]; i++) {
-                createMarker(result);
-            }
-        }
-
-        function createMarker(place) {
-            var marker = new google.maps.Marker({
-                map: map,
-                position: place.geometry.location,
-                icon: {
-                    // Star
-                    path: 'M 0,-24 6,-7 24,-7 10,4 15,21 0,11 -15,21 -10,4 -24,-7 -6,-7 z',
-                    fillColor: '#ffff00',
-                    fillOpacity: 1,
-                    scale: 1 / 4,
-                    strokeColor: '#bd8d2c',
-                    strokeWeight: 1
-                }
-            });
-        }
-*/
-
-
-
         /**
          * Show bounding Circle
          */
@@ -714,28 +677,7 @@
                 });
             }
         }
-        function fillInAddress() {
-            // Get the place details from the autocomplete object.
-            var place = autocomplete.getPlace();
 
-            console.log("The place: "+JSON.stringify(place));
-            /*for (var component in componentForm) {
-                document.getElementById(component).value = '';
-                document.getElementById(component).disabled = false;
-            }
-
-            // Get each component of the address from the place details
-            // and fill the corresponding field on the form.
-            for (var i = 0; i < place.address_components.length; i++) {
-                var addressType = place.address_components[i].types[0];
-                if (componentForm[addressType]) {
-                    var val = place.address_components[i][componentForm[addressType]];
-                    document.getElementById(addressType).value = val;
-                }
-            }
-            */
-
-        }
 
 
         function geocodePosition(pos) {
@@ -842,8 +784,7 @@
                 }
             });
 
-        }
-        ;
+        };
 
 
         function toggleMedianBounds() {
@@ -865,164 +806,12 @@
                 });
                 layer.setMap(map);
 
-
-                console.log("showing median bounds")
-
-                /*
-                var resultsToShow = [];
-                //var zA = [[92037, 0.2], [92121, 0.5], [92122, 0.8]];
-                var year = 2012;
-
-
-                if (regionHash == null) {
-                    console.log("building regionHash");
-                    regionHash = {};
-                    $.ajax({
-                        type: "GET",
-                        url: '/readMedianData',
-                        success: function (result) {
-
-                            var regionObject = {
-                                zipCode: '',
-                                years: []
-                            };
-
-                            for (var a in result) {
-                                if (a % 10 == 0) {
-                                    regionHash[regionObject.zipCode] = regionObject;
-                                    regionObject = {
-                                        zipCode: '',
-                                        years: []
-                                    };
-                                    regionObject.zipCode = result[a].RegionName;
-                                    regionObject.years[a % 10] = result[a].Value;
-                                }
-
-                                regionObject.years[a % 10] = result[a].Value;
-
-                            }
-
-                            for (a in regionHash) {
-                                var value = regionHash[a].years[(year - 2005)];
-                                console.log("Pushing: "+regionHash[a].zipCode+", "+value+", "+(1 - ((regionHash[a].years[(year - 2005)] - 135) / 580)));
-                                //resultsToShow.push([[regionHash[a].zipCode],[regionHash[a].years[(year-2005)]]]);
-                                if(!value){
-                                    value = -1;
-                                }else{
-                                    value = (1 - ((regionHash[a].years[(year - 2005)] - 135) / 580));
-                                }
-                                resultsToShow.push([[regionHash[a].zipCode], [value]]);
-                            }
-                            //colorZips(resultsToShow);
-                            //1 - ((value - 135) / 580)
-                        },
-                        error: function (jqXHR, textstatus, errorThrown) {
-                            alert('text status ' + textstatus + ', err ' + errorThrown);
-                        }
-                    });
-                }
-                else {
-                    for (a in regionHash) {
-                        var value = regionHash[a].years[(year - 2005)];
-                        console.log("Pushing: "+regionHash[a].zipCode+", "+value+", "+(1 - ((regionHash[a].years[(year - 2005)] - 135) / 580)));
-                        //resultsToShow.push([[regionHash[a].zipCode],[regionHash[a].years[(year-2005)]]]);
-                        if(!value){
-                           value = -1;
-                        }else{
-                            value = (1 - ((regionHash[a].years[(year - 2005)] - 135) / 580));
-                        }
-                        resultsToShow.push([[regionHash[a].zipCode], [value]]);
-                    }
-                    //colorZips(resultsToShow);
-                }*/
-
             }
 
         }
 
 
-        //zips should be in array format [ [zipcode, priceRating], [zipcode, priceRating], ... ]
-        function colorZips(zipArr) {
 
-            console.log("zips in colorZips: "+zipArr.length);
-/*
-            function toHex(n) {
-                n = parseInt(n,10);
-                if (isNaN(n)) return "00";
-                n = Math.max(0,Math.min(n,255));
-                return "0123456789ABCDEF".charAt((n-n%16)/16) + "0123456789ABCDEF".charAt(n%16);
-            }
-            var overColor = function(percent) {
-                // 0, 255, 90 green
-                // 255, 48, 0 red
-                if(percent > -1) {
-                    var red = 255 - Math.floor(255*percent);
-                    var green = 48 + Math.floor(207*percent);
-                    var blue = Math.floor(90*percent);
-                    return "#" + toHex(red) + toHex(green) + toHex(blue);
-                }
-                else {
-                    return "#000000";
-                }
-            }*/
-            var stlCollection = function(zips) {
-
-                var stl = [{
-                    polygonOptions: {
-                        fillColor: '#000000',
-                        fillOpacity: 0.1
-                    }
-                }];
-                var len = zips.length;
-                for(var i = 0; i < len; i++) {
-                    console.log("Coloring "+zips[i][0]+" to "+zips[i][1]);
-                    stl.push({
-                        where: 'name = ' + zips[i][0],
-                        polygonOptions: {
-                            fillColor: '#FFC107'//overColor(zips[i][1])
-                        }
-                    });
-                }
-                return stl;
-            };
-            layer.set('styles', stlCollection(zipArr));
-        }
-
-
-/*
-
-        //zips should be in array format [ [zipcode, priceRating], [zipcode, priceRating], ... ]
-        function colorRegions(zipHash) {
-
-            layer = new google.maps.FusionTablesLayer({
-                query: {
-                    select: 'geometry',
-                    from: '1Lae-86jeUDLmA6-8APDDqazlTOy1GsTXh28DAkw'
-                },
-                styles: [{
-                    polygonOptions: {
-                        fillColor: '#00FF00',
-                        fillOpacity: 0.3
-                    }
-                }, {
-                    where: 'zip2 in zipHash',
-                    polygonOptions: {
-                        fillColor: '#ffffff'
-                    }
-                }, {
-                    where: 'zip2 = 92056',
-                    polygonOptions: {
-                        fillOpacity: 1.0,
-                        fillColor: '#000000'
-                    }
-
-                }]
-            });
-
-            layer.setMap(map);
-            //layer.set('styles', styleCollection(zipArr));
-        }
-*/
 
         /** TODO Does not work, V3 throws errors when trying to save
          */
@@ -1050,13 +839,33 @@
 
             $.ajax({
                 type: "GET",
-                url: '/delphidata',
-                data: { data: "test"
+                url: '/getHousesInRentalRange',
+                data: { minRange: 1000,
+                        maxRange: 7500
                 },
                 success: function(result) {
 
-                    console.log("call Success: "+result) //Returned data from call
+                    //console.log("call Success: "+JSON.stringify(result)); //Returned data from call
+                    //showHousingMarkers();
+                    for(var a = 0; a < result.length; a++){
+                        //console.log("Object "+a+":"+JSON.stringify(result[a]));
 
+
+                        createAndShowHome(result[a]);
+                        /*var marker = new google.maps.Marker({
+                            map: map,
+                            position: new google.maps.LatLng(result[a].latitude, result[a].longitude),
+                            //position: place.geometry.location,
+                            animation: google.maps.Animation.DROP,
+                            //data: result[a],
+                            icon: houseIcon
+                        });
+
+                        houseMarkerHash[result[a].zpid] = marker;
+                        */
+
+
+                    }
                 },
                 error: function(jqXHR, textstatus, errorThrown) {
                     //alert('text status ' + textstatus + ', err ' + errorThrown);
@@ -1064,8 +873,73 @@
                 }
             });
 
+        }
+
+        function createAndShowHome(houseInfo) {
+
+            var marker = new google.maps.Marker({
+                map: map,
+                position: new google.maps.LatLng(houseInfo.latitude, houseInfo.longitude),
+                animation: google.maps.Animation.DROP,
+                icon: houseIcon
+            });
+
+
+            var bathrooms = houseInfo.baths;
+            var bedrooms = houseInfo.beds;
+
+            var rentalCost = "$" + houseInfo.rental;
+
+            var zillowLink = houseInfo.url;
+
+
+            if (houseInfo.sqft != null) {
+
+
+            }else{
+
+            }
+
+
+            if (houseInfo.address != null) {
+                var addressText = '<h4 id="firstHeading" class="firstHeading">' +
+                        houseInfo.address + ' ' + houseInfo.state + '</h4>';
+            }
+            else{
+                var addressText = '<h4 id="firstHeading" class="firstHeading">' + houseInfo.state + '</h4>';
+            }
+            var streetUrl = "https://maps.googleapis.com/maps/api/streetview?size=200x200&location="+houseInfo.latitude+","+houseInfo.longitude+"&fov=90&heading=235&pitch=10";
+            var streetViewImage = '<img src='+streetUrl+' alt="Street View" height="200" width="100%">';
+
+            var contentString = '<div id="content">' +
+                    streetViewImage+
+                    '<div id="siteNotice">'+
+                    '</div>'+
+                    addressText+
+                    '<div id="bodyContent">'+
+                    '<p>' +
+                    '<b>'+bedrooms+' bedrooms &#8226 '+bathrooms+' bathrooms</b><br>' +
+                    'Rental Cost: '+rentalCost+
+                    '<p><a target="_tab" href='+zillowLink+'>'+
+                    'Zillow Info</a>'+
+                    ' &#8226 <a href="javascript:getZillowComps('+houseInfo.comparables+')" >Show Comps</a></p>'+
+                    '</div>'+
+                    '</div>';
+
+            var houseInfowindow = new google.maps.InfoWindow({
+                content: contentString,
+                maxWidth: 400
+            });
+
+            google.maps.event.addListener(marker, 'click', function () {
+                console.log(houseInfo);
+                houseInfowindow.open(map, this);
+            });
+
 
         }
+
+
 
 
 
@@ -1089,50 +963,7 @@
             });
         }
 
-
-        /**
-         * C3 visualization for Marital status in SD
-         */
-        function getMaritalStatus(){
-
-            $.ajax({
-                type: "GET",
-                url: '/readMaritalStatus',
-                success: function(result) {
-                    console.log("readMaritalStatus: "+JSON.stringify(result));
-                    //for (var a in result.features) {
-                    //    buildBox(result.features[a].geometry.coordinates[0][0]);
-                    //}
-                },
-                error: function(jqXHR, textstatus, errorThrown) {
-                    //alert('text status ' + textstatus + ', err ' + errorThrown);
-                    console.log("call error: ")
-
-                }
-            });
-        }
-
-
-        //Not very useful boundaries
-        function setupMapRegions(){
-
-            $.ajax({
-                type: "GET",
-                url: '/showMapRegions',
-                success: function(result) {
-                    for (var a in result.features) {
-                        buildBox(result.features[a].geometry.coordinates[0][0]);
-                    }
-                },
-                error: function(jqXHR, textstatus, errorThrown) {
-                    //alert('text status ' + textstatus + ', err ' + errorThrown);
-                    console.log("call error: ")
-
-
-                }
-            });
-        }
-
+/*
         function buildBox(coordinates){
             var regionBounds = [];
             for (var a in coordinates) {
@@ -1151,7 +982,7 @@
 
             regionPath.setMap(map);
         }
-
+*/
 
         function hideRangeCircles(){
             rangeShowing = false;
@@ -1450,10 +1281,13 @@
 
 </style>
 
+
+
 <button onclick="callDatabase()">Delphi</button>
+<!--
 <button onclick="toggleBoundingCircle()">Toggle circle bound</button>
 <button onclick="getZillowComps(16834453)">Get Comps</button>
-
+-->
 
 <!-- About Section -->
 <section id="about">
@@ -1468,7 +1302,7 @@
             <div class="col-lg-12">
                 <ul class="timeline">
                     <li>
-                        <div id="traffic_chart"></div>
+                        <div id="age_chart"></div>
                         <div class="timeline-image">
                             <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
                         </div>
@@ -1597,8 +1431,9 @@
             });
         }).use('screenPosition', {scale: 0.45});
 
+    /*
     var chart = c3.generate({
-        bindto: '#traffic_chart',
+        bindto: '#age_chart',
         data: {
             columns: [
                 ['data1', 30, 200, 100, 400, 150, 250],
@@ -1607,66 +1442,58 @@
             type: 'spline'
         }
     });
+*/
 
 
-
-/* //TODO traffic stats
+///TODO traffic stats
     $.ajax({
         type: "GET",
-        url: '/readTrafficStatus',
+        url: '/readAgeStats',
         success: function(result) {
 
             var test = [50, 20, 10, 40, 15, 2555];
-            console.log("marital result: "+JSON.stringify(result.data[0]));
-            console.log("marital result: "+JSON.stringify(result.data[0][11]));
+            console.log("readAgeStats result: "+JSON.stringify(result.data[0]));
+            //console.log("readAgeStats result: "+JSON.stringify(result.data[0][11]));
 
             var locations = result.data.map(function (item) {
-                return item[9];
+                return item[4];
             });
 
-            var totalPopulation = result.data.map(function (item) {
-                return item[11];
-            });
-
-            var singleStats = result.data.map(function (item) {
-                return item[12];
-            });
-
-            var marriedStats = result.data.map(function (item) {
+            var females = result.data.map(function (item) {
                 return item[13];
             });
 
-            var separatedStats = result.data.map(function (item) {
-                return item[14];
+            var males = result.data.map(function (item) {
+                return item[12];
             });
 
-            var widowedStats = result.data.map(function (item) {
-                return item[15];
+            var pop45to64 = result.data.map(function (item) {
+                return item[10];
             });
 
-            var divorcedStats = result.data.map(function (item) {
-                return item[16];
+            var pop25to44 = result.data.map(function (item) {
+                return item[9];
             });
 
 
             var chart = c3.generate({
-                bindto: '#marital_chart',
+                bindto: '#age_chart',
                 data: {
                     x : 'x',
                     json: {
-                        x : locations,
-                        Single: singleStats,
-                        Married: marriedStats,
-                        Separated: separatedStats,
-                        Widowed: widowedStats,
-                        Divorced: divorcedStats
+                        x : test,
+                        test: test
+                        //Married: marriedStats,
+                        //Separated: separatedStats,
+                        //Widowed: widowedStats,
+                        //Divorced: divorcedStats
                     },
                     groups: [
-                        ['Single', 'Widowed']
+                        //['Single', 'Widowed']
                     ],
                     types: {
-                        Single: 'area-spline',
-                        Married: 'bar'
+                        //Single: 'area-spline',
+                        //Married: 'bar'
                     }
                 },
                 axis: {
@@ -1690,7 +1517,7 @@
 
         }
     });
-*/
+
 
 
     //  totalPop, single, married, separated, widowed, divorced
@@ -1700,8 +1527,8 @@
         url: '/readMaritalStatus',
         success: function(result) {
 
-            console.log("marital result: "+JSON.stringify(result.data[0]));
-            console.log("marital result: "+JSON.stringify(result.data[0][11]));
+            //console.log("marital result: "+JSON.stringify(result.data[0]));
+            //console.log("marital result: "+JSON.stringify(result.data[0][11]));
 
             var locations = result.data.map(function (item) {
                 return item[9];
@@ -1719,6 +1546,10 @@
                 return item[13];
             });
 
+            var divorcedStats = result.data.map(function (item) {
+                return item[16];
+            });
+/*
             var separatedStats = result.data.map(function (item) {
                 return item[14];
             });
@@ -1727,10 +1558,8 @@
                 return item[15];
             });
 
-            var divorcedStats = result.data.map(function (item) {
-                return item[16];
-            });
 
+*/
 
             var chart = c3.generate({
                 bindto: '#marital_chart',
@@ -1740,8 +1569,8 @@
                         x : locations,
                         Single: singleStats,
                         Married: marriedStats,
-                        Separated: separatedStats,
-                        Widowed: widowedStats,
+                        //Separated: separatedStats,
+                        //Widowed: widowedStats,
                         Divorced: divorcedStats
                     },
                     groups: [

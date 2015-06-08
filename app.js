@@ -11,6 +11,7 @@ var pg = require('pg');
 var app = express();
 
 
+
 var index = require('./routes/index');
 var zillow = new Zillow("X1-ZWz1a7ra6xs5qj_7rj5m");
 
@@ -26,7 +27,7 @@ db.once('open', function (callback) {
     console.log("Database connected succesfully.");
 });
 
-
+var Schema = mongoose.Schema;
 //GetSearchResults - Params: address, city/state/zip || result: Zpid, and lots more...........use getDeepSearchResults for more info
 
 //GetComps - params: Zpid, count(1-25), rentzestimate(bool) || result: set of infos for comparables...............use deep for more results
@@ -112,7 +113,6 @@ app.get('/getCompResults', function(req, res) {
         rentzestimate: true
     };
 
-
      zillow.callApi('GetComps', getCompParams)
      .then(function(data) {
      console.log("in comps here: "+JSON.stringify(data));
@@ -127,45 +127,71 @@ app.get('/getCompResults', function(req, res) {
 
 
 
+var HouseInfoSchema2 = new Schema({
+    zpid: Number,
+    url : String,
+    beds: String,
+    baths: String,
+    sqft: String,
+    address:String,
+    rental:String,
+    zestimate:String,
+    longitude:String,
+    latitude:String,
+    state:String,
+    zipcode:String,
+    comparables:String,
+    mapthishome:String
+});
 
 
-//TODO Save all google places and Zillow houses to DB
-app.get('/saveResults', function(req, res) {
+var HouseInfo2 = mongoose.model('houseinfos2',HouseInfoSchema2);
 
-    console.log("input: "+JSON.stringify(req.data));
-    //var thisBar = barSchema;
-    //thisBar.plugin(findOrCreate);
-    //var FindOrCreateBar = mongoose.model('Bar', thisBar);
 
-    //bar.plugin(findOrCreate);
-    //var Click = mongoose.model('Bar', barSchema);
-/*
-    FindOrCreateBar.findOrCreate({data: '127.0.0.1'}, function(err, click, created) {
-        // created will be true here
-        console.log('A new click from "%s" was inserted', click.ip);
-        FindOrCreateBar.findOrCreate({}, function(err, click, created) {
-            // created will be false here
-            console.log('Did not create a new click for "%s"', click.ip);
-        })
-    });
-*/
 
-    res.send('hello world');
+
+app.get('/getHousesInRentalRange', function (req, res) {
+
+    console.log("minRange:"+req.query.minRange);
+    console.log("minRange:"+req.query.maxRange);
+    var upper = req.query.maxRange;
+    var lower = req.query.minRange;
+
+
+
+    var query= HouseInfo2.where('rental')
+        .regex(/[^-]/g)
+        .gte(lower.toString())
+        .lte(upper.toString())
+        .sort('rental')
+        .exec(function(err, data){
+            if(err)
+                console.log(err);
+            else {
+                //console.log(data);
+                res.send(data);
+            }
+            return;
+        });
+    //return query; //get rid of comment when actually put into use
+    //var regionsFromJson = require('./public/json/sd-regions.json');
+
+
 });
 
 
 
+/*
+function getResults(){
+
+    HouseInfo2.find().limit(10).exec(function(err,data2){
+        if(err)
+            console.log(err)
+        else
+            console.log(data2);})
 
 
-var houseSchema = mongoose.Schema({
-    data: Object
-})
-
-var barSchema = mongoose.Schema({
-    data: Object
-})
-
-
+}*/
 
 app.get('/showMapRegions', function (req, res) {
     var regionsFromJson = require('./public/json/sd-regions.json');
@@ -181,6 +207,13 @@ app.get('/readMedianData', function (req, res) {
 
 app.get('/readMaritalStatus', function (req, res) {
     var dataFromJson = require('./public/json/marital_status.json');
+    res.send(dataFromJson);
+
+});
+
+
+app.get('/readAgeStats', function (req, res) {
+    var dataFromJson = require('./public/json/demo_age_2012.json');
     res.send(dataFromJson);
 
 });
@@ -236,7 +269,7 @@ app.get('/login', function(req, res){
 });
 
 //set environment ports and start application
-app.set('port', process.env.PORT || 3000);
+app.set('port', 3000);
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });

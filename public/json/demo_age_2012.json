@@ -1,0 +1,854 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "byka-f6k4",
+      "name" : "2012 San Diego Demographics - County Population",
+      "averageRating" : 0,
+      "category" : "Demographic Profiles",
+      "createdAt" : 1423192487,
+      "description" : "The 2012 San Diego Demographics Dataset for County Populations is compiled from SANDAG population estimates for our region. SANDAG, the San Diego Association of Governments is the official census holder for San Diego County.",
+      "displayType" : "table",
+      "downloadCount" : 4,
+      "indexUpdatedAt" : 1423732832,
+      "licenseId" : "PUBLIC_DOMAIN",
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 10126472,
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1423192575,
+      "publicationGroup" : 2200431,
+      "publicationStage" : "published",
+      "rowClass" : "",
+      "rowsUpdatedAt" : 1423192501,
+      "rowsUpdatedBy" : "sd98-xisa",
+      "tableId" : 2200431,
+      "totalTimesRated" : 0,
+      "viewCount" : 44,
+      "viewLastModified" : 1423732780,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : 187939114,
+        "name" : "Region Number",
+        "dataTypeName" : "number",
+        "fieldName" : "region_number",
+        "position" : 2,
+        "renderTypeName" : "number",
+        "tableColumnId" : 24455768,
+        "width" : 256,
+        "cachedContents" : {
+          "non_null" : 41,
+          "smallest" : "1",
+          "sum" : "163",
+          "null" : 7,
+          "average" : "3.975609756097561",
+          "largest" : "6",
+          "top" : [ {
+            "count" : 20,
+            "item" : "1"
+          }, {
+            "count" : 19,
+            "item" : "2"
+          }, {
+            "count" : 18,
+            "item" : "3"
+          }, {
+            "count" : 17,
+            "item" : "4"
+          }, {
+            "count" : 16,
+            "item" : "5"
+          }, {
+            "count" : 15,
+            "item" : "6"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 187939115,
+        "name" : "Subregional Area Number",
+        "dataTypeName" : "number",
+        "fieldName" : "subregional_area_number",
+        "position" : 3,
+        "renderTypeName" : "number",
+        "tableColumnId" : 24455769,
+        "width" : 376,
+        "cachedContents" : {
+          "non_null" : 41,
+          "smallest" : "1",
+          "sum" : "1264",
+          "null" : 7,
+          "average" : "30.82926829268293",
+          "largest" : "63"
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 187939116,
+        "name" : "Area ",
+        "dataTypeName" : "text",
+        "fieldName" : "area",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 24455770,
+        "width" : 160,
+        "cachedContents" : {
+          "non_null" : 48,
+          "smallest" : "Alpine",
+          "null" : 0,
+          "largest" : "Vista",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Valley Center"
+          }, {
+            "count" : 19,
+            "item" : "Pauma"
+          }, {
+            "count" : 18,
+            "item" : "Fallbrook"
+          }, {
+            "count" : 17,
+            "item" : "Palomar-Julian"
+          }, {
+            "count" : 16,
+            "item" : "Anza-Borrego Springs"
+          }, {
+            "count" : 15,
+            "item" : "North Inland Region"
+          }, {
+            "count" : 14,
+            "item" : "County Total"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 187939117,
+        "name" : "Total 2012 Population",
+        "dataTypeName" : "number",
+        "fieldName" : "total_2012_population",
+        "position" : 5,
+        "renderTypeName" : "number",
+        "tableColumnId" : 24455771,
+        "width" : 352,
+        "cachedContents" : {
+          "non_null" : 48,
+          "smallest" : "4952",
+          "sum" : "9430287",
+          "null" : 0,
+          "average" : "196464.3125",
+          "largest" : "3143429",
+          "top" : [ {
+            "count" : 20,
+            "item" : "23553"
+          }, {
+            "count" : 19,
+            "item" : "7798"
+          }, {
+            "count" : 18,
+            "item" : "48167"
+          }, {
+            "count" : 17,
+            "item" : "6529"
+          }, {
+            "count" : 16,
+            "item" : "4952"
+          }, {
+            "count" : 15,
+            "item" : "581849"
+          }, {
+            "count" : 14,
+            "item" : "3143429"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 187939118,
+        "name" : "Population 0-4",
+        "dataTypeName" : "number",
+        "fieldName" : "population_0_4",
+        "position" : 6,
+        "renderTypeName" : "number",
+        "tableColumnId" : 24455772,
+        "width" : 268,
+        "cachedContents" : {
+          "non_null" : 48,
+          "smallest" : "218",
+          "sum" : "611487",
+          "null" : 0,
+          "average" : "12739.3125",
+          "largest" : "203829",
+          "top" : [ {
+            "count" : 20,
+            "item" : "1200"
+          }, {
+            "count" : 19,
+            "item" : "654"
+          }, {
+            "count" : 18,
+            "item" : "3017"
+          }, {
+            "count" : 17,
+            "item" : "262"
+          }, {
+            "count" : 16,
+            "item" : "218"
+          }, {
+            "count" : 15,
+            "item" : "37540"
+          }, {
+            "count" : 14,
+            "item" : "203829"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 187939119,
+        "name" : "Population 5-14 ",
+        "dataTypeName" : "number",
+        "fieldName" : "population_5_14",
+        "position" : 7,
+        "renderTypeName" : "number",
+        "tableColumnId" : 24455773,
+        "width" : 292,
+        "cachedContents" : {
+          "non_null" : 48,
+          "smallest" : "452",
+          "sum" : "1195248",
+          "null" : 0,
+          "average" : "24901",
+          "largest" : "398416",
+          "top" : [ {
+            "count" : 20,
+            "item" : "2802"
+          }, {
+            "count" : 19,
+            "item" : "1141"
+          }, {
+            "count" : 18,
+            "item" : "6015"
+          }, {
+            "count" : 17,
+            "item" : "619"
+          }, {
+            "count" : 16,
+            "item" : "503"
+          }, {
+            "count" : 15,
+            "item" : "82111"
+          }, {
+            "count" : 14,
+            "item" : "398416"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 187939120,
+        "name" : "Population 15-24",
+        "dataTypeName" : "number",
+        "fieldName" : "population_15_24",
+        "position" : 8,
+        "renderTypeName" : "number",
+        "tableColumnId" : 24455774,
+        "width" : 292,
+        "cachedContents" : {
+          "non_null" : 48,
+          "smallest" : "504",
+          "sum" : "1508148",
+          "null" : 0,
+          "average" : "31419.75",
+          "largest" : "502716",
+          "top" : [ {
+            "count" : 20,
+            "item" : "3384"
+          }, {
+            "count" : 19,
+            "item" : "1120"
+          }, {
+            "count" : 18,
+            "item" : "7274"
+          }, {
+            "count" : 17,
+            "item" : "625"
+          }, {
+            "count" : 16,
+            "item" : "504"
+          }, {
+            "count" : 15,
+            "item" : "82935"
+          }, {
+            "count" : 14,
+            "item" : "502716"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 187939121,
+        "name" : "Population 25-44",
+        "dataTypeName" : "number",
+        "fieldName" : "population_25_44",
+        "position" : 9,
+        "renderTypeName" : "number",
+        "tableColumnId" : 24455775,
+        "width" : 292,
+        "cachedContents" : {
+          "non_null" : 48,
+          "smallest" : "693",
+          "sum" : "2670153",
+          "null" : 0,
+          "average" : "55628.1875",
+          "largest" : "890051",
+          "top" : [ {
+            "count" : 20,
+            "item" : "4441"
+          }, {
+            "count" : 19,
+            "item" : "1966"
+          }, {
+            "count" : 18,
+            "item" : "10184"
+          }, {
+            "count" : 17,
+            "item" : "1109"
+          }, {
+            "count" : 16,
+            "item" : "693"
+          }, {
+            "count" : 15,
+            "item" : "146096"
+          }, {
+            "count" : 14,
+            "item" : "890051"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 187939122,
+        "name" : "Population 45-64 ",
+        "dataTypeName" : "number",
+        "fieldName" : "population_45_64",
+        "position" : 10,
+        "renderTypeName" : "number",
+        "tableColumnId" : 24455776,
+        "width" : 304,
+        "cachedContents" : {
+          "non_null" : 48,
+          "smallest" : "82",
+          "sum" : "2321646",
+          "null" : 0,
+          "average" : "48367.625",
+          "largest" : "773882",
+          "top" : [ {
+            "count" : 20,
+            "item" : "7481"
+          }, {
+            "count" : 19,
+            "item" : "2035"
+          }, {
+            "count" : 18,
+            "item" : "12893"
+          }, {
+            "count" : 17,
+            "item" : "2271"
+          }, {
+            "count" : 16,
+            "item" : "1436"
+          }, {
+            "count" : 15,
+            "item" : "155314"
+          }, {
+            "count" : 14,
+            "item" : "773882"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 187939123,
+        "name" : "Population 65+",
+        "dataTypeName" : "number",
+        "fieldName" : "population_65",
+        "position" : 11,
+        "renderTypeName" : "number",
+        "tableColumnId" : 24455777,
+        "width" : 268,
+        "cachedContents" : {
+          "non_null" : 48,
+          "smallest" : "6",
+          "sum" : "1123605",
+          "null" : 0,
+          "average" : "23408.4375",
+          "largest" : "374535",
+          "top" : [ {
+            "count" : 20,
+            "item" : "4245"
+          }, {
+            "count" : 19,
+            "item" : "882"
+          }, {
+            "count" : 18,
+            "item" : "8784"
+          }, {
+            "count" : 17,
+            "item" : "1643"
+          }, {
+            "count" : 16,
+            "item" : "1598"
+          }, {
+            "count" : 15,
+            "item" : "77853"
+          }, {
+            "count" : 14,
+            "item" : "374535"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 187939124,
+        "name" : "Males",
+        "dataTypeName" : "number",
+        "fieldName" : "males",
+        "position" : 12,
+        "renderTypeName" : "number",
+        "tableColumnId" : 24455778,
+        "width" : 160,
+        "cachedContents" : {
+          "non_null" : 48,
+          "smallest" : "2478",
+          "sum" : "4727829",
+          "null" : 0,
+          "average" : "98496.4375",
+          "largest" : "1575943",
+          "top" : [ {
+            "count" : 20,
+            "item" : "11818"
+          }, {
+            "count" : 19,
+            "item" : "4014"
+          }, {
+            "count" : 18,
+            "item" : "24030"
+          }, {
+            "count" : 17,
+            "item" : "3209"
+          }, {
+            "count" : 16,
+            "item" : "2478"
+          }, {
+            "count" : 15,
+            "item" : "286529"
+          }, {
+            "count" : 14,
+            "item" : "1575943"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 187939125,
+        "name" : "Females",
+        "dataTypeName" : "number",
+        "fieldName" : "females",
+        "position" : 13,
+        "renderTypeName" : "number",
+        "tableColumnId" : 24455779,
+        "width" : 184,
+        "cachedContents" : {
+          "non_null" : 48,
+          "smallest" : "1218",
+          "sum" : "4702458",
+          "null" : 0,
+          "average" : "97967.875",
+          "largest" : "1567486",
+          "top" : [ {
+            "count" : 20,
+            "item" : "11735"
+          }, {
+            "count" : 19,
+            "item" : "3784"
+          }, {
+            "count" : 18,
+            "item" : "24137"
+          }, {
+            "count" : 17,
+            "item" : "3320"
+          }, {
+            "count" : 16,
+            "item" : "2474"
+          }, {
+            "count" : 15,
+            "item" : "295320"
+          }, {
+            "count" : 14,
+            "item" : "1567486"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 187939126,
+        "name" : "White",
+        "dataTypeName" : "number",
+        "fieldName" : "white",
+        "position" : 14,
+        "renderTypeName" : "number",
+        "tableColumnId" : 24455780,
+        "width" : 160,
+        "cachedContents" : {
+          "non_null" : 48,
+          "smallest" : "2853",
+          "sum" : "4476960",
+          "null" : 0,
+          "average" : "93270",
+          "largest" : "1492320",
+          "top" : [ {
+            "count" : 20,
+            "item" : "14651"
+          }, {
+            "count" : 19,
+            "item" : "2986"
+          }, {
+            "count" : 18,
+            "item" : "26942"
+          }, {
+            "count" : 17,
+            "item" : "4589"
+          }, {
+            "count" : 16,
+            "item" : "2853"
+          }, {
+            "count" : 15,
+            "item" : "313555"
+          }, {
+            "count" : 14,
+            "item" : "1492320"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 187939127,
+        "name" : "Hispanic",
+        "dataTypeName" : "number",
+        "fieldName" : "hispanic",
+        "position" : 15,
+        "renderTypeName" : "number",
+        "tableColumnId" : 24455781,
+        "width" : 196,
+        "cachedContents" : {
+          "non_null" : 48,
+          "smallest" : "987",
+          "sum" : "3105678",
+          "null" : 0,
+          "average" : "64701.625",
+          "largest" : "1035226",
+          "top" : [ {
+            "count" : 20,
+            "item" : "6216"
+          }, {
+            "count" : 19,
+            "item" : "3020"
+          }, {
+            "count" : 18,
+            "item" : "18351"
+          }, {
+            "count" : 17,
+            "item" : "1048"
+          }, {
+            "count" : 16,
+            "item" : "1927"
+          }, {
+            "count" : 15,
+            "item" : "173681"
+          }, {
+            "count" : 14,
+            "item" : "1035226"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 187939128,
+        "name" : "Black",
+        "dataTypeName" : "number",
+        "fieldName" : "black",
+        "position" : 16,
+        "renderTypeName" : "number",
+        "tableColumnId" : 24455782,
+        "width" : 160,
+        "cachedContents" : {
+          "non_null" : 48,
+          "smallest" : "36",
+          "sum" : "418149",
+          "null" : 0,
+          "average" : "8711.4375",
+          "largest" : "139383",
+          "top" : [ {
+            "count" : 20,
+            "item" : "186"
+          }, {
+            "count" : 19,
+            "item" : "111"
+          }, {
+            "count" : 18,
+            "item" : "546"
+          }, {
+            "count" : 17,
+            "item" : "70"
+          }, {
+            "count" : 16,
+            "item" : "36"
+          }, {
+            "count" : 15,
+            "item" : "10062"
+          }, {
+            "count" : 14,
+            "item" : "139383"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 187939129,
+        "name" : "Asian/Pacific Islander",
+        "dataTypeName" : "number",
+        "fieldName" : "asian_pacific_islander",
+        "position" : 17,
+        "renderTypeName" : "number",
+        "tableColumnId" : 24455783,
+        "width" : 364,
+        "cachedContents" : {
+          "non_null" : 48,
+          "smallest" : "38",
+          "sum" : "1067805",
+          "null" : 0,
+          "average" : "22245.9375",
+          "largest" : "355935",
+          "top" : [ {
+            "count" : 20,
+            "item" : "881"
+          }, {
+            "count" : 19,
+            "item" : "309"
+          }, {
+            "count" : 18,
+            "item" : "1163"
+          }, {
+            "count" : 17,
+            "item" : "104"
+          }, {
+            "count" : 16,
+            "item" : "38"
+          }, {
+            "count" : 15,
+            "item" : "62503"
+          }, {
+            "count" : 14,
+            "item" : "355935"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 187939130,
+        "name" : "Other Race/ Ethnicity",
+        "dataTypeName" : "number",
+        "fieldName" : "other_race_ethnicity",
+        "position" : 18,
+        "renderTypeName" : "number",
+        "tableColumnId" : 24455784,
+        "width" : 352,
+        "cachedContents" : {
+          "non_null" : 48,
+          "smallest" : "98",
+          "sum" : "361695",
+          "null" : 0,
+          "average" : "7535.3125",
+          "largest" : "120565",
+          "top" : [ {
+            "count" : 20,
+            "item" : "1619"
+          }, {
+            "count" : 19,
+            "item" : "1372"
+          }, {
+            "count" : 18,
+            "item" : "1165"
+          }, {
+            "count" : 17,
+            "item" : "718"
+          }, {
+            "count" : 16,
+            "item" : "98"
+          }, {
+            "count" : 15,
+            "item" : "22048"
+          }, {
+            "count" : 14,
+            "item" : "120565"
+          } ]
+        },
+        "format" : {
+        }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "Public Domain"
+      },
+      "metadata" : {
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        },
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "rdfSubject" : "0",
+        "rowIdentifier" : "0",
+        "rdfClass" : ""
+      },
+      "owner" : {
+        "id" : "sd98-xisa",
+        "displayName" : "F Larios",
+        "roleName" : "administrator",
+        "screenName" : "F Larios",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards" ]
+      },
+      "query" : {
+      },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "sd98-xisa",
+        "displayName" : "F Larios",
+        "roleName" : "administrator",
+        "screenName" : "F Larios",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards" ]
+      },
+      "tags" : [ "demographics", "san diego population", "total population", "race population", "gender population" ],
+      "flags" : [ "default" ]
+    }
+  },
+  "data" : [ [ 1, "1038B692-C5AF-4146-950F-2D17216113E1", 1, 1423192490, "894276", 1423192490, "894276", "{\n}", "1", "40", "San Dieguito", "95500", "4858", "11770", "10699", "23914", "29593", "14666", "46969", "48531", "73992", "13417", "581", "4506", "3004" ]
+, [ 2, "A0D54929-1C4B-48F1-B904-654D3BE8C83F", 2, 1423192490, "894276", 1423192490, "894276", "{\n}", "1", "41", "Carlsbad", "117427", "6316", "15516", "13709", "29286", "33337", "19263", "57077", "60350", "85260", "17794", "1566", "8630", "4177" ]
+, [ 3, "301068C3-F9E0-4D2D-988C-48529D1EA5EA", 3, 1423192490, "894276", 1423192490, "894276", "{\n}", "1", "42", "Oceanside", "161223", "13065", "20913", "24239", "44685", "39179", "19142", "80038", "81185", "73383", "62054", "6459", "12576", "6751" ]
+, [ 4, "FF08F362-BE73-4864-B7FF-2C4D661710D0", 4, 1423192490, "894276", 1423192490, "894276", "{\n}", "1", "43", "Pendleton", "38172", "3889", "4165", "20469", "9063", "514", "72", "26457", "11715", "23295", "8170", "2910", "1637", "2160" ]
+, [ 5, "492B48B8-0FC2-41FD-87AB-E3FE5C4A435C", 5, 1423192490, "894276", 1423192490, "894276", "{\n}", "1", "52", "Vista", "102080", "7741", "14088", "16186", "29209", "24254", "10602", "51505", "50575", "43217", "48887", "2538", "4305", "3133" ]
+, [ 7, "7553E334-1511-4833-9EFF-9CE9F3B583E6", 7, 1423192490, "894276", 1423192490, "894276", "{\n}", "2", "2", "Peninsula", "63252", "3241", "4870", "12112", "21424", "14122", "7483", "34465", "28787", "47479", "8649", "2163", "2363", "2598" ]
+, [ 8, "6BFAFF42-7F35-464A-BC1E-9672494D0C67", 8, 1423192490, "894276", 1423192490, "894276", "{\n}", "2", "10", "Kearny Mesa", "152441", "9495", "14918", "20522", "51457", "36370", "19679", "75923", "76518", "83559", "34846", "6484", "20491", "7061" ]
+, [ 9, "3AE869E6-8E5D-4D03-9D51-B043430007D9", 9, 1423192490, "894276", 1423192490, "894276", "{\n}", "2", "11", "Coastal", "75893", "2489", "5171", "11046", "27951", "16501", "12735", "39064", "36829", "60540", "8482", "784", "3504", "2583" ]
+, [ 10, "1FE4A77B-0B82-45F5-8A17-E010D49FA70A", 10, 1423192490, "894276", 1423192490, "894276", "{\n}", "2", "12", "University", "68088", "2881", "3326", "24769", "21378", "9293", "6441", "33726", "34362", "34483", "7088", "1225", "22408", "2884" ]
+, [ 11, "D4D07403-E673-4717-B9A4-19490FAE46A9", 11, 1423192490, "894276", 1423192490, "894276", "{\n}", "2", "13", "Del Mar-Mira Mesa", "160089", "9253", "22302", "21097", "45740", "46235", "15462", "80113", "79976", "75851", "16518", "3498", "56910", "7312" ]
+, [ 12, "C293CAC5-B983-4439-A61C-1B34B16616AF", 12, 1423192490, "894276", 1423192490, "894276", "{\n}", "2", "16", "Miramar", "5072", "352", "452", "3075", "1105", "82", "6", "3854", "1218", "3033", "1042", "475", "249", "273" ]
+, [ 13, "E30C1C41-DC6B-4E55-A4D0-600777941473", 13, 1423192490, "894276", 1423192490, "894276", "{\n}", "2", "17", "Elliott-Navajo", "90258", "5999", "11226", "10799", "25502", "22475", "14257", "43817", "46441", "60021", "13537", "3946", "8181", "4573" ]
+, [ 15, "1EA2CB52-5441-41A4-8443-6B9237D2F039", 15, 1423192490, "894276", 1423192490, "894276", "{\n}", "3", "1", "Central SD", "166820", "8934", "12473", "19031", "70652", "39059", "16671", "90882", "75938", "81444", "60001", "10742", "8776", "5857" ]
+, [ 16, "1B2FE51E-FA8D-49D9-BC86-AA2B0A4ACA21", 16, 1423192490, "894276", 1423192490, "894276", "{\n}", "3", "5", "Southeast SD", "157033", "11962", "24409", "27494", "41591", "36299", "15278", "76521", "80512", "14536", "81088", "23925", "32380", "5104" ]
+, [ 17, "D6E5F7FA-9A4B-4701-8BA5-19A94EE19ED8", 17, 1423192490, "894276", 1423192490, "894276", "{\n}", "3", "6", "Mid-City", "164903", "12261", "22212", "32033", "51189", "34049", "13159", "82107", "82796", "45619", "71270", "18380", "24201", "5433" ]
+, [ 19, "5D2A19C3-1C46-49C8-9490-851D5F3953BA", 19, 1423192490, "894276", 1423192490, "894276", "{\n}", "4", "3", "Coronado", "23187", "955", "2123", "5679", "5883", "4932", "3615", "13213", "9974", "16865", "3328", "1207", "906", "881" ]
+, [ 20, "57504BBE-988D-4B9D-9095-628584866F1A", 20, 1423192490, "894276", 1423192490, "894276", "{\n}", "4", "4", "National City", "58752", "4173", "8149", "12308", "15866", "12222", "6034", "30079", "28673", "6400", "38066", "2409", "10570", "1307" ]
+, [ 21, "F2883670-9C9D-44C4-9049-E8A36E0A98F6", 21, 1423192490, "894276", 1423192490, "894276", "{\n}", "4", "20", "Sweetwater", "139210", "9378", "22328", "21691", "39387", "33824", "12602", "67706", "71504", "31514", "66351", "5899", "30077", "5369" ]
+, [ 22, "7292CF14-7FD0-40A4-AAF0-B9621F82134B", 22, 1423192490, "894276", 1423192490, "894276", "{\n}", "4", "21", "Chula Vista", "116603", "8377", "16397", "19247", "30650", "27140", "14792", "56138", "60465", "20420", "83820", "3695", "6087", "2581" ]
+, [ 23, "6DE720D4-E5F0-40CE-AE4D-E3C4C80275E7", 23, 1423192490, "894276", 1423192490, "894276", "{\n}", "4", "22", "South Bay", "135592", "10688", "19552", "23574", "37426", "30904", "13448", "68178", "67414", "19675", "94425", "4965", "13036", "3491" ]
+, [ 25, "0435B375-09F4-4448-8449-DC2FB432B3A5", 25, 1423192490, "894276", 1423192490, "894276", "{\n}", "5", "30", "Jamul", "18079", "703", "1992", "3125", "4357", "5736", "2166", "10392", "7687", "9693", "5782", "835", "1246", "523" ]
+, [ 26, "88DA8540-89F4-42F2-B3E8-294865B3C347", 26, 1423192490, "894276", 1423192490, "894276", "{\n}", "5", "31", "Spring Valley", "82215", "5612", "11304", "12561", "20860", "21717", "10161", "39989", "42226", "38061", "27450", "7354", "5488", "3862" ]
+, [ 27, "96A2A9A9-EEC6-4C02-BEC1-2BD45A0EA379", 27, 1423192490, "894276", 1423192490, "894276", "{\n}", "5", "32", "Lemon Grove", "30110", "1983", "4196", "4804", "7869", "7718", "3540", "14637", "15473", "9231", "13137", "4156", "2304", "1282" ]
+, [ 28, "7B142A13-DCA0-452A-A0A4-865C42509C9D", 28, 1423192490, "894276", 1423192490, "894276", "{\n}", "5", "33", "La Mesa", "60320", "3802", "6315", "7754", "17783", "15595", "9071", "28806", "31514", "37118", "12755", "4034", "3670", "2743" ]
+, [ 29, "3A41B25C-3E66-4C9A-9B44-0B9A3A3238AF", 29, 1423192490, "894276", 1423192490, "894276", "{\n}", "5", "34", "El Cajon", "126047", "8814", "16813", "19631", "33133", "32013", "15643", "61796", "64251", "73306", "34897", "6701", "4630", "6513" ]
+, [ 30, "BF055516-6279-4D9D-8C92-0F26E922AA29", 30, 1423192490, "894276", 1423192490, "894276", "{\n}", "5", "35", "Santee", "51950", "3225", "6526", "7410", "13467", "14938", "6384", "25182", "26768", "38123", "8646", "828", "2184", "2169" ]
+, [ 31, "E016DFC8-A6EE-433B-BFA1-CFA9BCF42FEA", 31, 1423192490, "894276", 1423192490, "894276", "{\n}", "5", "36", "Lakeside", "56951", "3665", "7673", "8308", "14324", "16146", "6835", "28171", "28780", "41013", "10989", "963", "1252", "2734" ]
+, [ 32, "619676CA-EB45-4754-A5BB-CA3110174C85", 32, 1423192490, "894276", 1423192490, "894276", "{\n}", "5", "37", "Harbison Crest", "14869", "613", "1557", "2048", "2766", "5139", "2746", "7426", "7443", "11562", "2366", "136", "271", "534" ]
+, [ 33, "8AEAD630-DFEA-4CAB-A124-D47434751A09", 33, 1423192490, "894276", 1423192490, "894276", "{\n}", "5", "38", "Alpine", "15226", "686", "1933", "2222", "3132", "4802", "2451", "7553", "7673", "11668", "2477", "174", "370", "537" ]
+, [ 34, "ED402937-4D30-41E2-AA96-35098A40F4D7", 34, 1423192490, "894276", 1423192490, "894276", "{\n}", "5", "61", "Laguna-Pine Valley", "5655", "291", "535", "873", "1031", "1976", "949", "3020", "2635", "4010", "987", "83", "109", "466" ]
+, [ 35, "8AD8F373-1177-4C2B-A440-49210F127081", 35, 1423192490, "894276", 1423192490, "894276", "{\n}", "5", "62", "Mountain Empire", "8563", "588", "1101", "1266", "1875", "2404", "1329", "4610", "3953", "4394", "3226", "206", "115", "622" ]
+, [ 37, "FE406165-0C3D-4732-BA57-F2A2B50563F3", 37, 1423192490, "894276", 1423192490, "894276", "{\n}", "6", "14", "North SD", "110927", "6931", "15971", "13124", "30358", "30406", "14137", "53633", "57294", "64134", "11518", "2488", "27500", "5287" ]
+, [ 38, "6FB84425-A316-498A-96D2-9EEE34545B9C", 38, 1423192490, "894276", 1423192490, "894276", "{\n}", "6", "15", "Poway", "87385", "4423", "12406", "11876", "19478", "27341", "11861", "42697", "44688", "57809", "10941", "1441", "13748", "3446" ]
+, [ 39, "AAE30D4B-7D7F-460F-B75C-CEA89823A6CB", 39, 1423192490, "894276", 1423192490, "894276", "{\n}", "6", "39", "Ramona", "35635", "1990", "4724", "5702", "7830", "11110", "4279", "17885", "17750", "24928", "8785", "283", "606", "1033" ]
+, [ 40, "9B1B443B-D4F2-4C9B-AE8D-286048EDCE44", 40, 1423192490, "894276", 1423192490, "894276", "{\n}", "6", "50", "Escondido", "165438", "12509", "24105", "26126", "45209", "39248", "18241", "82023", "83415", "69771", "77496", "3233", "10557", "4381" ]
+, [ 41, "BBC0FA13-7638-4ABD-9ABC-D573A3B2BA2F", 41, 1423192490, "894276", 1423192490, "894276", "{\n}", "6", "51", "San Marcos", "91465", "6336", "13825", "13200", "24828", "21093", "12183", "44742", "46723", "44892", "34379", "1668", "7597", "2929" ]
+, [ 42, "068014C1-55B4-447E-8B7D-E3465A4A004B", 42, 1423192490, "894276", 1423192490, "894276", "{\n}", "6", "53", "Valley Center", "23553", "1200", "2802", "3384", "4441", "7481", "4245", "11818", "11735", "14651", "6216", "186", "881", "1619" ]
+, [ 43, "35840FEF-030E-4AFF-BB05-CB9D0690A0CA", 43, 1423192490, "894276", 1423192490, "894276", "{\n}", "6", "54", "Pauma", "7798", "654", "1141", "1120", "1966", "2035", "882", "4014", "3784", "2986", "3020", "111", "309", "1372" ]
+, [ 44, "EF2BB786-FBF4-44CF-84C9-B666D1993E16", 44, 1423192490, "894276", 1423192490, "894276", "{\n}", "6", "55", "Fallbrook", "48167", "3017", "6015", "7274", "10184", "12893", "8784", "24030", "24137", "26942", "18351", "546", "1163", "1165" ]
+, [ 45, "AD9EE3D6-25D0-41DD-9C17-3DB48FD2375A", 45, 1423192490, "894276", 1423192490, "894276", "{\n}", "6", "60", "Palomar-Julian", "6529", "262", "619", "625", "1109", "2271", "1643", "3209", "3320", "4589", "1048", "70", "104", "718" ]
+, [ 46, "01CD5648-0D65-4609-884C-C2222594160A", 46, 1423192490, "894276", 1423192490, "894276", "{\n}", "6", "63", "Anza-Borrego Springs", "4952", "218", "503", "504", "693", "1436", "1598", "2478", "2474", "2853", "1927", "36", "38", "98" ]
+ ]
+}
