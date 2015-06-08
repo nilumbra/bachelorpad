@@ -16,6 +16,11 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
     <script src="javascripts/howler.min.js" type="text/javascript"></script>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -25,6 +30,14 @@
     <!-- Google -->
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+
+
+    <!-- Load c3.css -->
+    <link href="css/c3.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Load d3.js and c3.js-->
+    <script src="js/d3.min.js" charset="utf-8"></script>
+    <script src="js/c3.min.js"></script>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -67,9 +80,12 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome to Bachelor's Pad</div>
-                <div class="intro-heading">Start your journey now.</div>
-                <a href="#services" class="page-scroll btn btn-xl">Let's Go</a>
+                <div class="intro-lead-in">FIND YOUR IDEAL</div>
+                <div class="intro-lead-in">HOUSING</div>
+                <div class="intro-lead-in">SIMPLY, ESAILY AND </div>
+                <div class="intro-lead-in">BEAUTIFULLY.</div>
+
+                <a href="#services" class="page-scroll btn btn-xl">explore</a>
             </div>
         </div>
     </header>
@@ -191,7 +207,7 @@
 
 
         var placeSearch, autocomplete;
-        var map;
+        var map, layer;
 
         var geocoder;
         var rangeShowing = false;
@@ -226,6 +242,14 @@
             service = new google.maps.places.PlacesService(map);
             infowindow = new google.maps.InfoWindow();
             geocoder = new google.maps.Geocoder();
+            layer = new google.maps.FusionTablesLayer({
+                query: {
+                    select: 'geometry',
+                    from: '1lLm4NeW8qtaO1UYpIgopccaJ_tdOMpsHlquX8g'
+                }
+            });
+
+
 
 
             // Try HTML5 geolocation
@@ -419,9 +443,12 @@
 
 
             //setupMapRegions();
-            getMedianValues();
+            //getMedianValues();
 
             initializeMapSoundAndIcons();
+
+
+
 
         }
 
@@ -730,7 +757,113 @@
         };
 
 
+        function showMedianBounds() {
 
+            //var year = 2012;
+            //var listOfResults = [];
+            $.ajax({
+                type: "GET",
+                url: '/readMedianData',
+                success: function(result) {
+                    console.log("median results: "+JSON.stringify(result[0]));
+                    var regionHash = {};
+                    var regionObject = {
+                        zipCode: '',
+                        years: []
+                    };
+
+
+                    for (var a in result) {
+                        if(a%10 == 0){
+                            regionHash[regionObject.zipCode] = regionObject;
+                            regionObject = {
+                                zipCode: '',
+                                years: []
+                            };
+                            regionObject.zipCode = result[a].RegionName;
+                            regionObject.years[a%10] = result[a].Value;
+                        }
+
+                        //if(!(result[a].RegionName in zipHash)){
+                        regionObject.years[a%10] = result[a].Value;
+                        console.log("regonName : " + JSON.stringify(regionObject.years));
+
+                        //console.log("value : " + (1 - ((result[a].Value - 135) / 580)));
+                    }
+
+                    //var zA = [[92037, 0.2], [92121, 0.5], [92122, 0.8]];
+                    colorRegions(regionHash);
+                    //1 - ((value - 135) / 580)
+                },
+                error: function (jqXHR, textstatus, errorThrown) {
+                    alert('text status ' + textstatus + ', err ' + errorThrown);
+                }
+            });
+
+        };
+
+
+
+
+/*
+
+        function colorZips(zipArr) {
+
+            var stlCollection = function(zips) {
+                var stl = [{
+                    polygonOptions: {
+                        fillColor: '#00FF00',
+                        fillOpacity: 0.3
+                    }
+                }];
+                for(var i = 0; i < zipArr.length; i++) {
+                    stl.push({
+                        where: 'name = ' + zips[i][0],
+                        polygonOptions: {
+                            fillColor: '#03A9F4'//overColor(zips[i][1])
+                        }
+                    });
+                }
+                return stl;
+            };
+            layer.set('styles', stlCollection(zipArr));
+        }
+
+*/
+
+
+
+        //zips should be in array format [ [zipcode, priceRating], [zipcode, priceRating], ... ]
+        function colorRegions(zipHash) {
+
+            layer = new google.maps.FusionTablesLayer({
+                query: {
+                    select: 'geometry',
+                    from: '1Lae-86jeUDLmA6-8APDDqazlTOy1GsTXh28DAkw'
+                },
+                styles: [{
+                    polygonOptions: {
+                        fillColor: '#00FF00',
+                        fillOpacity: 0.3
+                    }
+                }, {
+                    where: 'zip2 in zipHash',
+                    polygonOptions: {
+                        fillColor: '#ffffff'
+                    }
+                }, {
+                    where: 'zip2 = 92056',
+                    polygonOptions: {
+                        fillOpacity: 1.0,
+                        fillColor: '#000000'
+                    }
+
+                }]
+            });
+
+            layer.setMap(map);
+            //layer.set('styles', styleCollection(zipArr));
+        }
 
 
         /** TODO Does not work, V3 throws errors when trying to save
@@ -777,6 +910,7 @@
         }
 
 
+
         function getMedianValues(){
 
             $.ajax({
@@ -798,6 +932,9 @@
         }
 
 
+        /**
+         * C3 visualization for Marital status in SD
+         */
         function getMaritalStatus(){
 
             $.ajax({
@@ -812,7 +949,6 @@
                 error: function(jqXHR, textstatus, errorThrown) {
                     //alert('text status ' + textstatus + ', err ' + errorThrown);
                     console.log("call error: ")
-
 
                 }
             });
@@ -1044,6 +1180,8 @@
     <input id="autocomplete" placeholder="Enter your address"
            onFocus="geolocate()" type="text"/>
 </div>
+
+
 <div id="googleMap" style="width:90%;height:80%">
 
 </div>
@@ -1061,9 +1199,9 @@
 </style>
 
 <button onclick="callDatabase()">Delphi</button>
-<button onclick="toggleBoundingCircle()">Show circle bound</button>
+<button onclick="toggleBoundingCircle()">Toggle circle bound</button>
 <button onclick="getZillowComps(16834453)">Get Comps</button>
-
+<button onclick="showMedianBounds()">Toggle Median Bounds</button>
 
 
 <!-- About Section -->
@@ -1079,6 +1217,7 @@
             <div class="col-lg-12">
                 <ul class="timeline">
                     <li>
+                        <div id="traffic_chart"></div>
                         <div class="timeline-image">
                             <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
                         </div>
@@ -1095,6 +1234,7 @@
 
 
                     <li class="timeline-inverted">
+                        <div id="marital_chart"></div>
                         <div class="timeline-image">
                             <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
                         </div>
@@ -1104,6 +1244,7 @@
                                 <h4 class="subheading">The happy hours</h4>
                             </div>
                             <div class="timeline-body">
+
                                 <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
                             </div>
                         </div>
@@ -1147,5 +1288,190 @@
     </div>
 </footer>
 
+
+<script>
+
+    var chart = c3.generate({
+        bindto: '#traffic_chart',
+        data: {
+            columns: [
+                ['data1', 30, 200, 100, 400, 150, 250],
+                ['data2', 130, 100, 140, 200, 150, 50]
+            ],
+            type: 'spline'
+        }
+    });
+
+
+
+/* //TODO traffic stats
+    $.ajax({
+        type: "GET",
+        url: '/readTrafficStatus',
+        success: function(result) {
+
+            var test = [50, 20, 10, 40, 15, 2555];
+            console.log("marital result: "+JSON.stringify(result.data[0]));
+            console.log("marital result: "+JSON.stringify(result.data[0][11]));
+
+            var locations = result.data.map(function (item) {
+                return item[9];
+            });
+
+            var totalPopulation = result.data.map(function (item) {
+                return item[11];
+            });
+
+            var singleStats = result.data.map(function (item) {
+                return item[12];
+            });
+
+            var marriedStats = result.data.map(function (item) {
+                return item[13];
+            });
+
+            var separatedStats = result.data.map(function (item) {
+                return item[14];
+            });
+
+            var widowedStats = result.data.map(function (item) {
+                return item[15];
+            });
+
+            var divorcedStats = result.data.map(function (item) {
+                return item[16];
+            });
+
+
+            var chart = c3.generate({
+                bindto: '#marital_chart',
+                data: {
+                    x : 'x',
+                    json: {
+                        x : locations,
+                        Single: singleStats,
+                        Married: marriedStats,
+                        Separated: separatedStats,
+                        Widowed: widowedStats,
+                        Divorced: divorcedStats
+                    },
+                    groups: [
+                        ['Single', 'Widowed']
+                    ],
+                    types: {
+                        Single: 'area-spline',
+                        Married: 'bar'
+                    }
+                },
+                axis: {
+                    x: {
+                        type: 'category',
+                        tick: {
+                            rotate: 75,
+                            multiline: false
+                        },
+                        height: 100
+                    }
+                }
+            });
+
+
+
+        },
+        error: function(jqXHR, textstatus, errorThrown) {
+            //alert('text status ' + textstatus + ', err ' + errorThrown);
+            console.log("call error: ")
+
+        }
+    });
+*/
+
+
+    //  totalPop, single, married, separated, widowed, divorced
+
+    $.ajax({
+        type: "GET",
+        url: '/readMaritalStatus',
+        success: function(result) {
+
+            var test = [50, 20, 10, 40, 15, 2555];
+            console.log("marital result: "+JSON.stringify(result.data[0]));
+            console.log("marital result: "+JSON.stringify(result.data[0][11]));
+
+            var locations = result.data.map(function (item) {
+                return item[9];
+            });
+
+            var totalPopulation = result.data.map(function (item) {
+                return item[11];
+            });
+
+            var singleStats = result.data.map(function (item) {
+                return item[12];
+            });
+
+            var marriedStats = result.data.map(function (item) {
+                return item[13];
+            });
+
+            var separatedStats = result.data.map(function (item) {
+                return item[14];
+            });
+
+            var widowedStats = result.data.map(function (item) {
+                return item[15];
+            });
+
+            var divorcedStats = result.data.map(function (item) {
+                return item[16];
+            });
+
+
+            var chart = c3.generate({
+                bindto: '#marital_chart',
+                data: {
+                    x : 'x',
+                    json: {
+                        x : locations,
+                        Single: singleStats,
+                        Married: marriedStats,
+                        Separated: separatedStats,
+                        Widowed: widowedStats,
+                        Divorced: divorcedStats
+                    },
+                    groups: [
+                        ['Single', 'Widowed']
+                    ],
+                    types: {
+                        Single: 'area-spline',
+                        Married: 'bar'
+                    }
+                },
+                axis: {
+                    x: {
+                        type: 'category',
+                        tick: {
+                            rotate: 75,
+                            multiline: false
+                        },
+                        height: 100
+                    }
+                }
+            });
+
+
+
+        },
+        error: function(jqXHR, textstatus, errorThrown) {
+            //alert('text status ' + textstatus + ', err ' + errorThrown);
+            console.log("call error: ")
+
+
+        }
+    });
+
+
+
+</script>
 </body>
 </html>

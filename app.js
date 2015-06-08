@@ -186,12 +186,13 @@ app.get('/readMaritalStatus', function (req, res) {
 });
 
 
-
 app.get('/delphidata', function (req, res) {
 
 
     //hhsa_san_diego_demographics_home_value_2012
     //cdph_smoking_prevalence_in_adults_1984_2013
+    //caltrans_1_hour
+    //zillow_zip_median_sold_price_per_sqft_all_homes_norm
 
     var conString = "postgres://cogsci_121_1:Lj9vQnwMVikW@delphidata.ucsd.edu/delphibetadb";
 
@@ -200,7 +201,7 @@ app.get('/delphidata', function (req, res) {
         console.log("connected to DB");
         //var query = 'SELECT * FROM zillow_zip_median_sold_price_per_sqft_all_homes_norm WHERE State = CA AND City = San Diego';
 
-        var query = "SELECT * FROM zillow_zip_median_sold_price_per_sqft_all_homes_norm WHERE 'State' = 'NY' LIMIT 100";
+        var query = 'SELECT time FROM caltrans_1_hour WHERE avgspeed = 60';
         //var query = "SELECT * FROM zillow_zip_median_sold_price_per_sqft_all_homes_norm LIMIT 100";//WHERE 'State'='CA'"; // 'State' = 'CA' AND
         //var query = 'SELECT * FROM hhsa_san_diego_demographics_home_value_2012';
         client.query(query, function(err, result) {
