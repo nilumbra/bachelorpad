@@ -66,7 +66,7 @@
                         <a class="page-scroll" href="#item2">OurTeam</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#item2" onclick="toggleMusic()">Sound</a>
+                        <a class="page-scroll" href="javascript:toggleMusic()">Sound</a>
                     </li>
 
                 </ul>
@@ -89,6 +89,39 @@
             </div>
         </div>
     </header>
+
+
+
+
+    <div id='cssmenu'>
+        <ul>
+
+            <li><a href='#'><span>Price</span></a></li>
+            <li><a href='#'><span>Traffic</span></a></li>
+            <li><a href='#'><span>Bars</span></a></li>
+            <li class='active'><a href='#'><span>stores</span></a></li>
+            <li class='last'><a href="javascript:toggleMedianBounds()"><span>Toggle Median Overlay</span></a></li>
+
+        </ul>
+    </div>
+
+    <style type="text/css">
+        #cssmenu
+        {
+            position: absolute;
+            top: 925px;
+            left: 180px;
+            z-index: 2;
+        }
+
+        #inputb
+        {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    </style>
+
 
 
 
@@ -226,6 +259,9 @@
         var playSound = false;
         var eFunction;
 
+        var showShoppingMarkers = true;
+        var showBarMarkers = true;
+
         var dayRequest;
         var service;
 
@@ -233,10 +269,11 @@
         var storeMarkerHash = {};
 
         var infowindow;
+
+        var regionHash = null;
+
+
         function initialize(){
-
-
-
 
             map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
             map.mapTypes.set(NIGHT_MAPTYPE_ID, nightMapType);
@@ -245,13 +282,6 @@
             service = new google.maps.places.PlacesService(map);
             infowindow = new google.maps.InfoWindow();
             geocoder = new google.maps.Geocoder();
-            layer = new google.maps.FusionTablesLayer({
-                query: {
-                    select: 'geometry',
-                    from: '1lLm4NeW8qtaO1UYpIgopccaJ_tdOMpsHlquX8g'
-                }
-            });
-
 
 
 
@@ -261,12 +291,6 @@
                     var pos = new google.maps.LatLng(position.coords.latitude,
                             position.coords.longitude);
 
-                    /*
-                    var infowindow = new google.maps.InfoWindow({
-                        map: map,
-                        position: pos,
-                        content: 'Location found using HTML5.'
-                    });*/
 
                     map.setCenter(pos);
                 }, function() {
@@ -285,14 +309,16 @@
 
                 eFunction = Math.pow(Math.E, (22-(map.getZoom())))+2;
 
-                console.log("map has changed to: "+eFunction);
+                //console.log("map has changed to: "+eFunction);
                 //daySound.pause();
                 //nightSound.pause();
 
                 if(map.getMapTypeId() == DAY_MAPTYPE_ID) {
 
-                    setAllMarkers(barMarkerHash, null)
-                    setAllMarkers(storeMarkerHash, map)
+                    setAllMarkers(barMarkerHash, null);
+                    if(showBarMarkers)
+                        setAllMarkers(storeMarkerHash, map);
+
                     nightSound.fade(0, 0, 1500, function() {
                         nightSound.pause();
                     });
@@ -318,8 +344,12 @@
                     });
                 }
                 else if(map.getMapTypeId() == NIGHT_MAPTYPE_ID) {
-                    setAllMarkers(barMarkerHash, map)
-                    setAllMarkers(storeMarkerHash, null)
+
+                    if(showShoppingMarkers)
+                        setAllMarkers(barMarkerHash, map);
+
+                    setAllMarkers(storeMarkerHash, null);
+
                     daySound.fade(0, 0, 1500, function() {
                         daySound.pause();
                     });
@@ -406,7 +436,7 @@
                     });
                 }
 
-
+/*
                 autocomplete = new google.maps.places.Autocomplete(
                         (document.getElementById('autocomplete')),
                         {types: ['geocode']});
@@ -414,7 +444,9 @@
                 // populate the address fields in the form.
                 google.maps.event.addListener(autocomplete, 'place_changed', function () {
                     fillInAddress();
-                });
+                });*/
+
+
             });
 
 
@@ -462,6 +494,8 @@
                     });
 
                     barMarkerHash[place.id] = marker;
+                    if(showBarMarkers)
+                        marker.setMap(map);
                 }
             }
 
@@ -486,6 +520,8 @@
                     });
 
                     storeMarkerHash[place.id] = marker;
+                    //if(showShoppingMarkers)
+                        //marker.setMap(map);
                 }
             }
 
@@ -500,7 +536,10 @@
 
 
 
+
         google.maps.event.addDomListener(window, 'load', initialize);
+
+
 
 
         function setAllMarkers(hash, map){
@@ -769,101 +808,154 @@
                         maxWidth: 400
                     });
 
-                    google.maps.event.addListener(marker, 'click', function() {
+                    google.maps.event.addListener(marker, 'click', function () {
                         houseInfowindow.open(map, this);
                     });
                 },
-                error: function(jqXHR, textstatus, errorThrown) {
+                error: function (jqXHR, textstatus, errorThrown) {
                     //alert('text status ' + textstatus + ', err ' + errorThrown);
                 }
             });
-        };
+        }
+        ;
 
 
         function getZillowComps(zpid) {
-            console.log("trying to get comps: "+zpid);
+            console.log("trying to get comps: " + zpid);
 
             $.ajax({
                 type: "GET",
                 url: '/getCompResults',
-                data: { zpid: zpid
+                data: {
+                    zpid: zpid
                 },
-                success: function(result) {
-                    console.log("comps Success: "+result) //Returned data from call
+                success: function (result) {
+                    console.log("comps Success: " + JSON.stringify(result)); //Returned data from call
 
-                },
-                error: function(jqXHR, textstatus, errorThrown) {
-                    alert('text status ' + textstatus + ', err ' + errorThrown);
-                }
-            });
-
-        };
-
-
-        function showMedianBounds() {
-
-            //var year = 2012;
-            //var listOfResults = [];
-            $.ajax({
-                type: "GET",
-                url: '/readMedianData',
-                success: function(result) {
-                    console.log("median results: "+JSON.stringify(result[0]));
-                    var regionHash = {};
-                    var regionObject = {
-                        zipCode: '',
-                        years: []
-                    };
-
-
-                    for (var a in result) {
-                        if(a%10 == 0){
-                            regionHash[regionObject.zipCode] = regionObject;
-                            regionObject = {
-                                zipCode: '',
-                                years: []
-                            };
-                            regionObject.zipCode = result[a].RegionName;
-                            regionObject.years[a%10] = result[a].Value;
-                        }
-
-                        //if(!(result[a].RegionName in zipHash)){
-                        regionObject.years[a%10] = result[a].Value;
-                        console.log("regonName : " + JSON.stringify(regionObject.years));
-
-                        //console.log("value : " + (1 - ((result[a].Value - 135) / 580)));
-                    }
-
-                    //var zA = [[92037, 0.2], [92121, 0.5], [92122, 0.8]];
-                    colorRegions(regionHash);
-                    //1 - ((value - 135) / 580)
                 },
                 error: function (jqXHR, textstatus, errorThrown) {
                     alert('text status ' + textstatus + ', err ' + errorThrown);
                 }
             });
 
-        };
+        }
+        ;
 
 
+        function toggleMedianBounds() {
+
+            if(layer != null){
+                layer.setMap(null);
+                layer = null;
+            }else {
+
+                layer = new google.maps.FusionTablesLayer({
+                    query: {
+                        select: 'geometry',
+                        from: '1lLm4NeW8qtaO1UYpIgopccaJ_tdOMpsHlquX8g'
+                    }
+                });
+                layer.setMap(map);
+                console.log("showing median bounds")
+
+                var resultsToShow = [];
+                //var zA = [[92037, 0.2], [92121, 0.5], [92122, 0.8]];
+                var year = 2012;
+
+                if (regionHash == null) {
+                    console.log("building regionHash");
+                    regionHash = {};
+                    $.ajax({
+                        type: "GET",
+                        url: '/readMedianData',
+                        success: function (result) {
+
+                            var regionObject = {
+                                zipCode: '',
+                                years: []
+                            };
+
+                            for (var a in result) {
+                                if (a % 10 == 0) {
+                                    regionHash[regionObject.zipCode] = regionObject;
+                                    regionObject = {
+                                        zipCode: '',
+                                        years: []
+                                    };
+                                    regionObject.zipCode = result[a].RegionName;
+                                    regionObject.years[a % 10] = result[a].Value;
+                                }
+
+                                regionObject.years[a % 10] = result[a].Value;
+
+                            }
+
+                            for (a in regionHash) {
+                                //resultsToShow.push([[regionHash[a].zipCode],[regionHash[a].years[(year-2005)]]])
+                                resultsToShow.push([[regionHash[a].zipCode], [(1 - ((regionHash[a].years[(year - 2005)] - 135) / 580))]]);
+                            }
+
+                            colorZips(resultsToShow);
+                            //1 - ((value - 135) / 580)
+                        },
+                        error: function (jqXHR, textstatus, errorThrown) {
+                            alert('text status ' + textstatus + ', err ' + errorThrown);
+                        }
+                    });
+                }
+                else {
+                    for (a in regionHash) {
+                        //console.log("Pushing: "+regionHash[a].zipCode+", "+regionHash[a].years[(year-2005)]);
+                        //resultsToShow.push([[regionHash[a].zipCode],[regionHash[a].years[(year-2005)]]]);
+                        resultsToShow.push([[regionHash[a].zipCode], [(1 - ((regionHash[a].years[(year - 2005)] - 135) / 580))]]);
+                    }
+                    colorZips(resultsToShow);
+                }
+
+            }
+
+        }
 
 
-/*
-
+        //zips should be in array format [ [zipcode, priceRating], [zipcode, priceRating], ... ]
         function colorZips(zipArr) {
 
+            console.log("zips in colorZips: "+zipArr.length);
+
+            function toHex(n) {
+                n = parseInt(n,10);
+                if (isNaN(n)) return "00";
+                n = Math.max(0,Math.min(n,255));
+                return "0123456789ABCDEF".charAt((n-n%16)/16) + "0123456789ABCDEF".charAt(n%16);
+            }
+            var overColor = function(percent) {
+                // 0, 255, 90 green
+                // 255, 48, 0 red
+                if(percent > -1) {
+                    var red = 255 - Math.floor(255*percent);
+                    var green = 48 + Math.floor(207*percent);
+                    var blue = Math.floor(90*percent);
+                    return "#" + toHex(red) + toHex(green) + toHex(blue);
+                }
+                else {
+                    return "#000000";
+                }
+            }
             var stlCollection = function(zips) {
+
                 var stl = [{
                     polygonOptions: {
-                        fillColor: '#00FF00',
-                        fillOpacity: 0.3
+                        fillColor: '#000000',
+                        fillOpacity: 0.1
                     }
                 }];
-                for(var i = 0; i < zipArr.length; i++) {
+                var len = zips.length;
+                for(var i = 0; i < len; i++) {
+                    console.log("Coloring "+zips[i][0]+" to "+zips[i][1]);
                     stl.push({
                         where: 'name = ' + zips[i][0],
                         polygonOptions: {
-                            fillColor: '#03A9F4'//overColor(zips[i][1])
+                            fillColor: '#FFC107'//overColor(zips[i][1])
                         }
                     });
                 }
@@ -872,9 +964,8 @@
             layer.set('styles', stlCollection(zipArr));
         }
 
-*/
 
-
+/*
 
         //zips should be in array format [ [zipcode, priceRating], [zipcode, priceRating], ... ]
         function colorRegions(zipHash) {
@@ -907,7 +998,7 @@
             layer.setMap(map);
             //layer.set('styles', styleCollection(zipArr));
         }
-
+*/
 
         /** TODO Does not work, V3 throws errors when trying to save
          */
@@ -1219,11 +1310,13 @@
 </head>
 
 <body>
+
+<!--
 <div id="locationField">
     <input id="autocomplete" placeholder="Enter your address"
            onFocus="geolocate()" type="text"/>
 </div>
-
+-->
 
 <div id="googleMap" style="width:90%;height:80%">
 
@@ -1244,7 +1337,6 @@
 <button onclick="callDatabase()">Delphi</button>
 <button onclick="toggleBoundingCircle()">Toggle circle bound</button>
 <button onclick="getZillowComps(16834453)">Get Comps</button>
-<button onclick="showMedianBounds()">Toggle Median Bounds</button>
 
 
 <!-- About Section -->
