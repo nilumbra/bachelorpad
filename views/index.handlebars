@@ -96,11 +96,10 @@
     <div id='cssmenu'>
         <ul>
 
-            <li><a href='#'><span>Price</span></a></li>
-            <li><a href='#'><span>Traffic</span></a></li>
-            <li><a href='#'><span>Bars</span></a></li>
-            <li class='active'><a href='#'><span>stores</span></a></li>
-            <li class='last'><a href="javascript:toggleMedianBounds()"><span>Toggle Median Overlay</span></a></li>
+            <li><a href="javascript:toggleMedianBounds()"><span>Price</span></a></li>
+            <li><a href="javascript:toggleTrafficLayer()"><span>Traffic</span></a></li>
+            <li><a href="javascript:toggleBarMarkers()"><span>Bars</span></a></li>
+            <li ><a href="javascript:toggleShoppingMarkers()"><span>Stores</span></a></li>
 
         </ul>
     </div>
@@ -243,7 +242,7 @@
 
 
         var placeSearch, autocomplete;
-        var map, layer;
+        var map, layer, trafficLayer;
 
         var geocoder;
         var rangeShowing = false;
@@ -316,7 +315,7 @@
                 if(map.getMapTypeId() == DAY_MAPTYPE_ID) {
 
                     setAllMarkers(barMarkerHash, null);
-                    if(showBarMarkers)
+                    if(showShoppingMarkers)
                         setAllMarkers(storeMarkerHash, map);
 
                     nightSound.fade(0, 0, 1500, function() {
@@ -345,7 +344,7 @@
                 }
                 else if(map.getMapTypeId() == NIGHT_MAPTYPE_ID) {
 
-                    if(showShoppingMarkers)
+                    if(showBarMarkers)
                         setAllMarkers(barMarkerHash, map);
 
                     setAllMarkers(storeMarkerHash, null);
@@ -436,16 +435,6 @@
                     });
                 }
 
-/*
-                autocomplete = new google.maps.places.Autocomplete(
-                        (document.getElementById('autocomplete')),
-                        {types: ['geocode']});
-                // When the user selects an address from the dropdown,
-                // populate the address fields in the form.
-                google.maps.event.addListener(autocomplete, 'place_changed', function () {
-                    fillInAddress();
-                });*/
-
 
             });
 
@@ -463,8 +452,6 @@
 
             initializeMapSoundAndIcons();
 
-            //google.maps.event.addListenerOnce(map, 'center_changed', performSearch);
-
 
         }
 
@@ -478,19 +465,10 @@
                 }else{
 
                     var marker = new google.maps.Marker({
-                        map: map,
+                        //map: map,
                         position: place.geometry.location,
                         animation: google.maps.Animation.DROP,
                         icon: icon
-                        /*icon: {
-                            // Star
-                            path: 'M 0,-24 6,-7 24,-7 10,4 15,21 0,11 -15,21 -10,4 -24,-7 -6,-7 z',
-                            fillColor: '#ffff00',
-                            fillOpacity: 1,
-                            scale: 1 / 4,
-                            strokeColor: '#bd8d2c',
-                            strokeWeight: 1
-                        }*/
                     });
 
                     barMarkerHash[place.id] = marker;
@@ -504,24 +482,15 @@
                     return;
                 }else{
                     var marker = new google.maps.Marker({
-                        map: map,
+                        //map: map,
                         position: place.geometry.location,
                         animation: google.maps.Animation.DROP,
                         icon: icon
-                        /*icon: {
-                            // Star
-                            path: 'M 0,-24 6,-7 24,-7 10,4 15,21 0,11 -15,21 -10,4 -24,-7 -6,-7 z',
-                            fillColor: '#ffff00',
-                            fillOpacity: 1,
-                            scale: 1 / 4,
-                            strokeColor: '#bd8d2c',
-                            strokeWeight: 1
-                        }*/
                     });
 
                     storeMarkerHash[place.id] = marker;
-                    //if(showShoppingMarkers)
-                        //marker.setMap(map);
+                    if(showShoppingMarkers)
+                        marker.setMap(map);
                 }
             }
 
@@ -535,11 +504,45 @@
         }
 
 
-
-
         google.maps.event.addDomListener(window, 'load', initialize);
 
 
+
+        function toggleTrafficLayer(){
+
+            if(trafficLayer == null){
+                trafficLayer = new google.maps.TrafficLayer();
+                trafficLayer.setMap(map);
+            }else{
+                trafficLayer.setMap(null);
+                trafficLayer = null;
+            }
+
+
+        }
+
+        function toggleBarMarkers(){
+
+            if(showBarMarkers){
+                setAllMarkers(barMarkerHash, null);
+
+            }else{
+                setAllMarkers(barMarkerHash, map);
+            }
+            showBarMarkers = !showBarMarkers;
+        }
+
+        function toggleShoppingMarkers(){
+
+            if(showShoppingMarkers){
+                setAllMarkers(storeMarkerHash, null);
+
+            }else{
+                setAllMarkers(storeMarkerHash, map);
+            }
+
+            showShoppingMarkers = !showShoppingMarkers;
+        }
 
 
         function setAllMarkers(hash, map){
@@ -768,6 +771,7 @@
                     });
 
 
+                    console.log(result.results[0].result[0].zpid[0]);
 
                     var bathrooms = result.results[0].result[0].bathrooms[0];
                     var bedrooms = result.results[0].result[0].bedrooms[0];
@@ -798,8 +802,8 @@
                             '<b>'+bedrooms+' bedrooms &#8226 '+bathrooms+' bathrooms &#8226 '+squareFeet+' sqft. </b><br>' +
                             'Zestimate: '+zestimate+
                             '<p><a target="_tab" href='+zillowLink+'>'+
-                            'Zillow Info</a></p>'+
-                            '<button onclick="getZillowComps(16834453)">Get Comps</button>'+
+                            'Zillow Info</a>'+
+                            ' &#8226 <a href="javascript:getZillowComps('+result.results[0].result[0].zpid[0]+')" >Show Comps</a></p>'+
                             '</div>'+
                             '</div>';
 
@@ -852,15 +856,23 @@
                 layer = new google.maps.FusionTablesLayer({
                     query: {
                         select: 'geometry',
-                        from: '1lLm4NeW8qtaO1UYpIgopccaJ_tdOMpsHlquX8g'
+                        from: '1kZPTdlzEO72BSskrYdigl1BU96n6CMcN7e3oUO5o'
+                    },
+                    options: {
+                        styleId: 2,
+                        templateId: 2
                     }
                 });
                 layer.setMap(map);
+
+
                 console.log("showing median bounds")
 
+                /*
                 var resultsToShow = [];
                 //var zA = [[92037, 0.2], [92121, 0.5], [92122, 0.8]];
                 var year = 2012;
+
 
                 if (regionHash == null) {
                     console.log("building regionHash");
@@ -891,11 +903,17 @@
                             }
 
                             for (a in regionHash) {
-                                //resultsToShow.push([[regionHash[a].zipCode],[regionHash[a].years[(year-2005)]]])
-                                resultsToShow.push([[regionHash[a].zipCode], [(1 - ((regionHash[a].years[(year - 2005)] - 135) / 580))]]);
+                                var value = regionHash[a].years[(year - 2005)];
+                                console.log("Pushing: "+regionHash[a].zipCode+", "+value+", "+(1 - ((regionHash[a].years[(year - 2005)] - 135) / 580)));
+                                //resultsToShow.push([[regionHash[a].zipCode],[regionHash[a].years[(year-2005)]]]);
+                                if(!value){
+                                    value = -1;
+                                }else{
+                                    value = (1 - ((regionHash[a].years[(year - 2005)] - 135) / 580));
+                                }
+                                resultsToShow.push([[regionHash[a].zipCode], [value]]);
                             }
-
-                            colorZips(resultsToShow);
+                            //colorZips(resultsToShow);
                             //1 - ((value - 135) / 580)
                         },
                         error: function (jqXHR, textstatus, errorThrown) {
@@ -905,12 +923,18 @@
                 }
                 else {
                     for (a in regionHash) {
-                        //console.log("Pushing: "+regionHash[a].zipCode+", "+regionHash[a].years[(year-2005)]);
+                        var value = regionHash[a].years[(year - 2005)];
+                        console.log("Pushing: "+regionHash[a].zipCode+", "+value+", "+(1 - ((regionHash[a].years[(year - 2005)] - 135) / 580)));
                         //resultsToShow.push([[regionHash[a].zipCode],[regionHash[a].years[(year-2005)]]]);
-                        resultsToShow.push([[regionHash[a].zipCode], [(1 - ((regionHash[a].years[(year - 2005)] - 135) / 580))]]);
+                        if(!value){
+                           value = -1;
+                        }else{
+                            value = (1 - ((regionHash[a].years[(year - 2005)] - 135) / 580));
+                        }
+                        resultsToShow.push([[regionHash[a].zipCode], [value]]);
                     }
-                    colorZips(resultsToShow);
-                }
+                    //colorZips(resultsToShow);
+                }*/
 
             }
 
@@ -921,7 +945,7 @@
         function colorZips(zipArr) {
 
             console.log("zips in colorZips: "+zipArr.length);
-
+/*
             function toHex(n) {
                 n = parseInt(n,10);
                 if (isNaN(n)) return "00";
@@ -940,7 +964,7 @@
                 else {
                     return "#000000";
                 }
-            }
+            }*/
             var stlCollection = function(zips) {
 
                 var stl = [{
