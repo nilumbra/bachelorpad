@@ -66,7 +66,7 @@
                         <a class="page-scroll" href="#item1">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#item2">OurTeam</a>
+                        <a class="page-scroll" href="#item2">Our Team</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="javascript:toggleMusic()">Sound</a>
@@ -85,7 +85,7 @@
             <div class="intro-text">
                 <div class="intro-lead-in">FIND YOUR IDEAL</div>
                 <div class="intro-lead-in">HOUSING</div>
-                <div class="intro-lead-in">SIMPLY, ESAILY AND </div>
+                <div class="intro-lead-in">SIMPLY, EASILY AND </div>
                 <div class="intro-lead-in">BEAUTIFULLY.</div>
 
                 <a href="#services" class="page-scroll btn btn-xl">explore</a>
@@ -1325,7 +1325,11 @@
                 left: 0px;
                 z-index: 100;
             }
-
+    #marital_chart {
+          background-color: black;
+          margin-bottom: 100px;
+          box-shadow: 0 0 100px 30px black;
+    }
 </style>
 
 
@@ -1385,7 +1389,7 @@
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <h4>Be Part
+                            <h4>Be a Part
                                 <br>Of Our
                                 <br>Story!</h4>
                         </div>
@@ -1445,6 +1449,7 @@
                 if(grab && hand.confidence > 0.3) {
                     moveMap((x - Math.floor(pos[0])), (y - Math.floor(pos[1])));
                     //out2.innerHTML = (z - Math.floor(pos[2]));
+                    circle.style.backgroundColor = "rgb(255, 139, 170)";
                     if(!zoom && ((new Date()) - lastZoom) > 1500) {
                         zoom = true;
                         lastZoom = new Date();
@@ -1457,6 +1462,7 @@
                     //z = Math.floor(pos[2]);
                 }
                 else {
+                    circle.style.backgroundColor = "white";
                     //console.log("grab: "+hand.grabStrength.toPrecision(2));
                     if(zoom) {
                         zoom = false;
