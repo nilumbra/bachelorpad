@@ -99,10 +99,10 @@
     <div id='cssmenu'>
         <ul>
 
-            <li><a href="javascript:toggleMedianBounds()"><span>Price</span></a></li>
-            <li><a href="javascript:toggleTrafficLayer()"><span>Traffic</span></a></li>
-            <li><a href="javascript:toggleBarMarkers()"><span>Bars</span></a></li>
-            <li><a href="javascript:toggleShoppingMarkers()"><span>Stores</span></a></li>
+            <li id='price_overlay'><a href="javascript:toggleMedianBounds()"><span>Price</span></a></li>
+            <li id="traffic_overlay"><a href="javascript:toggleTrafficLayer()"><span>Traffic</span></a></li>
+            <li id="bar_markers"><a href="javascript:toggleBarMarkers()"><span>Entertainment</span></a></li>
+            <li id="shopping_markers"><a href="javascript:toggleShoppingMarkers()"><span>Shopping</span></a></li>
             <li><a><input id="min_field" type="text" placeholder="Min Range"></a></li>
             <li><a><input id="max_field" type="text" placeholder="Max Range"></a></li>
             <li><a href="javascript:callDatabase()"><span>Search</span></a></li>
@@ -247,7 +247,8 @@
 
 
         var placeSearch, autocomplete;
-        var map, layer, trafficLayer;
+        var map, trafficLayer;
+        var layer = null;
 
         var geocoder;
         var rangeShowing = false;
@@ -276,6 +277,7 @@
         var infowindow;
 
         var regionHash = null;
+        var currentInfoWindow = new google.maps.InfoWindow();
 
 
         function initialize(){
@@ -288,6 +290,10 @@
             infowindow = new google.maps.InfoWindow();
             geocoder = new google.maps.Geocoder();
 
+            document.getElementById('price_overlay').className = 'inactive';
+            document.getElementById('traffic_overlay').className = 'inactive';
+
+            document.getElementById('shopping_markers').className = 'active';
 
 
             // Try HTML5 geolocation
@@ -320,9 +326,24 @@
 
                 if(map.getMapTypeId() == DAY_MAPTYPE_ID) {
 
-                    setAllMarkers(barMarkerHash, null);
-                    if(showShoppingMarkers)
+                    //setAllMarkers(barMarkerHash, null);
+                    showShoppingMarkers = true;
+                    if(showShoppingMarkers) {
+                        document.getElementById('shopping_markers').className = 'active';
                         setAllMarkers(storeMarkerHash, map);
+                        showShoppingMarkers = true;
+                    }
+                    setAllMarkers(barMarkerHash, null);
+                    showBarMarkers = false;
+                    document.getElementById('bar_markers').className = 'inactive';
+                    /*
+                    if(showBarMarkers){
+                        document.getElementById('bar_markers').className = 'active';
+                    }
+                    else{
+                        setAllMarkers(storeMarkerHash, null);
+                        document.getElementById('bar_markers').className = 'inactive';
+                    }*/
 
                     nightSound.fade(0, 0, 1500, function() {
                         nightSound.pause();
@@ -350,10 +371,25 @@
                 }
                 else if(map.getMapTypeId() == NIGHT_MAPTYPE_ID) {
 
-                    if(showBarMarkers)
+                    showBarMarkers = true;
+                    if(showBarMarkers) {
+                        document.getElementById('bar_markers').className = 'active';
                         setAllMarkers(barMarkerHash, map);
+                    }
 
                     setAllMarkers(storeMarkerHash, null);
+                    showShoppingMarkers = false;
+                    document.getElementById('shopping_markers').className = 'inactive';
+                    /*
+                    if(showShoppingMarkers){
+                        document.getElementById('shopping_markers').className = 'active';
+                    }
+                    else{
+                        setAllMarkers(storeMarkerHash, null);
+                        document.getElementById('shopping_markers').className = 'inactive';
+                    }*/
+
+
 
                     daySound.fade(0, 0, 1500, function() {
                         daySound.pause();
@@ -453,9 +489,6 @@
             });
 
 
-            //setupMapRegions();
-            //getMedianValues();
-
             initializeMapSoundAndIcons();
 
 
@@ -502,16 +535,16 @@
 
 
             google.maps.event.addListener(marker, 'click', function() {
+                currentInfoWindow.close();
                 infowindow.setContent(place.name);
                 infowindow.open(map, this);
+                currentInfoWindow = infowindow;
             });
-
 
         }
 
 
         google.maps.event.addDomListener(window, 'load', initialize);
-
 
         function clearHouseMarkers(){
 
@@ -522,9 +555,11 @@
         function toggleTrafficLayer(){
 
             if(trafficLayer == null){
+                document.getElementById('traffic_overlay').className = 'active';
                 trafficLayer = new google.maps.TrafficLayer();
                 trafficLayer.setMap(map);
             }else{
+                document.getElementById('traffic_overlay').className = 'inactive';
                 trafficLayer.setMap(null);
                 trafficLayer = null;
             }
@@ -533,9 +568,11 @@
         function toggleBarMarkers(){
 
             if(showBarMarkers){
+                document.getElementById('bar_markers').className = 'inactive';
                 setAllMarkers(barMarkerHash, null);
 
             }else{
+                document.getElementById('bar_markers').className = 'active';
                 setAllMarkers(barMarkerHash, map);
             }
             showBarMarkers = !showBarMarkers;
@@ -544,10 +581,13 @@
         function toggleShoppingMarkers(){
 
             if(showShoppingMarkers){
+                document.getElementById('shopping_markers').className = 'inactive';
                 setAllMarkers(storeMarkerHash, null);
 
             }else{
+                document.getElementById('shopping_markers').className = 'active';
                 setAllMarkers(storeMarkerHash, map);
+
             }
 
             showShoppingMarkers = !showShoppingMarkers;
@@ -615,7 +655,6 @@
          * Show bounding Circle
          */
         function toggleBoundingCircle() {
-
 
             if (boundingCircle == null) {
 
@@ -713,10 +752,8 @@
 
                         humane.log("Error getting location", {timeout: 1000, clickToClose: true });
 
-
                     }
                     else {
-
 
                         var latitude = result.results[0].result[0].address[0].latitude[0];
                         var longitude = result.results[0].result[0].address[0].longitude[0];
@@ -780,7 +817,11 @@
                         });
 
                         google.maps.event.addListener(marker, 'click', function () {
+
+                            currentInfoWindow.close();
                             houseInfowindow.open(map, this);
+                            currentInfoWindow = houseInfowindow;
+
                         });
 
                     }
@@ -816,13 +857,17 @@
         };
 
 
+
+        /**
+         * Google Fusion Layer median bounds
+         * */
         function toggleMedianBounds() {
 
             if(layer != null){
                 layer.setMap(null);
                 layer = null;
+                document.getElementById('price_overlay').className = 'inactive';
             }else {
-
                 layer = new google.maps.FusionTablesLayer({
                     query: {
                         select: 'geometry',
@@ -834,9 +879,8 @@
                     }
                 });
                 layer.setMap(map);
-
+                document.getElementById('price_overlay').className = 'active';
             }
-
         }
 
 
@@ -853,7 +897,7 @@
                 data: { data: place
                         },
                 success: function(result) {
-                    console.log("Save Success: "+result); //Returned data from call
+                    //console.log("Save Success: "+result); //Returned data from call
 
                 },
                 error: function(jqXHR, textstatus, errorThrown) {
@@ -923,7 +967,7 @@
                 icon: houseIcon
             });
 
-            console.log("houseInfo.zpid: "+houseInfo.zpid);
+            //console.log("houseInfo.zpid: "+houseInfo.zpid);
             houseMarkerHash[houseInfo.zpid] = marker;
 
             var bathrooms = houseInfo.baths;
@@ -972,7 +1016,7 @@
             });
 
             google.maps.event.addListener(marker, 'click', function () {
-                console.log(houseInfo);
+                //console.log(houseInfo);
                 houseInfowindow.open(map, this);
             });
 
@@ -980,26 +1024,6 @@
         }
 
 
-
-        function getMedianValues(){
-
-            $.ajax({
-                type: "GET",
-                url: '/readMedianData',
-                success: function(result) {
-                    console.log("MedianInfo: "+JSON.stringify(result));
-                    //for (var a in result.features) {
-                    //    buildBox(result.features[a].geometry.coordinates[0][0]);
-                    //}
-                },
-                error: function(jqXHR, textstatus, errorThrown) {
-                    //alert('text status ' + textstatus + ', err ' + errorThrown);
-                    console.log("call error: ")
-
-
-                }
-            });
-        }
 
 /*
         function buildBox(coordinates){
@@ -1160,7 +1184,6 @@
 
 
         function toggleMusic(){
-            //console.log("toggle music:"+playSound);
             if(playSound){
                 daySound.pause();
                 nightSound.pause();
