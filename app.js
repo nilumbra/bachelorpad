@@ -92,6 +92,7 @@ app.get('/getDeepSearchResults', function(req, res) {
             }else{
                 console.log("Cant get that address: "+req.query.address);
                 //console.log("error code: "+JSON.stringify(result.message[0].code)); //0 = success
+                res.send("error getting location");
                 return;
             }
 
@@ -133,15 +134,15 @@ var HouseInfoSchema2 = new Schema({
     beds: String,
     baths: String,
     sqft: String,
-    address:String,
-    rental:String,
-    zestimate:String,
-    longitude:String,
-    latitude:String,
-    state:String,
-    zipcode:String,
-    comparables:String,
-    mapthishome:String
+    address: String,
+    rental: String,
+    zestimate: String,
+    longitude: String,
+    latitude: String,
+    state: String,
+    zipcode: String,
+    comparables: String,
+    mapthishome: String
 });
 
 
@@ -168,7 +169,7 @@ app.get('/getHousesInRentalRange', function (req, res) {
             if(err)
                 console.log(err);
             else {
-                //console.log(data);
+                console.log("DB results: "+data.length);
                 res.send(data);
             }
             return;
