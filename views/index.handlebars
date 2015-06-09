@@ -607,7 +607,7 @@
             //13
             eFunction = Math.pow(Math.E, (22-(map.getZoom())))+2;
             if(map.getMapTypeId() == DAY_MAPTYPE_ID) {
-
+                nightSound.volume(0);
                 dayRequest = {
                     location: map.getCenter(),
                     radius: (eFunction),
@@ -615,11 +615,13 @@
                 };
 
                 service.nearbySearch(dayRequest, function (results, status) {
-                    if(playSound)
-                        //daySound.fadeIn(0.05 * results.length, 1500);
-                        daySound.volume(0.05 * results.length, 0.05 * results.length, 1000);
+                    if (playSound) {
+                    //daySound.fadeIn(0.05 * results.length, 1500);
+                    daySound.volume(0.05 * results.length, 0.05 * results.length, 1000);
+                    }
                     else
                         daySound.volume(0);
+
                     if (status == google.maps.places.PlacesServiceStatus.OK) {
                         for (var i = 0; i < results.length; i++) {
                             createMarker(results[i], marketIcon);
@@ -628,7 +630,7 @@
                 });
             }
             else { //nighttime
-
+                daySound.volume(0);
                 var nightRequest = {
                     location: map.getCenter(),
                     radius: eFunction,
@@ -637,9 +639,9 @@
 
                 service.nearbySearch(nightRequest, function (results, status) {
                     if(playSound)
-                        daySound.volume(0.05 * results.length, 0.05 * results.length, 1000);
+                        nightSound.volume(0.05 * results.length, 0.05 * results.length, 1000);
                     else
-                        daySound.volume(0);
+                        nightSound.volume(0);
                     if (status == google.maps.places.PlacesServiceStatus.OK) {
                         for (var i = 0; i < results.length; i++) {
                             createMarker(results[i], barIcon);
@@ -924,8 +926,8 @@
                 $.ajax({
                     type: "GET",
                     url: '/getHousesInRentalRange',
-                    data: { minRange: document.getElementById('min_field').value,
-                            maxRange: document.getElementById('max_field').value
+                    data: { minRange: minField,
+                            maxRange: maxField
                     },
                     success: function(result) {
 
@@ -933,7 +935,8 @@
                         var counter = 0;
                         for(var a = 0; a < result.length; a++) {
                             //console.log("Object "+a+":"+JSON.stringify(result[a]));
-                            if (!(result[a].zpid in houseMarkerHash)) {
+                            if (!(result[a].zpid in houseMarkerHash && (result[a].rental >= minField && result[a].rental <= maxField))) {
+                                console.log("price: "+(result[a].rental >= minField && result[a].rental <= maxField));
                                 createAndShowHome(result[a]);
                                 counter++;
                             }
@@ -1016,8 +1019,10 @@
             });
 
             google.maps.event.addListener(marker, 'click', function () {
-                //console.log(houseInfo);
+
+                currentInfoWindow.close();
                 houseInfowindow.open(map, this);
+                currentInfoWindow = houseInfowindow;
             });
 
 
