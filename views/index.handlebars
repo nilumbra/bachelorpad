@@ -31,6 +31,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
 
+    <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
 
     <!-- Load c3.css -->
     <link href="css/c3.min.css" rel="stylesheet" type="text/css">
@@ -113,7 +114,7 @@
         #cssmenu
         {
             position: absolute;
-            top: 1719px;
+            top: 1670px;
             left: 120px;
             z-index: 2;
         }
@@ -607,7 +608,7 @@
             //13
             eFunction = Math.pow(Math.E, (22-(map.getZoom())))+2;
             if(map.getMapTypeId() == DAY_MAPTYPE_ID) {
-
+                nightSound.volume(0);
                 dayRequest = {
                     location: map.getCenter(),
                     radius: (eFunction),
@@ -615,11 +616,13 @@
                 };
 
                 service.nearbySearch(dayRequest, function (results, status) {
-                    if(playSound)
-                        //daySound.fadeIn(0.05 * results.length, 1500);
-                        daySound.volume(0.05 * results.length, 0.05 * results.length, 1000);
+                    if (playSound) {
+                    //daySound.fadeIn(0.05 * results.length, 1500);
+                    daySound.volume(0.05 * results.length, 0.05 * results.length, 1000);
+                    }
                     else
                         daySound.volume(0);
+
                     if (status == google.maps.places.PlacesServiceStatus.OK) {
                         for (var i = 0; i < results.length; i++) {
                             createMarker(results[i], marketIcon);
@@ -628,7 +631,7 @@
                 });
             }
             else { //nighttime
-
+                daySound.volume(0);
                 var nightRequest = {
                     location: map.getCenter(),
                     radius: eFunction,
@@ -637,9 +640,9 @@
 
                 service.nearbySearch(nightRequest, function (results, status) {
                     if(playSound)
-                        daySound.volume(0.05 * results.length, 0.05 * results.length, 1000);
+                        nightSound.volume(0.05 * results.length, 0.05 * results.length, 1000);
                     else
-                        daySound.volume(0);
+                        nightSound.volume(0);
                     if (status == google.maps.places.PlacesServiceStatus.OK) {
                         for (var i = 0; i < results.length; i++) {
                             createMarker(results[i], barIcon);
@@ -796,33 +799,40 @@
                         var streetUrl = "https://maps.googleapis.com/maps/api/streetview?size=200x200&location=" + latitude + "," + longitude + "&fov=90&heading=235&pitch=10";
                         var streetViewImage = '<img src=' + streetUrl + ' alt="Street View" height="200" width="100%">';
 
-                        var contentString = '<div id="content">' +
-                                streetViewImage +
-                                '<div id="siteNotice">' +
-                                '</div>' +
+                        var contentString = '<div id="content" style="border-radius: 4px;overflow: hidden;">' +
+                                streetViewImage + '<div style="background-color: rgb(244,244,244);border-top: 2px solid rgb(226, 226, 226);padding: 10px;">' +
                                 addressText +
                                 '<div id="bodyContent">' +
-                                '<p>' +
+                                '<p style="margin:0">' +
                                 '<b>' + bedrooms + ' bedrooms &#8226 ' + bathrooms + ' bathrooms &#8226 ' + squareFeet + ' sqft. </b><br>' +
                                 'Zestimate: ' + zestimate +
-                                '<p><a target="_tab" href=' + zillowLink + '>' +
+                                '<p style="margin:0"><a target="_tab" href=' + zillowLink + '>' +
                                 'Zillow Info</a>' +
-                                    // ' &#8226 <a href="javascript:getZillowComps('+result.results[0].result[0].zpid[0]+')" >Show Comps</a></p>'+
-                                '</div>' +
+                                '</div>' + '</div>' +
                                 '</div>';
 
-                        var houseInfowindow = new google.maps.InfoWindow({
+                        var infobox = new InfoBox({
                             content: contentString,
-                            maxWidth: 400
+                            disableAutoPan: false,
+                            maxWidth: 150,
+                            pixelOffset: new google.maps.Size(-130, -330),
+                            zIndex: null,
+                            boxStyle: {
+                                background: "url('http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/examples/tipbox.gif') no-repeat",
+                                opacity: 1,
+                                width: "260px"
+                            },
+                            closeBoxMargin: "4px 4px 2px -20px",
+                            closeBoxURL: "http://www.google.com/intl/en_us/mapfiles/close.gif",
+                            infoBoxClearance: new google.maps.Size(1, 1)
                         });
 
                         google.maps.event.addListener(marker, 'click', function () {
-
                             currentInfoWindow.close();
-                            houseInfowindow.open(map, this);
-                            currentInfoWindow = houseInfowindow;
-
+                            infobox.open(map, this);
+                            currentInfoWindow = infobox;
                         });
+
 
                     }
 
@@ -924,8 +934,8 @@
                 $.ajax({
                     type: "GET",
                     url: '/getHousesInRentalRange',
-                    data: { minRange: document.getElementById('min_field').value,
-                            maxRange: document.getElementById('max_field').value
+                    data: { minRange: minField,
+                            maxRange: maxField
                     },
                     success: function(result) {
 
@@ -933,7 +943,8 @@
                         var counter = 0;
                         for(var a = 0; a < result.length; a++) {
                             //console.log("Object "+a+":"+JSON.stringify(result[a]));
-                            if (!(result[a].zpid in houseMarkerHash)) {
+                            if (!(result[a].zpid in houseMarkerHash && (result[a].rental >= minField && result[a].rental <= maxField))) {
+                                console.log("price: "+(result[a].rental >= minField && result[a].rental <= maxField));
                                 createAndShowHome(result[a]);
                                 counter++;
                             }
@@ -995,31 +1006,39 @@
             var streetUrl = "https://maps.googleapis.com/maps/api/streetview?size=200x200&location="+houseInfo.latitude+","+houseInfo.longitude+"&fov=90&heading=235&pitch=10";
             var streetViewImage = '<img src='+streetUrl+' alt="Street View" height="200" width="100%">';
 
-            var contentString = '<div id="content">' +
-                    streetViewImage+
-                    '<div id="siteNotice">'+
-                    '</div>'+
-                    addressText+
-                    '<div id="bodyContent">'+
-                    '<p>' +
-                    '<b>'+bedrooms+' bedrooms &#8226 '+bathrooms+' bathrooms</b><br>' +
-                    'Rental Cost: '+rentalCost+
-                    '<p><a target="_tab" href='+zillowLink+'>'+
-                    'Zillow Info</a>'+
-                    //' &#8226 <a href="javascript:getZillowComps('+houseInfo.comparables+')" >Show Comps</a></p>'+
-                    '</div>'+
+            var contentString = '<div id="content" style="border-radius: 4px;overflow: hidden;">' +
+                    streetViewImage + '<div style="background-color: rgb(244,244,244);border-top: 2px solid rgb(226, 226, 226);padding: 10px;">' +
+                    addressText +
+                    '<div id="bodyContent">' +
+                    '<p style="margin:0">' +
+                    '<b>' + bedrooms + ' bedrooms &#8226 ' + bathrooms + ' bathrooms'+' </b><br>' +
+                    'Zestimate: ' + rentalCost +
+                    '<p style="margin:0"><a target="_tab" href=' + zillowLink + '>' +
+                    'Zillow Info</a>' +
+                    '</div>' + '</div>' +
                     '</div>';
 
-            var houseInfowindow = new google.maps.InfoWindow({
+            var infobox = new InfoBox({
                 content: contentString,
-                maxWidth: 400
+                disableAutoPan: false,
+                maxWidth: 150,
+                pixelOffset: new google.maps.Size(-130, -330),
+                zIndex: null,
+                boxStyle: {
+                    background: "url('http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/examples/tipbox.gif') no-repeat",
+                    opacity: 1,
+                    width: "260px"
+                },
+                closeBoxMargin: "4px 4px 2px -20px",
+                closeBoxURL: "http://www.google.com/intl/en_us/mapfiles/close.gif",
+                infoBoxClearance: new google.maps.Size(1, 1)
             });
 
             google.maps.event.addListener(marker, 'click', function () {
-                //console.log(houseInfo);
-                houseInfowindow.open(map, this);
+                currentInfoWindow.close();
+                infobox.open(map, this);
+                currentInfoWindow = infobox;
             });
-
 
         }
 
@@ -1365,7 +1384,7 @@
                                 <h4 class="subheading">The busy city</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                <p class="text-muted">Restaurants, stores, and all the facilities you need for your daily lives are here. No matter if it is your favorite caramel macchiato or meat lasagna, it’s just steps away!</p>
                             </div>
                         </div>
                     </li>
@@ -1383,7 +1402,7 @@
                             </div>
                             <div class="timeline-body">
 
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                <p class="text-muted">Music, alcohol, the clubs are gonna rock your world in the night. Wanna grab some beers and hang out with someone nice? Just get dressed and step out your door.</p>
                             </div>
                         </div>
                     </li>
