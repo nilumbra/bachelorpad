@@ -508,6 +508,11 @@
         google.maps.event.addDomListener(window, 'load', initialize);
 
 
+        function clearHouseMarkers(){
+
+            setAllMarkers(houseMarkerHash, null);
+            houseMarkerHash = {};
+        }
 
         function toggleTrafficLayer(){
 
@@ -518,8 +523,6 @@
                 trafficLayer.setMap(null);
                 trafficLayer = null;
             }
-
-
         }
 
         function toggleBarMarkers(){
@@ -705,18 +708,25 @@
                     console.log("latitude "+JSON.stringify(result.results[0].result[0].address[0].latitude[0]));
                     console.log("longitude "+JSON.stringify(result.results[0].result[0].address[0].longitude[0]));
 
+
                     var marker = new google.maps.Marker({
                         map: map,
                         position: new google.maps.LatLng(latitude, longitude),
                         animation: google.maps.Animation.DROP,
                         icon: houseIcon
                     });
+                    houseMarkerHash[result.results[0].result[0].zpid[0]] = marker;
 
 
                     console.log(result.results[0].result[0].zpid[0]);
 
-                    var bathrooms = result.results[0].result[0].bathrooms[0];
-                    var bedrooms = result.results[0].result[0].bedrooms[0];
+                    var bathrooms = 1;
+                    if(result.results[0].result[0].bathrooms != null)
+                        bathrooms = result.results[0].result[0].bathrooms[0];
+
+                    var bedrooms = 1;
+                    if(result.results[0].result[0].bedrooms != null)
+                        bedrooms = result.results[0].result[0].bedrooms[0];
 
                     var squareFeet = result.results[0].result[0].finishedSqFt[0];
 
@@ -849,22 +859,8 @@
                     //showHousingMarkers();
                     for(var a = 0; a < result.length; a++){
                         //console.log("Object "+a+":"+JSON.stringify(result[a]));
-
-
-                        createAndShowHome(result[a]);
-                        /*var marker = new google.maps.Marker({
-                            map: map,
-                            position: new google.maps.LatLng(result[a].latitude, result[a].longitude),
-                            //position: place.geometry.location,
-                            animation: google.maps.Animation.DROP,
-                            //data: result[a],
-                            icon: houseIcon
-                        });
-
-                        houseMarkerHash[result[a].zpid] = marker;
-                        */
-
-
+                        if(!(result[a].zpid in houseMarkerHash))
+                            createAndShowHome(result[a]);
                     }
                 },
                 error: function(jqXHR, textstatus, errorThrown) {
@@ -884,6 +880,8 @@
                 icon: houseIcon
             });
 
+            console.log("houseInfo.zpid: "+houseInfo.zpid);
+            houseMarkerHash[houseInfo.zpid] = marker;
 
             var bathrooms = houseInfo.baths;
             var bedrooms = houseInfo.beds;
@@ -894,7 +892,6 @@
 
 
             if (houseInfo.sqft != null) {
-
 
             }else{
 
@@ -1284,8 +1281,9 @@
 
 
 <button onclick="callDatabase()">Delphi</button>
+
+<button onclick="clearHouseMarkers()">Clear Houses</button>
 <!--
-<button onclick="toggleBoundingCircle()">Toggle circle bound</button>
 <button onclick="getZillowComps(16834453)">Get Comps</button>
 -->
 
@@ -1420,32 +1418,20 @@
                     y = Math.floor(pos[1]);
                     z = Math.floor(pos[2]);
                 }
-                if(hand.confidence > 0.6 && frame.fingers[0].extended && frame.fingers[4].extended && !frame.fingers[1].extended && !frame.fingers[2].extended && !frame.fingers[3].extended && map.getMapTypeId() == "roadmap") {
-                    map.setMapTypeId('nightmode');
+                if(hand.confidence > 0.6 && frame.fingers[0].extended && frame.fingers[4].extended && !frame.fingers[1].extended && !frame.fingers[2].extended && !frame.fingers[3].extended && map.getMapTypeId() == DAY_MAPTYPE_ID) {
+                    map.setMapTypeId(NIGHT_MAPTYPE_ID);
                 }
-                else if(hand.confidence > 0.6 && !frame.fingers[0].extended && frame.fingers[4].extended && !frame.fingers[1].extended && frame.fingers[2].extended && frame.fingers[3].extended && map.getMapTypeId() != "roadmap") {
-                    map.setMapTypeId('roadmap');
+                else if(hand.confidence > 0.6 && !frame.fingers[0].extended && frame.fingers[4].extended && !frame.fingers[1].extended && frame.fingers[2].extended && frame.fingers[3].extended && map.getMapTypeId() != DAY_MAPTYPE_ID) {
+                    map.setMapTypeId(DAY_MAPTYPE_ID);
                 }
 
                 //map.setZoom(/* 0-21 depending on Z from handPos*/);
             });
         }).use('screenPosition', {scale: 0.45});
 
-    /*
-    var chart = c3.generate({
-        bindto: '#age_chart',
-        data: {
-            columns: [
-                ['data1', 30, 200, 100, 400, 150, 250],
-                ['data2', 130, 100, 140, 200, 150, 50]
-            ],
-            type: 'spline'
-        }
-    });
-*/
 
 
-///TODO traffic stats
+///TODO Age stats
     $.ajax({
         type: "GET",
         url: '/readAgeStats',
