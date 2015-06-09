@@ -1,0 +1,8312 @@
+[
+  {
+    "RegionName":91901,
+    "City":"Alpine",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":310.3126
+  },
+  {
+    "RegionName":91901,
+    "City":"Alpine",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":null
+  },
+  {
+    "RegionName":91901,
+    "City":"Alpine",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":91901,
+    "City":"Alpine",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":null
+  },
+  {
+    "RegionName":91901,
+    "City":"Alpine",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":226.4004
+  },
+  {
+    "RegionName":91901,
+    "City":"Alpine",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":207.434
+  },
+  {
+    "RegionName":91901,
+    "City":"Alpine",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":null
+  },
+  {
+    "RegionName":91901,
+    "City":"Alpine",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":null
+  },
+  {
+    "RegionName":91901,
+    "City":"Alpine",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":196.4719
+  },
+  {
+    "RegionName":91901,
+    "City":"Alpine",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":null
+  },
+  {
+    "RegionName":91902,
+    "City":"Bonita",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":328.9407
+  },
+  {
+    "RegionName":91902,
+    "City":"Bonita",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":null
+  },
+  {
+    "RegionName":91902,
+    "City":"Bonita",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":91902,
+    "City":"Bonita",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":null
+  },
+  {
+    "RegionName":91902,
+    "City":"Bonita",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":178.9994
+  },
+  {
+    "RegionName":91902,
+    "City":"Bonita",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":null
+  },
+  {
+    "RegionName":91902,
+    "City":"Bonita",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":182.7706
+  },
+  {
+    "RegionName":91902,
+    "City":"Bonita",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":null
+  },
+  {
+    "RegionName":91902,
+    "City":"Bonita",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":null
+  },
+  {
+    "RegionName":91902,
+    "City":"Bonita",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":null
+  },
+  {
+    "RegionName":91910,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":328.1036
+  },
+  {
+    "RegionName":91910,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":332.9677
+  },
+  {
+    "RegionName":91910,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":311.5045
+  },
+  {
+    "RegionName":91910,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":211.784
+  },
+  {
+    "RegionName":91910,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":185.1556
+  },
+  {
+    "RegionName":91910,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":189.4968
+  },
+  {
+    "RegionName":91910,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":175.6004
+  },
+  {
+    "RegionName":91910,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":195.5865
+  },
+  {
+    "RegionName":91910,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":224.1258
+  },
+  {
+    "RegionName":91910,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":230.8357
+  },
+  {
+    "RegionName":91911,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":325.8639
+  },
+  {
+    "RegionName":91911,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":328.6513
+  },
+  {
+    "RegionName":91911,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":303.7805
+  },
+  {
+    "RegionName":91911,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":208.953
+  },
+  {
+    "RegionName":91911,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":154.6364
+  },
+  {
+    "RegionName":91911,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":180.6833
+  },
+  {
+    "RegionName":91911,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":166.7434
+  },
+  {
+    "RegionName":91911,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":177.3516
+  },
+  {
+    "RegionName":91911,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":207.533
+  },
+  {
+    "RegionName":91911,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":224.3792
+  },
+  {
+    "RegionName":91913,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":307.875
+  },
+  {
+    "RegionName":91913,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":310.2599
+  },
+  {
+    "RegionName":91913,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":286.4669
+  },
+  {
+    "RegionName":91913,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":210.2758
+  },
+  {
+    "RegionName":91913,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":168.0508
+  },
+  {
+    "RegionName":91913,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":177.6718
+  },
+  {
+    "RegionName":91913,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":166.5521
+  },
+  {
+    "RegionName":91913,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":158.3743
+  },
+  {
+    "RegionName":91913,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":200.9646
+  },
+  {
+    "RegionName":91913,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":229.2847
+  },
+  {
+    "RegionName":91914,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":309.6559
+  },
+  {
+    "RegionName":91914,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":302.6604
+  },
+  {
+    "RegionName":91914,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":91914,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":null
+  },
+  {
+    "RegionName":91914,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":165.8533
+  },
+  {
+    "RegionName":91914,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":171.397
+  },
+  {
+    "RegionName":91914,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":171.0425
+  },
+  {
+    "RegionName":91914,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":170.0069109
+  },
+  {
+    "RegionName":91914,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":205.9415
+  },
+  {
+    "RegionName":91914,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":230.9081
+  },
+  {
+    "RegionName":91915,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":285.7898
+  },
+  {
+    "RegionName":91915,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":279.9852
+  },
+  {
+    "RegionName":91915,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":259.5961
+  },
+  {
+    "RegionName":91915,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":196.0392
+  },
+  {
+    "RegionName":91915,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":166.0117
+  },
+  {
+    "RegionName":91915,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":175.2778
+  },
+  {
+    "RegionName":91915,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":168.0511
+  },
+  {
+    "RegionName":91915,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":167.0037
+  },
+  {
+    "RegionName":91915,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":201.4879
+  },
+  {
+    "RegionName":91915,
+    "City":"Chula Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":231.5597
+  },
+  {
+    "RegionName":91932,
+    "City":"Imperial Beach",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":367.4946
+  },
+  {
+    "RegionName":91932,
+    "City":"Imperial Beach",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":null
+  },
+  {
+    "RegionName":91932,
+    "City":"Imperial Beach",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":91932,
+    "City":"Imperial Beach",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":null
+  },
+  {
+    "RegionName":91932,
+    "City":"Imperial Beach",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":null
+  },
+  {
+    "RegionName":91932,
+    "City":"Imperial Beach",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":null
+  },
+  {
+    "RegionName":91932,
+    "City":"Imperial Beach",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":null
+  },
+  {
+    "RegionName":91932,
+    "City":"Imperial Beach",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":null
+  },
+  {
+    "RegionName":91932,
+    "City":"Imperial Beach",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":235.5981
+  },
+  {
+    "RegionName":91932,
+    "City":"Imperial Beach",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":null
+  },
+  {
+    "RegionName":91935,
+    "City":"Jamul",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":null
+  },
+  {
+    "RegionName":91935,
+    "City":"Jamul",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":null
+  },
+  {
+    "RegionName":91935,
+    "City":"Jamul",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":91935,
+    "City":"Jamul",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":null
+  },
+  {
+    "RegionName":91935,
+    "City":"Jamul",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":null
+  },
+  {
+    "RegionName":91935,
+    "City":"Jamul",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":null
+  },
+  {
+    "RegionName":91935,
+    "City":"Jamul",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":null
+  },
+  {
+    "RegionName":91935,
+    "City":"Jamul",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":null
+  },
+  {
+    "RegionName":91935,
+    "City":"Jamul",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":null
+  },
+  {
+    "RegionName":91935,
+    "City":"Jamul",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":null
+  },
+  {
+    "RegionName":91941,
+    "City":"La Mesa",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":331.9005
+  },
+  {
+    "RegionName":91941,
+    "City":"La Mesa",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":328.1022
+  },
+  {
+    "RegionName":91941,
+    "City":"La Mesa",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":300.4298
+  },
+  {
+    "RegionName":91941,
+    "City":"La Mesa",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":247.6565
+  },
+  {
+    "RegionName":91941,
+    "City":"La Mesa",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":225.8985
+  },
+  {
+    "RegionName":91941,
+    "City":"La Mesa",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":231.6246
+  },
+  {
+    "RegionName":91941,
+    "City":"La Mesa",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":205.2052
+  },
+  {
+    "RegionName":91941,
+    "City":"La Mesa",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":219.0714
+  },
+  {
+    "RegionName":91941,
+    "City":"La Mesa",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":232.9352
+  },
+  {
+    "RegionName":91941,
+    "City":"La Mesa",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":289.0346
+  },
+  {
+    "RegionName":91942,
+    "City":"La Mesa",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":357.4798
+  },
+  {
+    "RegionName":91942,
+    "City":"La Mesa",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":344.8255
+  },
+  {
+    "RegionName":91942,
+    "City":"La Mesa",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":325.7305
+  },
+  {
+    "RegionName":91942,
+    "City":"La Mesa",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":null
+  },
+  {
+    "RegionName":91942,
+    "City":"La Mesa",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":220.6093
+  },
+  {
+    "RegionName":91942,
+    "City":"La Mesa",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":250.262
+  },
+  {
+    "RegionName":91942,
+    "City":"La Mesa",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":240.5271
+  },
+  {
+    "RegionName":91942,
+    "City":"La Mesa",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":230.0862
+  },
+  {
+    "RegionName":91942,
+    "City":"La Mesa",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":259.4563
+  },
+  {
+    "RegionName":91942,
+    "City":"La Mesa",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":298.4067
+  },
+  {
+    "RegionName":91945,
+    "City":"Lemon Grove",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":313.533
+  },
+  {
+    "RegionName":91945,
+    "City":"Lemon Grove",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":324.6682
+  },
+  {
+    "RegionName":91945,
+    "City":"Lemon Grove",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":91945,
+    "City":"Lemon Grove",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":null
+  },
+  {
+    "RegionName":91945,
+    "City":"Lemon Grove",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":195.3362
+  },
+  {
+    "RegionName":91945,
+    "City":"Lemon Grove",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":202.7159
+  },
+  {
+    "RegionName":91945,
+    "City":"Lemon Grove",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":170.4439
+  },
+  {
+    "RegionName":91945,
+    "City":"Lemon Grove",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":201.9543974
+  },
+  {
+    "RegionName":91945,
+    "City":"Lemon Grove",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":236.3903
+  },
+  {
+    "RegionName":91945,
+    "City":"Lemon Grove",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":null
+  },
+  {
+    "RegionName":91950,
+    "City":"National City",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":381.5624
+  },
+  {
+    "RegionName":91950,
+    "City":"National City",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":369.0596
+  },
+  {
+    "RegionName":91950,
+    "City":"National City",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":91950,
+    "City":"National City",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":211.6402116
+  },
+  {
+    "RegionName":91950,
+    "City":"National City",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":168.0777
+  },
+  {
+    "RegionName":91950,
+    "City":"National City",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":159.1998
+  },
+  {
+    "RegionName":91950,
+    "City":"National City",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":166.8591
+  },
+  {
+    "RegionName":91950,
+    "City":"National City",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":168.5144124
+  },
+  {
+    "RegionName":91950,
+    "City":"National City",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":null
+  },
+  {
+    "RegionName":91950,
+    "City":"National City",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":null
+  },
+  {
+    "RegionName":91977,
+    "City":"Spring Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":311.058
+  },
+  {
+    "RegionName":91977,
+    "City":"Spring Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":316.5432
+  },
+  {
+    "RegionName":91977,
+    "City":"Spring Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":284.6558
+  },
+  {
+    "RegionName":91977,
+    "City":"Spring Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":208.9149
+  },
+  {
+    "RegionName":91977,
+    "City":"Spring Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":152.516
+  },
+  {
+    "RegionName":91977,
+    "City":"Spring Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":179.7309
+  },
+  {
+    "RegionName":91977,
+    "City":"Spring Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":167.5243
+  },
+  {
+    "RegionName":91977,
+    "City":"Spring Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":180.0355
+  },
+  {
+    "RegionName":91977,
+    "City":"Spring Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":209.6887
+  },
+  {
+    "RegionName":91977,
+    "City":"Spring Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":238.3394
+  },
+  {
+    "RegionName":91978,
+    "City":"Spring Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":null
+  },
+  {
+    "RegionName":91978,
+    "City":"Spring Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":null
+  },
+  {
+    "RegionName":91978,
+    "City":"Spring Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":91978,
+    "City":"Spring Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":null
+  },
+  {
+    "RegionName":91978,
+    "City":"Spring Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":null
+  },
+  {
+    "RegionName":91978,
+    "City":"Spring Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":null
+  },
+  {
+    "RegionName":91978,
+    "City":"Spring Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":null
+  },
+  {
+    "RegionName":91978,
+    "City":"Spring Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":null
+  },
+  {
+    "RegionName":91978,
+    "City":"Spring Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":null
+  },
+  {
+    "RegionName":91978,
+    "City":"Spring Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":null
+  },
+  {
+    "RegionName":92003,
+    "City":"Bonsall",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":null
+  },
+  {
+    "RegionName":92003,
+    "City":"Bonsall",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":null
+  },
+  {
+    "RegionName":92003,
+    "City":"Bonsall",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":92003,
+    "City":"Bonsall",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":null
+  },
+  {
+    "RegionName":92003,
+    "City":"Bonsall",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":null
+  },
+  {
+    "RegionName":92003,
+    "City":"Bonsall",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":null
+  },
+  {
+    "RegionName":92003,
+    "City":"Bonsall",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":null
+  },
+  {
+    "RegionName":92003,
+    "City":"Bonsall",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":null
+  },
+  {
+    "RegionName":92003,
+    "City":"Bonsall",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":null
+  },
+  {
+    "RegionName":92003,
+    "City":"Bonsall",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":null
+  },
+  {
+    "RegionName":92004,
+    "City":"Borrego Springs",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":197.1212
+  },
+  {
+    "RegionName":92004,
+    "City":"Borrego Springs",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":null
+  },
+  {
+    "RegionName":92004,
+    "City":"Borrego Springs",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":92004,
+    "City":"Borrego Springs",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":null
+  },
+  {
+    "RegionName":92004,
+    "City":"Borrego Springs",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":null
+  },
+  {
+    "RegionName":92004,
+    "City":"Borrego Springs",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":null
+  },
+  {
+    "RegionName":92004,
+    "City":"Borrego Springs",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":null
+  },
+  {
+    "RegionName":92004,
+    "City":"Borrego Springs",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":null
+  },
+  {
+    "RegionName":92004,
+    "City":"Borrego Springs",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":null
+  },
+  {
+    "RegionName":92004,
+    "City":"Borrego Springs",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":null
+  },
+  {
+    "RegionName":92007,
+    "City":"Encinitas",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":466.6501
+  },
+  {
+    "RegionName":92007,
+    "City":"Encinitas",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":null
+  },
+  {
+    "RegionName":92007,
+    "City":"Encinitas",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":433.3576111
+  },
+  {
+    "RegionName":92007,
+    "City":"Encinitas",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":null
+  },
+  {
+    "RegionName":92007,
+    "City":"Encinitas",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":436.9469027
+  },
+  {
+    "RegionName":92007,
+    "City":"Encinitas",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":null
+  },
+  {
+    "RegionName":92007,
+    "City":"Encinitas",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":388.0673
+  },
+  {
+    "RegionName":92007,
+    "City":"Encinitas",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":null
+  },
+  {
+    "RegionName":92007,
+    "City":"Encinitas",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":null
+  },
+  {
+    "RegionName":92007,
+    "City":"Encinitas",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":null
+  },
+  {
+    "RegionName":92008,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":355.4538
+  },
+  {
+    "RegionName":92008,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":386.1281
+  },
+  {
+    "RegionName":92008,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":363.3002
+  },
+  {
+    "RegionName":92008,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":328.3182
+  },
+  {
+    "RegionName":92008,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":280.6535
+  },
+  {
+    "RegionName":92008,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":310.1606
+  },
+  {
+    "RegionName":92008,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":279.5226
+  },
+  {
+    "RegionName":92008,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":251.8771
+  },
+  {
+    "RegionName":92008,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":311.6524
+  },
+  {
+    "RegionName":92008,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":351.6017
+  },
+  {
+    "RegionName":92009,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":331.3758
+  },
+  {
+    "RegionName":92009,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":300.3429
+  },
+  {
+    "RegionName":92009,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":315.0589
+  },
+  {
+    "RegionName":92009,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":283.2335
+  },
+  {
+    "RegionName":92009,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":249.0476
+  },
+  {
+    "RegionName":92009,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":257.6781
+  },
+  {
+    "RegionName":92009,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":238.0317
+  },
+  {
+    "RegionName":92009,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":245.7862
+  },
+  {
+    "RegionName":92009,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":281.0891
+  },
+  {
+    "RegionName":92009,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":310.6915
+  },
+  {
+    "RegionName":92010,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":309.6222
+  },
+  {
+    "RegionName":92010,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":331.6467
+  },
+  {
+    "RegionName":92010,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":308.8172
+  },
+  {
+    "RegionName":92010,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":null
+  },
+  {
+    "RegionName":92010,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":249.7524
+  },
+  {
+    "RegionName":92010,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":null
+  },
+  {
+    "RegionName":92010,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":215.6251
+  },
+  {
+    "RegionName":92010,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":208.5049
+  },
+  {
+    "RegionName":92010,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":275.1017
+  },
+  {
+    "RegionName":92010,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":296.2883
+  },
+  {
+    "RegionName":92011,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":362.1731
+  },
+  {
+    "RegionName":92011,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":350.3023
+  },
+  {
+    "RegionName":92011,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":335.4077
+  },
+  {
+    "RegionName":92011,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":329.3803
+  },
+  {
+    "RegionName":92011,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":283.3421
+  },
+  {
+    "RegionName":92011,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":289.0331
+  },
+  {
+    "RegionName":92011,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":291.6457
+  },
+  {
+    "RegionName":92011,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":274.286
+  },
+  {
+    "RegionName":92011,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":324.1706
+  },
+  {
+    "RegionName":92011,
+    "City":"Carlsbad",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":337.0447
+  },
+  {
+    "RegionName":92014,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":492.4501
+  },
+  {
+    "RegionName":92014,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":511.53
+  },
+  {
+    "RegionName":92014,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":522.9784
+  },
+  {
+    "RegionName":92014,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":481.7193
+  },
+  {
+    "RegionName":92014,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":null
+  },
+  {
+    "RegionName":92014,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":null
+  },
+  {
+    "RegionName":92014,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":475.3403
+  },
+  {
+    "RegionName":92014,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":null
+  },
+  {
+    "RegionName":92014,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":494.9987
+  },
+  {
+    "RegionName":92014,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":570.3229
+  },
+  {
+    "RegionName":92019,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":328.3002
+  },
+  {
+    "RegionName":92019,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":315.4313
+  },
+  {
+    "RegionName":92019,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":308.7267
+  },
+  {
+    "RegionName":92019,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":238.3602
+  },
+  {
+    "RegionName":92019,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":210.9967
+  },
+  {
+    "RegionName":92019,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":206.7438
+  },
+  {
+    "RegionName":92019,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":204.9553
+  },
+  {
+    "RegionName":92019,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":202.2585
+  },
+  {
+    "RegionName":92019,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":231.2076
+  },
+  {
+    "RegionName":92019,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":250.4833
+  },
+  {
+    "RegionName":92020,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":317.435
+  },
+  {
+    "RegionName":92020,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":310.9392
+  },
+  {
+    "RegionName":92020,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":296.8544
+  },
+  {
+    "RegionName":92020,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":236.9669
+  },
+  {
+    "RegionName":92020,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":187.6319
+  },
+  {
+    "RegionName":92020,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":198.9398
+  },
+  {
+    "RegionName":92020,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":194.2184
+  },
+  {
+    "RegionName":92020,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":217.3352
+  },
+  {
+    "RegionName":92020,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":252.9896
+  },
+  {
+    "RegionName":92020,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":268.4268
+  },
+  {
+    "RegionName":92021,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":313.8189
+  },
+  {
+    "RegionName":92021,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":300.5311
+  },
+  {
+    "RegionName":92021,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":309.0789
+  },
+  {
+    "RegionName":92021,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":217.2717
+  },
+  {
+    "RegionName":92021,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":167.2996
+  },
+  {
+    "RegionName":92021,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":194.1761
+  },
+  {
+    "RegionName":92021,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":174.35
+  },
+  {
+    "RegionName":92021,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":172.2015
+  },
+  {
+    "RegionName":92021,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":220.9998
+  },
+  {
+    "RegionName":92021,
+    "City":"El Cajon",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":235.8718
+  },
+  {
+    "RegionName":92024,
+    "City":"Encinitas",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":409.3804
+  },
+  {
+    "RegionName":92024,
+    "City":"Encinitas",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":385.9523
+  },
+  {
+    "RegionName":92024,
+    "City":"Encinitas",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":380.5846
+  },
+  {
+    "RegionName":92024,
+    "City":"Encinitas",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":386.0311
+  },
+  {
+    "RegionName":92024,
+    "City":"Encinitas",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":329.7269
+  },
+  {
+    "RegionName":92024,
+    "City":"Encinitas",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":338.3841
+  },
+  {
+    "RegionName":92024,
+    "City":"Encinitas",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":331.3102
+  },
+  {
+    "RegionName":92024,
+    "City":"Encinitas",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":313.4814
+  },
+  {
+    "RegionName":92024,
+    "City":"Encinitas",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":365.4386
+  },
+  {
+    "RegionName":92024,
+    "City":"Encinitas",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":384.3508
+  },
+  {
+    "RegionName":92025,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":296.3694
+  },
+  {
+    "RegionName":92025,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":294.5811
+  },
+  {
+    "RegionName":92025,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":278.1902
+  },
+  {
+    "RegionName":92025,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":215.3249
+  },
+  {
+    "RegionName":92025,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":181.0032
+  },
+  {
+    "RegionName":92025,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":197.8793
+  },
+  {
+    "RegionName":92025,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":170.7306
+  },
+  {
+    "RegionName":92025,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":189.1977
+  },
+  {
+    "RegionName":92025,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":218.5612
+  },
+  {
+    "RegionName":92025,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":242.0525
+  },
+  {
+    "RegionName":92026,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":298.168
+  },
+  {
+    "RegionName":92026,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":307.745
+  },
+  {
+    "RegionName":92026,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":287.4925
+  },
+  {
+    "RegionName":92026,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":269.8746
+  },
+  {
+    "RegionName":92026,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":171.1731
+  },
+  {
+    "RegionName":92026,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":173.703
+  },
+  {
+    "RegionName":92026,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":178.0232
+  },
+  {
+    "RegionName":92026,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":176.5638
+  },
+  {
+    "RegionName":92026,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":217.7578
+  },
+  {
+    "RegionName":92026,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":230.2907
+  },
+  {
+    "RegionName":92027,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":323.049
+  },
+  {
+    "RegionName":92027,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":316.1653
+  },
+  {
+    "RegionName":92027,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":258.8143
+  },
+  {
+    "RegionName":92027,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":197.0634
+  },
+  {
+    "RegionName":92027,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":158.5173
+  },
+  {
+    "RegionName":92027,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":173.4605
+  },
+  {
+    "RegionName":92027,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":173.1577
+  },
+  {
+    "RegionName":92027,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":175.0011
+  },
+  {
+    "RegionName":92027,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":207.8777
+  },
+  {
+    "RegionName":92027,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":229.1367
+  },
+  {
+    "RegionName":92028,
+    "City":"Fallbrook",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":288.5503
+  },
+  {
+    "RegionName":92028,
+    "City":"Fallbrook",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":292.7179
+  },
+  {
+    "RegionName":92028,
+    "City":"Fallbrook",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":264.1307
+  },
+  {
+    "RegionName":92028,
+    "City":"Fallbrook",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":215.973
+  },
+  {
+    "RegionName":92028,
+    "City":"Fallbrook",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":182.7578
+  },
+  {
+    "RegionName":92028,
+    "City":"Fallbrook",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":177.1432
+  },
+  {
+    "RegionName":92028,
+    "City":"Fallbrook",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":166.941
+  },
+  {
+    "RegionName":92028,
+    "City":"Fallbrook",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":163.8522
+  },
+  {
+    "RegionName":92028,
+    "City":"Fallbrook",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":207.2958
+  },
+  {
+    "RegionName":92028,
+    "City":"Fallbrook",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":229.6372
+  },
+  {
+    "RegionName":92029,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":325.7297
+  },
+  {
+    "RegionName":92029,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":300.5246
+  },
+  {
+    "RegionName":92029,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":92029,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":254.5691906
+  },
+  {
+    "RegionName":92029,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":230.3028
+  },
+  {
+    "RegionName":92029,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":226.5948
+  },
+  {
+    "RegionName":92029,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":215.3595
+  },
+  {
+    "RegionName":92029,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":215.3624
+  },
+  {
+    "RegionName":92029,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":242.5056
+  },
+  {
+    "RegionName":92029,
+    "City":"Escondido",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":268.1906
+  },
+  {
+    "RegionName":92036,
+    "City":"Julian",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":null
+  },
+  {
+    "RegionName":92036,
+    "City":"Julian",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":null
+  },
+  {
+    "RegionName":92036,
+    "City":"Julian",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":92036,
+    "City":"Julian",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":null
+  },
+  {
+    "RegionName":92036,
+    "City":"Julian",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":null
+  },
+  {
+    "RegionName":92036,
+    "City":"Julian",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":null
+  },
+  {
+    "RegionName":92036,
+    "City":"Julian",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":null
+  },
+  {
+    "RegionName":92036,
+    "City":"Julian",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":null
+  },
+  {
+    "RegionName":92036,
+    "City":"Julian",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":null
+  },
+  {
+    "RegionName":92036,
+    "City":"Julian",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":null
+  },
+  {
+    "RegionName":92037,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":537.0464
+  },
+  {
+    "RegionName":92037,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":520.0986
+  },
+  {
+    "RegionName":92037,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":513.9012
+  },
+  {
+    "RegionName":92037,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":564.7129
+  },
+  {
+    "RegionName":92037,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":470.629
+  },
+  {
+    "RegionName":92037,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":476.4257
+  },
+  {
+    "RegionName":92037,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":443.1895
+  },
+  {
+    "RegionName":92037,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":490.9275
+  },
+  {
+    "RegionName":92037,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":520.3728
+  },
+  {
+    "RegionName":92037,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":476.1745
+  },
+  {
+    "RegionName":92040,
+    "City":"Lakeside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":318.9115
+  },
+  {
+    "RegionName":92040,
+    "City":"Lakeside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":315.47
+  },
+  {
+    "RegionName":92040,
+    "City":"Lakeside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":308.068
+  },
+  {
+    "RegionName":92040,
+    "City":"Lakeside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":228.3216
+  },
+  {
+    "RegionName":92040,
+    "City":"Lakeside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":193.6232
+  },
+  {
+    "RegionName":92040,
+    "City":"Lakeside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":178.82
+  },
+  {
+    "RegionName":92040,
+    "City":"Lakeside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":192.4277
+  },
+  {
+    "RegionName":92040,
+    "City":"Lakeside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":183.8181
+  },
+  {
+    "RegionName":92040,
+    "City":"Lakeside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":223.8184
+  },
+  {
+    "RegionName":92040,
+    "City":"Lakeside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":248.158
+  },
+  {
+    "RegionName":92054,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":394.2381
+  },
+  {
+    "RegionName":92054,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":342.1214
+  },
+  {
+    "RegionName":92054,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":349.2023
+  },
+  {
+    "RegionName":92054,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":259.9924
+  },
+  {
+    "RegionName":92054,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":291.3346
+  },
+  {
+    "RegionName":92054,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":261.4803
+  },
+  {
+    "RegionName":92054,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":232.9202
+  },
+  {
+    "RegionName":92054,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":202.0373
+  },
+  {
+    "RegionName":92054,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":295.0281
+  },
+  {
+    "RegionName":92054,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":329.5022
+  },
+  {
+    "RegionName":92056,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":314.4751
+  },
+  {
+    "RegionName":92056,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":325.8185
+  },
+  {
+    "RegionName":92056,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":289.533
+  },
+  {
+    "RegionName":92056,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":232.3343
+  },
+  {
+    "RegionName":92056,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":197.995
+  },
+  {
+    "RegionName":92056,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":209.0115
+  },
+  {
+    "RegionName":92056,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":194.918
+  },
+  {
+    "RegionName":92056,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":188.9873
+  },
+  {
+    "RegionName":92056,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":239.3184
+  },
+  {
+    "RegionName":92056,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":263.7036
+  },
+  {
+    "RegionName":92057,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":310.7631
+  },
+  {
+    "RegionName":92057,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":294.0041
+  },
+  {
+    "RegionName":92057,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":266.7735
+  },
+  {
+    "RegionName":92057,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":196.5703
+  },
+  {
+    "RegionName":92057,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":175.7382
+  },
+  {
+    "RegionName":92057,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":182.6013
+  },
+  {
+    "RegionName":92057,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":167.1565
+  },
+  {
+    "RegionName":92057,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":166.2492
+  },
+  {
+    "RegionName":92057,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":208.3843
+  },
+  {
+    "RegionName":92057,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":230.6559
+  },
+  {
+    "RegionName":92058,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":null
+  },
+  {
+    "RegionName":92058,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":null
+  },
+  {
+    "RegionName":92058,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":92058,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":null
+  },
+  {
+    "RegionName":92058,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":175.3482
+  },
+  {
+    "RegionName":92058,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":164.1444
+  },
+  {
+    "RegionName":92058,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":180.8993
+  },
+  {
+    "RegionName":92058,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":170.9847
+  },
+  {
+    "RegionName":92058,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":196.6254
+  },
+  {
+    "RegionName":92058,
+    "City":"Oceanside",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":235.5464
+  },
+  {
+    "RegionName":92061,
+    "City":"Pauma Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":null
+  },
+  {
+    "RegionName":92061,
+    "City":"Pauma Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":null
+  },
+  {
+    "RegionName":92061,
+    "City":"Pauma Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":92061,
+    "City":"Pauma Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":null
+  },
+  {
+    "RegionName":92061,
+    "City":"Pauma Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":null
+  },
+  {
+    "RegionName":92061,
+    "City":"Pauma Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":null
+  },
+  {
+    "RegionName":92061,
+    "City":"Pauma Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":null
+  },
+  {
+    "RegionName":92061,
+    "City":"Pauma Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":null
+  },
+  {
+    "RegionName":92061,
+    "City":"Pauma Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":null
+  },
+  {
+    "RegionName":92061,
+    "City":"Pauma Valley",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":null
+  },
+  {
+    "RegionName":92064,
+    "City":"Poway",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":364.6638
+  },
+  {
+    "RegionName":92064,
+    "City":"Poway",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":349.267
+  },
+  {
+    "RegionName":92064,
+    "City":"Poway",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":330.5206
+  },
+  {
+    "RegionName":92064,
+    "City":"Poway",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":305.9464
+  },
+  {
+    "RegionName":92064,
+    "City":"Poway",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":264.5768
+  },
+  {
+    "RegionName":92064,
+    "City":"Poway",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":284.5635
+  },
+  {
+    "RegionName":92064,
+    "City":"Poway",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":260.7711
+  },
+  {
+    "RegionName":92064,
+    "City":"Poway",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":271.491
+  },
+  {
+    "RegionName":92064,
+    "City":"Poway",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":299.685
+  },
+  {
+    "RegionName":92064,
+    "City":"Poway",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":302.588
+  },
+  {
+    "RegionName":92065,
+    "City":"Ramona",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":279.8378
+  },
+  {
+    "RegionName":92065,
+    "City":"Ramona",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":276.9202
+  },
+  {
+    "RegionName":92065,
+    "City":"Ramona",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":270.0263
+  },
+  {
+    "RegionName":92065,
+    "City":"Ramona",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":219.4839
+  },
+  {
+    "RegionName":92065,
+    "City":"Ramona",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":172.1309
+  },
+  {
+    "RegionName":92065,
+    "City":"Ramona",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":163.9681
+  },
+  {
+    "RegionName":92065,
+    "City":"Ramona",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":148.5373
+  },
+  {
+    "RegionName":92065,
+    "City":"Ramona",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":158.9669
+  },
+  {
+    "RegionName":92065,
+    "City":"Ramona",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":191.6101
+  },
+  {
+    "RegionName":92065,
+    "City":"Ramona",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":197.1807
+  },
+  {
+    "RegionName":92067,
+    "City":"Rancho Santa Fe",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":null
+  },
+  {
+    "RegionName":92067,
+    "City":"Rancho Santa Fe",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":590.0741
+  },
+  {
+    "RegionName":92067,
+    "City":"Rancho Santa Fe",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":92067,
+    "City":"Rancho Santa Fe",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":null
+  },
+  {
+    "RegionName":92067,
+    "City":"Rancho Santa Fe",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":null
+  },
+  {
+    "RegionName":92067,
+    "City":"Rancho Santa Fe",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":null
+  },
+  {
+    "RegionName":92067,
+    "City":"Rancho Santa Fe",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":null
+  },
+  {
+    "RegionName":92067,
+    "City":"Rancho Santa Fe",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":null
+  },
+  {
+    "RegionName":92067,
+    "City":"Rancho Santa Fe",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":null
+  },
+  {
+    "RegionName":92067,
+    "City":"Rancho Santa Fe",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":461.7055948
+  },
+  {
+    "RegionName":92069,
+    "City":"San Marcos",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":297.2279
+  },
+  {
+    "RegionName":92069,
+    "City":"San Marcos",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":309.9816
+  },
+  {
+    "RegionName":92069,
+    "City":"San Marcos",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":266.7184
+  },
+  {
+    "RegionName":92069,
+    "City":"San Marcos",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":232.3321
+  },
+  {
+    "RegionName":92069,
+    "City":"San Marcos",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":176.1632
+  },
+  {
+    "RegionName":92069,
+    "City":"San Marcos",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":191.8015
+  },
+  {
+    "RegionName":92069,
+    "City":"San Marcos",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":183.372
+  },
+  {
+    "RegionName":92069,
+    "City":"San Marcos",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":172.9151
+  },
+  {
+    "RegionName":92069,
+    "City":"San Marcos",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":223.2898
+  },
+  {
+    "RegionName":92069,
+    "City":"San Marcos",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":254.2705
+  },
+  {
+    "RegionName":92071,
+    "City":"Santee",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":333.9703
+  },
+  {
+    "RegionName":92071,
+    "City":"Santee",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":318.613
+  },
+  {
+    "RegionName":92071,
+    "City":"Santee",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":300.7809
+  },
+  {
+    "RegionName":92071,
+    "City":"Santee",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":243.1304
+  },
+  {
+    "RegionName":92071,
+    "City":"Santee",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":207.4743
+  },
+  {
+    "RegionName":92071,
+    "City":"Santee",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":205.7259
+  },
+  {
+    "RegionName":92071,
+    "City":"Santee",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":212.1691
+  },
+  {
+    "RegionName":92071,
+    "City":"Santee",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":202.6232
+  },
+  {
+    "RegionName":92071,
+    "City":"Santee",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":234.7031
+  },
+  {
+    "RegionName":92071,
+    "City":"Santee",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":260.7132
+  },
+  {
+    "RegionName":92075,
+    "City":"Solana Beach",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":509.0426
+  },
+  {
+    "RegionName":92075,
+    "City":"Solana Beach",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":487.8534
+  },
+  {
+    "RegionName":92075,
+    "City":"Solana Beach",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":455.4769
+  },
+  {
+    "RegionName":92075,
+    "City":"Solana Beach",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":459.7189
+  },
+  {
+    "RegionName":92075,
+    "City":"Solana Beach",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":421.6383
+  },
+  {
+    "RegionName":92075,
+    "City":"Solana Beach",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":406.9314
+  },
+  {
+    "RegionName":92075,
+    "City":"Solana Beach",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":402.2782
+  },
+  {
+    "RegionName":92075,
+    "City":"Solana Beach",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":402.8562
+  },
+  {
+    "RegionName":92075,
+    "City":"Solana Beach",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":425.6619
+  },
+  {
+    "RegionName":92075,
+    "City":"Solana Beach",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":530.1815
+  },
+  {
+    "RegionName":92078,
+    "City":"San Marcos",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":304.034
+  },
+  {
+    "RegionName":92078,
+    "City":"San Marcos",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":303.8391
+  },
+  {
+    "RegionName":92078,
+    "City":"San Marcos",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":289.239
+  },
+  {
+    "RegionName":92078,
+    "City":"San Marcos",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":223.3415
+  },
+  {
+    "RegionName":92078,
+    "City":"San Marcos",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":200.5053
+  },
+  {
+    "RegionName":92078,
+    "City":"San Marcos",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":207.5857
+  },
+  {
+    "RegionName":92078,
+    "City":"San Marcos",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":195.5455
+  },
+  {
+    "RegionName":92078,
+    "City":"San Marcos",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":197.8411
+  },
+  {
+    "RegionName":92078,
+    "City":"San Marcos",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":240.3177
+  },
+  {
+    "RegionName":92078,
+    "City":"San Marcos",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":265.0845
+  },
+  {
+    "RegionName":92081,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":322.2864
+  },
+  {
+    "RegionName":92081,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":311.5044
+  },
+  {
+    "RegionName":92081,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":274.3253
+  },
+  {
+    "RegionName":92081,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":230.7835
+  },
+  {
+    "RegionName":92081,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":204.8809
+  },
+  {
+    "RegionName":92081,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":208.1587
+  },
+  {
+    "RegionName":92081,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":192.1789
+  },
+  {
+    "RegionName":92081,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":200.262
+  },
+  {
+    "RegionName":92081,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":240.0626
+  },
+  {
+    "RegionName":92081,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":252.4656
+  },
+  {
+    "RegionName":92082,
+    "City":"Valley Center",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":271.9326
+  },
+  {
+    "RegionName":92082,
+    "City":"Valley Center",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":270.4305
+  },
+  {
+    "RegionName":92082,
+    "City":"Valley Center",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":92082,
+    "City":"Valley Center",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":null
+  },
+  {
+    "RegionName":92082,
+    "City":"Valley Center",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":167.5107
+  },
+  {
+    "RegionName":92082,
+    "City":"Valley Center",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":null
+  },
+  {
+    "RegionName":92082,
+    "City":"Valley Center",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":null
+  },
+  {
+    "RegionName":92082,
+    "City":"Valley Center",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":166.978
+  },
+  {
+    "RegionName":92082,
+    "City":"Valley Center",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":178.7592
+  },
+  {
+    "RegionName":92082,
+    "City":"Valley Center",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":191.7522
+  },
+  {
+    "RegionName":92083,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":313.8601
+  },
+  {
+    "RegionName":92083,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":311.122
+  },
+  {
+    "RegionName":92083,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":92083,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":212.3142251
+  },
+  {
+    "RegionName":92083,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":172.2377
+  },
+  {
+    "RegionName":92083,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":159.691
+  },
+  {
+    "RegionName":92083,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":151.5093
+  },
+  {
+    "RegionName":92083,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":null
+  },
+  {
+    "RegionName":92083,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":200.0322
+  },
+  {
+    "RegionName":92083,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":253.3674
+  },
+  {
+    "RegionName":92084,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":314.3647
+  },
+  {
+    "RegionName":92084,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":303.547
+  },
+  {
+    "RegionName":92084,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":277.2535
+  },
+  {
+    "RegionName":92084,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":210.1837
+  },
+  {
+    "RegionName":92084,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":169.1121
+  },
+  {
+    "RegionName":92084,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":186.5554
+  },
+  {
+    "RegionName":92084,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":181.815
+  },
+  {
+    "RegionName":92084,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":183.6977
+  },
+  {
+    "RegionName":92084,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":225.9242
+  },
+  {
+    "RegionName":92084,
+    "City":"Vista",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":248.8672
+  },
+  {
+    "RegionName":92091,
+    "City":"Rancho Santa Fe",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":null
+  },
+  {
+    "RegionName":92091,
+    "City":"Rancho Santa Fe",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":null
+  },
+  {
+    "RegionName":92091,
+    "City":"Rancho Santa Fe",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":92091,
+    "City":"Rancho Santa Fe",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":null
+  },
+  {
+    "RegionName":92091,
+    "City":"Rancho Santa Fe",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":null
+  },
+  {
+    "RegionName":92091,
+    "City":"Rancho Santa Fe",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":null
+  },
+  {
+    "RegionName":92091,
+    "City":"Rancho Santa Fe",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":null
+  },
+  {
+    "RegionName":92091,
+    "City":"Rancho Santa Fe",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":null
+  },
+  {
+    "RegionName":92091,
+    "City":"Rancho Santa Fe",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":null
+  },
+  {
+    "RegionName":92091,
+    "City":"Rancho Santa Fe",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":null
+  },
+  {
+    "RegionName":92101,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":515.9055
+  },
+  {
+    "RegionName":92101,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":511.2488
+  },
+  {
+    "RegionName":92101,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":486.322
+  },
+  {
+    "RegionName":92101,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":450.6997
+  },
+  {
+    "RegionName":92101,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":396.0359
+  },
+  {
+    "RegionName":92101,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":365.6816
+  },
+  {
+    "RegionName":92101,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":340.5939
+  },
+  {
+    "RegionName":92101,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":382.7538
+  },
+  {
+    "RegionName":92101,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":439.8087
+  },
+  {
+    "RegionName":92101,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":457.5008
+  },
+  {
+    "RegionName":92102,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":414.0229
+  },
+  {
+    "RegionName":92102,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":393.3235
+  },
+  {
+    "RegionName":92102,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":92102,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":345.721694
+  },
+  {
+    "RegionName":92102,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":228.0130293
+  },
+  {
+    "RegionName":92102,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":197.3333
+  },
+  {
+    "RegionName":92102,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":198.9089
+  },
+  {
+    "RegionName":92102,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":null
+  },
+  {
+    "RegionName":92102,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":279.1576
+  },
+  {
+    "RegionName":92102,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":null
+  },
+  {
+    "RegionName":92103,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":480.2046
+  },
+  {
+    "RegionName":92103,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":444.8542
+  },
+  {
+    "RegionName":92103,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":471.6785
+  },
+  {
+    "RegionName":92103,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":365.6223
+  },
+  {
+    "RegionName":92103,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":349.3102
+  },
+  {
+    "RegionName":92103,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":353.0559
+  },
+  {
+    "RegionName":92103,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":378.0342
+  },
+  {
+    "RegionName":92103,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":340.8443
+  },
+  {
+    "RegionName":92103,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":424.2355
+  },
+  {
+    "RegionName":92103,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":436.8592
+  },
+  {
+    "RegionName":92104,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":438.0462
+  },
+  {
+    "RegionName":92104,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":424.0422
+  },
+  {
+    "RegionName":92104,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":370.4669
+  },
+  {
+    "RegionName":92104,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":381.4608
+  },
+  {
+    "RegionName":92104,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":288.7302
+  },
+  {
+    "RegionName":92104,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":313.6662
+  },
+  {
+    "RegionName":92104,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":315.9544
+  },
+  {
+    "RegionName":92104,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":303.7289
+  },
+  {
+    "RegionName":92104,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":382.6667
+  },
+  {
+    "RegionName":92104,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":409.5018
+  },
+  {
+    "RegionName":92105,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":377.0439
+  },
+  {
+    "RegionName":92105,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":401.8714
+  },
+  {
+    "RegionName":92105,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":347.0786
+  },
+  {
+    "RegionName":92105,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":248.3942
+  },
+  {
+    "RegionName":92105,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":169.2474
+  },
+  {
+    "RegionName":92105,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":190.6566
+  },
+  {
+    "RegionName":92105,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":185.2524
+  },
+  {
+    "RegionName":92105,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":175.5481
+  },
+  {
+    "RegionName":92105,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":205.8983
+  },
+  {
+    "RegionName":92105,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":280.6267
+  },
+  {
+    "RegionName":92106,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":null
+  },
+  {
+    "RegionName":92106,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":456.9666
+  },
+  {
+    "RegionName":92106,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":522.2308
+  },
+  {
+    "RegionName":92106,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":436.7072
+  },
+  {
+    "RegionName":92106,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":391.6971
+  },
+  {
+    "RegionName":92106,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":347.2015
+  },
+  {
+    "RegionName":92106,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":389.3307
+  },
+  {
+    "RegionName":92106,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":433.5414
+  },
+  {
+    "RegionName":92106,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":425.765
+  },
+  {
+    "RegionName":92106,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":477.314
+  },
+  {
+    "RegionName":92107,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":438.4743
+  },
+  {
+    "RegionName":92107,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":null
+  },
+  {
+    "RegionName":92107,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":414.8255
+  },
+  {
+    "RegionName":92107,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":499.2282
+  },
+  {
+    "RegionName":92107,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":447.0383
+  },
+  {
+    "RegionName":92107,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":442.5855
+  },
+  {
+    "RegionName":92107,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":366.4177
+  },
+  {
+    "RegionName":92107,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":349.2744
+  },
+  {
+    "RegionName":92107,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":442.2945
+  },
+  {
+    "RegionName":92107,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":524.4754
+  },
+  {
+    "RegionName":92108,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":381.4646
+  },
+  {
+    "RegionName":92108,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":376.3293
+  },
+  {
+    "RegionName":92108,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":353.8584
+  },
+  {
+    "RegionName":92108,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":null
+  },
+  {
+    "RegionName":92108,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":264.2104
+  },
+  {
+    "RegionName":92108,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":249.9878
+  },
+  {
+    "RegionName":92108,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":220.5387
+  },
+  {
+    "RegionName":92108,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":200.1042
+  },
+  {
+    "RegionName":92108,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":285.3801
+  },
+  {
+    "RegionName":92108,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":302.3404
+  },
+  {
+    "RegionName":92109,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":549.6448
+  },
+  {
+    "RegionName":92109,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":508.7929
+  },
+  {
+    "RegionName":92109,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":500.1173
+  },
+  {
+    "RegionName":92109,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":417.3898
+  },
+  {
+    "RegionName":92109,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":406.4658
+  },
+  {
+    "RegionName":92109,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":449.4742
+  },
+  {
+    "RegionName":92109,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":397.948
+  },
+  {
+    "RegionName":92109,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":349.6227
+  },
+  {
+    "RegionName":92109,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":455.0897
+  },
+  {
+    "RegionName":92109,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":484.6086
+  },
+  {
+    "RegionName":92110,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":419.9593
+  },
+  {
+    "RegionName":92110,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":365.8648
+  },
+  {
+    "RegionName":92110,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":376.729
+  },
+  {
+    "RegionName":92110,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":324.8264
+  },
+  {
+    "RegionName":92110,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":282.0089
+  },
+  {
+    "RegionName":92110,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":269.3512
+  },
+  {
+    "RegionName":92110,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":266.1957
+  },
+  {
+    "RegionName":92110,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":null
+  },
+  {
+    "RegionName":92110,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":322.9948
+  },
+  {
+    "RegionName":92110,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":337.3295
+  },
+  {
+    "RegionName":92111,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":362.9203
+  },
+  {
+    "RegionName":92111,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":352.4007
+  },
+  {
+    "RegionName":92111,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":320.841
+  },
+  {
+    "RegionName":92111,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":283.5387
+  },
+  {
+    "RegionName":92111,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":269.1757
+  },
+  {
+    "RegionName":92111,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":283.8946
+  },
+  {
+    "RegionName":92111,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":237.1153
+  },
+  {
+    "RegionName":92111,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":259.8683
+  },
+  {
+    "RegionName":92111,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":296.5506
+  },
+  {
+    "RegionName":92111,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":333.5711
+  },
+  {
+    "RegionName":92113,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":315.2245
+  },
+  {
+    "RegionName":92113,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":394.1641
+  },
+  {
+    "RegionName":92113,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":92113,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":null
+  },
+  {
+    "RegionName":92113,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":null
+  },
+  {
+    "RegionName":92113,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":178.9644
+  },
+  {
+    "RegionName":92113,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":152.9893
+  },
+  {
+    "RegionName":92113,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":null
+  },
+  {
+    "RegionName":92113,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":null
+  },
+  {
+    "RegionName":92113,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":null
+  },
+  {
+    "RegionName":92114,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":331.1177
+  },
+  {
+    "RegionName":92114,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":332.5112
+  },
+  {
+    "RegionName":92114,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":275.8019
+  },
+  {
+    "RegionName":92114,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":188.1953
+  },
+  {
+    "RegionName":92114,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":165.3389
+  },
+  {
+    "RegionName":92114,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":188.6194
+  },
+  {
+    "RegionName":92114,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":183.8481
+  },
+  {
+    "RegionName":92114,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":165.7245
+  },
+  {
+    "RegionName":92114,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":229.9089
+  },
+  {
+    "RegionName":92114,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":254.6873
+  },
+  {
+    "RegionName":92115,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":370.0226
+  },
+  {
+    "RegionName":92115,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":363.473
+  },
+  {
+    "RegionName":92115,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":352.1146
+  },
+  {
+    "RegionName":92115,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":263.5117
+  },
+  {
+    "RegionName":92115,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":236.9268
+  },
+  {
+    "RegionName":92115,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":217.2072
+  },
+  {
+    "RegionName":92115,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":219.6163
+  },
+  {
+    "RegionName":92115,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":240.0554
+  },
+  {
+    "RegionName":92115,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":295.2168
+  },
+  {
+    "RegionName":92115,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":301.6099
+  },
+  {
+    "RegionName":92116,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":460.4719
+  },
+  {
+    "RegionName":92116,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":397.6872
+  },
+  {
+    "RegionName":92116,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":427.4852
+  },
+  {
+    "RegionName":92116,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":407.5889
+  },
+  {
+    "RegionName":92116,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":373.4274
+  },
+  {
+    "RegionName":92116,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":304.9178
+  },
+  {
+    "RegionName":92116,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":346.275
+  },
+  {
+    "RegionName":92116,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":295.5151
+  },
+  {
+    "RegionName":92116,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":400.5381
+  },
+  {
+    "RegionName":92116,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":424.0606
+  },
+  {
+    "RegionName":92117,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":411.1366
+  },
+  {
+    "RegionName":92117,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":402.4904
+  },
+  {
+    "RegionName":92117,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":390.6697
+  },
+  {
+    "RegionName":92117,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":353.5006
+  },
+  {
+    "RegionName":92117,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":326.4802
+  },
+  {
+    "RegionName":92117,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":313.8639
+  },
+  {
+    "RegionName":92117,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":288.4686
+  },
+  {
+    "RegionName":92117,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":296.0623
+  },
+  {
+    "RegionName":92117,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":338.7157
+  },
+  {
+    "RegionName":92117,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":382.7053
+  },
+  {
+    "RegionName":92118,
+    "City":"Coronado",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":null
+  },
+  {
+    "RegionName":92118,
+    "City":"Coronado",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":null
+  },
+  {
+    "RegionName":92118,
+    "City":"Coronado",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":92118,
+    "City":"Coronado",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":711.7647059
+  },
+  {
+    "RegionName":92118,
+    "City":"Coronado",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":714.319
+  },
+  {
+    "RegionName":92118,
+    "City":"Coronado",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":570.0304
+  },
+  {
+    "RegionName":92118,
+    "City":"Coronado",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":660.3492
+  },
+  {
+    "RegionName":92118,
+    "City":"Coronado",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":null
+  },
+  {
+    "RegionName":92118,
+    "City":"Coronado",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":562.521
+  },
+  {
+    "RegionName":92118,
+    "City":"Coronado",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":664.1771
+  },
+  {
+    "RegionName":92119,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":322.2407
+  },
+  {
+    "RegionName":92119,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":288.4017
+  },
+  {
+    "RegionName":92119,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":295.8132
+  },
+  {
+    "RegionName":92119,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":267.9365
+  },
+  {
+    "RegionName":92119,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":236.4294
+  },
+  {
+    "RegionName":92119,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":236.2632
+  },
+  {
+    "RegionName":92119,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":211.79
+  },
+  {
+    "RegionName":92119,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":236.5553
+  },
+  {
+    "RegionName":92119,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":282.4192
+  },
+  {
+    "RegionName":92119,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":299.5307
+  },
+  {
+    "RegionName":92120,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":320.5241
+  },
+  {
+    "RegionName":92120,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":316.6013
+  },
+  {
+    "RegionName":92120,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":325.7951
+  },
+  {
+    "RegionName":92120,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":282.1307
+  },
+  {
+    "RegionName":92120,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":238.558
+  },
+  {
+    "RegionName":92120,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":252.7334
+  },
+  {
+    "RegionName":92120,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":223.5747
+  },
+  {
+    "RegionName":92120,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":262.3371
+  },
+  {
+    "RegionName":92120,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":266.1477
+  },
+  {
+    "RegionName":92120,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":298.8159
+  },
+  {
+    "RegionName":92121,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":null
+  },
+  {
+    "RegionName":92121,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":null
+  },
+  {
+    "RegionName":92121,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":92121,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":null
+  },
+  {
+    "RegionName":92121,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":null
+  },
+  {
+    "RegionName":92121,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":null
+  },
+  {
+    "RegionName":92121,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":null
+  },
+  {
+    "RegionName":92121,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":null
+  },
+  {
+    "RegionName":92121,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":null
+  },
+  {
+    "RegionName":92121,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":null
+  },
+  {
+    "RegionName":92122,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":438.5097
+  },
+  {
+    "RegionName":92122,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":434.3946
+  },
+  {
+    "RegionName":92122,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":371.9036
+  },
+  {
+    "RegionName":92122,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":350.8905
+  },
+  {
+    "RegionName":92122,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":314.6105
+  },
+  {
+    "RegionName":92122,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":316.3273
+  },
+  {
+    "RegionName":92122,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":297.1023
+  },
+  {
+    "RegionName":92122,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":312.6605
+  },
+  {
+    "RegionName":92122,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":338.7492
+  },
+  {
+    "RegionName":92122,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":373.5139
+  },
+  {
+    "RegionName":92123,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":365.0495
+  },
+  {
+    "RegionName":92123,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":null
+  },
+  {
+    "RegionName":92123,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":327.2928
+  },
+  {
+    "RegionName":92123,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":271.5413
+  },
+  {
+    "RegionName":92123,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":253.7561
+  },
+  {
+    "RegionName":92123,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":244.3941
+  },
+  {
+    "RegionName":92123,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":251.4006
+  },
+  {
+    "RegionName":92123,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":264.9338
+  },
+  {
+    "RegionName":92123,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":275.8139
+  },
+  {
+    "RegionName":92123,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":309.2932
+  },
+  {
+    "RegionName":92124,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":349.3128
+  },
+  {
+    "RegionName":92124,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":338.9971
+  },
+  {
+    "RegionName":92124,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":311.9309
+  },
+  {
+    "RegionName":92124,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":267.4934
+  },
+  {
+    "RegionName":92124,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":265.3573
+  },
+  {
+    "RegionName":92124,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":270.4728
+  },
+  {
+    "RegionName":92124,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":244.0028
+  },
+  {
+    "RegionName":92124,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":null
+  },
+  {
+    "RegionName":92124,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":276.081
+  },
+  {
+    "RegionName":92124,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":287.061
+  },
+  {
+    "RegionName":92126,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":371.3019
+  },
+  {
+    "RegionName":92126,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":339.9341
+  },
+  {
+    "RegionName":92126,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":323.3461
+  },
+  {
+    "RegionName":92126,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":268.1836
+  },
+  {
+    "RegionName":92126,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":247.6763
+  },
+  {
+    "RegionName":92126,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":250.9184
+  },
+  {
+    "RegionName":92126,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":234.4449
+  },
+  {
+    "RegionName":92126,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":239.2733
+  },
+  {
+    "RegionName":92126,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":297.1202
+  },
+  {
+    "RegionName":92126,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":305.1203
+  },
+  {
+    "RegionName":92127,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":335.9184
+  },
+  {
+    "RegionName":92127,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":333.7355
+  },
+  {
+    "RegionName":92127,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":300.8423
+  },
+  {
+    "RegionName":92127,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":268.7998
+  },
+  {
+    "RegionName":92127,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":251.2891
+  },
+  {
+    "RegionName":92127,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":263.9491
+  },
+  {
+    "RegionName":92127,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":248.7724
+  },
+  {
+    "RegionName":92127,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":244.6661
+  },
+  {
+    "RegionName":92127,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":284.6748
+  },
+  {
+    "RegionName":92127,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":310.5098
+  },
+  {
+    "RegionName":92128,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":349.1506
+  },
+  {
+    "RegionName":92128,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":321.6996
+  },
+  {
+    "RegionName":92128,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":305.4515
+  },
+  {
+    "RegionName":92128,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":271.5296
+  },
+  {
+    "RegionName":92128,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":268.5445
+  },
+  {
+    "RegionName":92128,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":262.1773
+  },
+  {
+    "RegionName":92128,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":238.7977
+  },
+  {
+    "RegionName":92128,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":251.1185
+  },
+  {
+    "RegionName":92128,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":293.2291
+  },
+  {
+    "RegionName":92128,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":315.4851
+  },
+  {
+    "RegionName":92129,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":347.7177
+  },
+  {
+    "RegionName":92129,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":335.8345
+  },
+  {
+    "RegionName":92129,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":319.2468
+  },
+  {
+    "RegionName":92129,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":284.9082
+  },
+  {
+    "RegionName":92129,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":257.3495
+  },
+  {
+    "RegionName":92129,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":266.5887
+  },
+  {
+    "RegionName":92129,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":256.9736
+  },
+  {
+    "RegionName":92129,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":246.5153
+  },
+  {
+    "RegionName":92129,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":303.0281
+  },
+  {
+    "RegionName":92129,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":317.4344
+  },
+  {
+    "RegionName":92130,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":399.7477
+  },
+  {
+    "RegionName":92130,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":378.3126
+  },
+  {
+    "RegionName":92130,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":369.6394
+  },
+  {
+    "RegionName":92130,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":353.9207
+  },
+  {
+    "RegionName":92130,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":332.5334
+  },
+  {
+    "RegionName":92130,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":342.2478
+  },
+  {
+    "RegionName":92130,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":321.3546
+  },
+  {
+    "RegionName":92130,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":323.5682
+  },
+  {
+    "RegionName":92130,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":368.5738
+  },
+  {
+    "RegionName":92130,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":405.2564
+  },
+  {
+    "RegionName":92131,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":361.9659
+  },
+  {
+    "RegionName":92131,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":340.4049
+  },
+  {
+    "RegionName":92131,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":329.8368
+  },
+  {
+    "RegionName":92131,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":306.6748
+  },
+  {
+    "RegionName":92131,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":272.8304
+  },
+  {
+    "RegionName":92131,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":284.2521
+  },
+  {
+    "RegionName":92131,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":262.5646
+  },
+  {
+    "RegionName":92131,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":255.0206
+  },
+  {
+    "RegionName":92131,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":306.8723
+  },
+  {
+    "RegionName":92131,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":314.4881
+  },
+  {
+    "RegionName":92139,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":326.7471
+  },
+  {
+    "RegionName":92139,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":330.9936
+  },
+  {
+    "RegionName":92139,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":92139,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":null
+  },
+  {
+    "RegionName":92139,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":143.002
+  },
+  {
+    "RegionName":92139,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":169.7469
+  },
+  {
+    "RegionName":92139,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":146.393
+  },
+  {
+    "RegionName":92139,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":null
+  },
+  {
+    "RegionName":92139,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":190.7396
+  },
+  {
+    "RegionName":92139,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":235.3705
+  },
+  {
+    "RegionName":92154,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":320.9516
+  },
+  {
+    "RegionName":92154,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2006,
+    "Value":337.2917
+  },
+  {
+    "RegionName":92154,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2007,
+    "Value":null
+  },
+  {
+    "RegionName":92154,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2008,
+    "Value":201.8481
+  },
+  {
+    "RegionName":92154,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2009,
+    "Value":158.2214
+  },
+  {
+    "RegionName":92154,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2010,
+    "Value":161.1945
+  },
+  {
+    "RegionName":92154,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2011,
+    "Value":149.1773
+  },
+  {
+    "RegionName":92154,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2012,
+    "Value":155.8884
+  },
+  {
+    "RegionName":92154,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2013,
+    "Value":189.0909
+  },
+  {
+    "RegionName":92154,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2014,
+    "Value":213.3139
+  },
+  {
+    "RegionName":92173,
+    "City":"San Diego",
+    "State":"CA",
+    "Metro":"San Diego",
+    "CountyName":"San Diego",
+    "Month":7,
+    "Year":2005,
+    "Value":341.8049
+  }
+]
