@@ -31,6 +31,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
 
+    <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
 
     <!-- Load c3.css -->
     <link href="css/c3.min.css" rel="stylesheet" type="text/css">
@@ -113,7 +114,7 @@
         #cssmenu
         {
             position: absolute;
-            top: 1719px;
+            top: 1670px;
             left: 120px;
             z-index: 2;
         }
@@ -798,33 +799,40 @@
                         var streetUrl = "https://maps.googleapis.com/maps/api/streetview?size=200x200&location=" + latitude + "," + longitude + "&fov=90&heading=235&pitch=10";
                         var streetViewImage = '<img src=' + streetUrl + ' alt="Street View" height="200" width="100%">';
 
-                        var contentString = '<div id="content">' +
-                                streetViewImage +
-                                '<div id="siteNotice">' +
-                                '</div>' +
+                        var contentString = '<div id="content" style="border-radius: 4px;overflow: hidden;">' +
+                                streetViewImage + '<div style="background-color: rgb(244,244,244);border-top: 2px solid rgb(226, 226, 226);padding: 10px;">' +
                                 addressText +
                                 '<div id="bodyContent">' +
-                                '<p>' +
+                                '<p style="margin:0">' +
                                 '<b>' + bedrooms + ' bedrooms &#8226 ' + bathrooms + ' bathrooms &#8226 ' + squareFeet + ' sqft. </b><br>' +
                                 'Zestimate: ' + zestimate +
-                                '<p><a target="_tab" href=' + zillowLink + '>' +
+                                '<p style="margin:0"><a target="_tab" href=' + zillowLink + '>' +
                                 'Zillow Info</a>' +
-                                    // ' &#8226 <a href="javascript:getZillowComps('+result.results[0].result[0].zpid[0]+')" >Show Comps</a></p>'+
-                                '</div>' +
+                                '</div>' + '</div>' +
                                 '</div>';
 
-                        var houseInfowindow = new google.maps.InfoWindow({
+                        var infobox = new InfoBox({
                             content: contentString,
-                            maxWidth: 400
+                            disableAutoPan: false,
+                            maxWidth: 150,
+                            pixelOffset: new google.maps.Size(-130, -330),
+                            zIndex: null,
+                            boxStyle: {
+                                background: "url('http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/examples/tipbox.gif') no-repeat",
+                                opacity: 1,
+                                width: "260px"
+                            },
+                            closeBoxMargin: "4px 4px 2px -20px",
+                            closeBoxURL: "http://www.google.com/intl/en_us/mapfiles/close.gif",
+                            infoBoxClearance: new google.maps.Size(1, 1)
                         });
 
                         google.maps.event.addListener(marker, 'click', function () {
-
                             currentInfoWindow.close();
-                            houseInfowindow.open(map, this);
-                            currentInfoWindow = houseInfowindow;
-
+                            infobox.open(map, this);
+                            currentInfoWindow = infobox;
                         });
+
 
                     }
 
@@ -998,33 +1006,39 @@
             var streetUrl = "https://maps.googleapis.com/maps/api/streetview?size=200x200&location="+houseInfo.latitude+","+houseInfo.longitude+"&fov=90&heading=235&pitch=10";
             var streetViewImage = '<img src='+streetUrl+' alt="Street View" height="200" width="100%">';
 
-            var contentString = '<div id="content">' +
-                    streetViewImage+
-                    '<div id="siteNotice">'+
-                    '</div>'+
-                    addressText+
-                    '<div id="bodyContent">'+
-                    '<p>' +
-                    '<b>'+bedrooms+' bedrooms &#8226 '+bathrooms+' bathrooms</b><br>' +
-                    'Rental Cost: '+rentalCost+
-                    '<p><a target="_tab" href='+zillowLink+'>'+
-                    'Zillow Info</a>'+
-                    //' &#8226 <a href="javascript:getZillowComps('+houseInfo.comparables+')" >Show Comps</a></p>'+
-                    '</div>'+
+            var contentString = '<div id="content" style="border-radius: 4px;overflow: hidden;">' +
+                    streetViewImage + '<div style="background-color: rgb(244,244,244);border-top: 2px solid rgb(226, 226, 226);padding: 10px;">' +
+                    addressText +
+                    '<div id="bodyContent">' +
+                    '<p style="margin:0">' +
+                    '<b>' + bedrooms + ' bedrooms &#8226 ' + bathrooms + ' bathrooms'+' </b><br>' +
+                    'Zestimate: ' + rentalCost +
+                    '<p style="margin:0"><a target="_tab" href=' + zillowLink + '>' +
+                    'Zillow Info</a>' +
+                    '</div>' + '</div>' +
                     '</div>';
 
-            var houseInfowindow = new google.maps.InfoWindow({
+            var infobox = new InfoBox({
                 content: contentString,
-                maxWidth: 400
+                disableAutoPan: false,
+                maxWidth: 150,
+                pixelOffset: new google.maps.Size(-130, -330),
+                zIndex: null,
+                boxStyle: {
+                    background: "url('http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/examples/tipbox.gif') no-repeat",
+                    opacity: 1,
+                    width: "260px"
+                },
+                closeBoxMargin: "4px 4px 2px -20px",
+                closeBoxURL: "http://www.google.com/intl/en_us/mapfiles/close.gif",
+                infoBoxClearance: new google.maps.Size(1, 1)
             });
 
             google.maps.event.addListener(marker, 'click', function () {
-
                 currentInfoWindow.close();
-                houseInfowindow.open(map, this);
-                currentInfoWindow = houseInfowindow;
+                infobox.open(map, this);
+                currentInfoWindow = infobox;
             });
-
 
         }
 
